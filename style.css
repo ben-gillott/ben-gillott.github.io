@@ -1,5 +1,5 @@
 body {
-    background-color: lightblue;
+    background-color: rgb(220, 232, 236);
   }
   
   h1 {
@@ -7,9 +7,32 @@ body {
     margin-left: 20px;
   }
 
-  div {
-    width: 50px;
+  
+  .projects-parent {
+    background-color: green;
+    width: 300px;
     padding: 10px;
     border: 2px solid black;
     margin: 50;
+    /* display: flex; */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr /*number of columns here */
+  }
+
+  .projects-child {
+    background-color: yellow;
+    width: 50px;
+    padding: 10px;
+    border: 2px solid red;
+    margin: 50;
+    /* flex: 1; */
+  }
+
+  .projects-child:hover {
+    background-color: green;
+    width: 50px;
+    padding: 10px;
+    border: 2px solid red;
+    margin: 50;
+    /* flex: 1; */
   }
