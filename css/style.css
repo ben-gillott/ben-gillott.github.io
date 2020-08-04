@@ -1,0 +1,68 @@
+:root {
+  --banner-color: blue;
+  --background-color: black;
+  --block-color: white;
+  --banner-text-color: black;
+  --default-text-color: black;
+}
+
+body {
+  background-color: var(--background-color);
+  background-size: cover;
+  font: normal 10px Verdana, Arial, sans-serif;
+}
+
+h1 {
+  background-color: var(--banner-color);
+  color: navy;
+  margin: 0px;
+}
+
+h2 {
+  color: var(--banner-color);
+  margin: 0px;
+}
+
+p {
+  color: black;
+  margin: 0px;
+}
+
+.containerbox {
+  width: 750px;
+  height: auto;
+  background-color: var(--block);
+  margin: auto;
+  margin-top: 70px;
+  padding: 10px;
+}
+
+h1 {
+}
+
+/* 
+  .projects-parent {
+    background-color: green;
+    width: 300px;
+    padding: 10px;
+    border: 2px solid black;
+    margin: 50;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr
+  }
+
+  .projects-child {
+    background-color: yellow;
+    width: 50px;
+    padding: 10px;
+    border: 2px solid red;
+    margin: 50;
+  }
+
+  .projects-child:hover {
+    background-color: green;
+    width: 50px;
+    padding: 10px;
+    border: 2px solid red;
+    margin: 50;
+  } */
