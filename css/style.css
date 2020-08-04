@@ -45,6 +45,8 @@ p {
   margin: auto;
   margin-top: 70px;
   padding: 10px;
+  
+  /* grid-template-columns: 1fr 1fr 1fr */
 }
 
 /* 
