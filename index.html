@@ -13,19 +13,85 @@
     />
     <meta name="author" content="Benjamin Gillott" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <base href="https://ben-gillott.github.io/" target="_blank" />
   </head>
 
   <body>
     <div class="parent containerbox">
       <h1>Ben Gillott</h1>
-        <img src="/assets/profile_photo.png" alt="Profile Image">
 
-        <p>
-          About me section paragraph this will be information. About one more
-          sentence of information and done.
-        </p>
+      <div class="image-about-box">
+        <!-- Left Column-->
+        <img
+          class="profile-image"
+          src="/assets/profile_photo.png"
+          alt="Profile Image"
+        />
 
+        <!-- Right Column-->
+        <div>
+          <h4
+            style="
+              margin-right: 80%;
+              color: white;
+              background-color: black;
+              margin-bottom: 0px;
+            "
+          >
+            About Me
+          </h4>
+          <p style="margin-top: 0px;">
+            Content about me section paragraph this will be information. About
+            one more sentence of information blah blah.
+          </p>
+
+          <br />
+
+          <!-- Resume -->
+          <div class="resume-holder">
+            <div onclick="window.open('./resume.pdf')"" class="icon-pair" style="border-radius: 5px;">
+              <img class="icon-pair-image" src="assets/resume_icon.png" />
+              <h5 class="icon-pair-text">Resume</h5>
+            </div>
+          </div>
+
+          <hr />
+
+          <!-- Socials and Links -->
+          <div class="socials-grid">
+            <div
+              onclick="window.open('https://github.com/ben-gillott')"
+              class="icon-pair"
+            >
+              <img class="icon-pair-image" src="assets/git_icon.svg" />
+              <h5 class="icon-pair-text">GitHub</h5>
+            </div>
+
+            <div
+              onclick="window.open('https://neblig.itch.io/')"
+              class="icon-pair"
+            >
+              <img class="icon-pair-image" src="assets/itch_icon.png" />
+              <h5 class="icon-pair-text">Itch.io</h5>
+            </div>
+
+            <div
+              onclick="window.open('https://www.linkedin.com/in/ben-gillott/')"
+              class="icon-pair"
+            >
+              <img class="icon-pair-image" src="assets/linkedin_icon.png" />
+              <h5 class="icon-pair-text">Linkedin</h5>
+            </div>
+
+            <div
+              onclick="window.open('https://www.facebook.com/benbeanbag')"
+              class="icon-pair"
+            >
+              <img class="icon-pair-image" src="assets/facebook_icon.png" />
+              <h5 class="icon-pair-text">Facebook</h5>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
     <div class="parent containerbox">

@@ -14,6 +14,7 @@
   --block-color: white;
   --banner-text-color: white;
   --content-text-color: black;
+  --hover-color: grey;
 }
 
 
@@ -34,6 +35,7 @@ h1 {
   font-size: 40px;
 }
 
+
 p {
   color: var(--content-text-color);
 }
@@ -49,29 +51,43 @@ p {
   /* grid-template-columns: 1fr 1fr 1fr */
 }
 
-/* 
-  .projects-parent {
-    background-color: green;
-    width: 300px;
-    padding: 10px;
-    border: 2px solid black;
-    margin: 50;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr
-  }
+.profile-image{
+  width: 90%;
+  padding: 10px;
+}
 
-  .projects-child {
-    background-color: yellow;
-    width: 50px;
-    padding: 10px;
-    border: 2px solid red;
-    margin: 50;
-  }
+.image-about-box{
+  display: grid;
+  grid-template-columns: 40% 1fr;
+}
 
-  .projects-child:hover {
-    background-color: green;
-    width: 50px;
-    padding: 10px;
-    border: 2px solid red;
-    margin: 50;
-  } */
+.socials-grid{
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.resume-holder{
+  margin-right: 47%;
+}
+
+.icon-pair{
+  margin: 10px;
+  display: grid;
+  grid-template-columns: 20% 1fr;
+}
+
+.icon-pair:hover{
+  background-color: var(--hover-color);
+  border-radius: 15px;
+  text-decoration: underline;
+}
+
+.icon-pair-text{
+  margin: auto 2%;
+  font-size: large;
+}
+
+.icon-pair-image{
+  width: 75%;
+}
