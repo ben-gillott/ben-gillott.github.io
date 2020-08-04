@@ -1,43 +1,50 @@
-:root {
-  --banner-color: blue;
-  --background-color: black;
-  --block-color: white;
-  --banner-text-color: black;
-  --default-text-color: black;
+@font-face {
+  font-family: BannerFont;
+  src: url(../assets/Silkscreen/slkscreb.ttf);
+  font-weight: bold;
+}
+@font-face {
+  font-family: ContentFont;
+  src: url(../assets/Silkscreen/slkscr.ttf);
 }
 
+:root {
+  --banner-color: black;
+  --base-color: black;
+  --block-color: white;
+  --banner-text-color: white;
+  --content-text-color: black;
+}
+
+
+/* ================================== */
+
 body {
-  background-color: var(--background-color);
+  background-color: var(--base-color);
   background-size: cover;
-  font: normal 10px Verdana, Arial, sans-serif;
+  font-family: ContentFont;
 }
 
 h1 {
   background-color: var(--banner-color);
-  color: navy;
-  margin: 0px;
-}
-
-h2 {
-  color: var(--banner-color);
-  margin: 0px;
+  color: var(--banner-text-color);
+  margin: auto;
+  padding: 10px;
+  text-align: center;
+  font-size: 40px;
 }
 
 p {
-  color: black;
-  margin: 0px;
+  color: var(--content-text-color);
 }
 
 .containerbox {
   width: 750px;
   height: auto;
-  background-color: var(--block);
+  background-color: var(--block-color);
   margin: auto;
   margin-top: 70px;
   padding: 10px;
-}
-
-h1 {
 }
 
 /* 
