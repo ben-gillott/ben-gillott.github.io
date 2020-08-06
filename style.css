@@ -17,14 +17,13 @@
   --hover-color: grey;
 }
 
-
-/* ================================== */
-
 body {
   background-color: var(--base-color);
   background-size: cover;
   font-family: ContentFont;
 }
+
+
 
 h1 {
   background-color: var(--banner-color);
@@ -34,7 +33,6 @@ h1 {
   text-align: center;
   font-size: 40px;
 }
-
 
 p {
   color: var(--content-text-color);
@@ -47,9 +45,8 @@ p {
   margin: auto;
   margin-top: 70px;
   padding: 10px;
-  
-  /* grid-template-columns: 1fr 1fr 1fr */
 }
+
 
 .profile-image{
   width: 90%;
@@ -91,3 +88,60 @@ p {
 .icon-pair-image{
   width: 75%;
 }
+
+
+/* PROJECTS */
+
+/* Update test1 */
+
+.project-box{
+  /* background-color: var(--hover-color); */
+  border-style: solid;
+  margin: auto;
+  margin-top: 10px;
+}
+
+h2 {
+  background-color: var(--banner-color);
+  color: var(--banner-text-color);
+  padding: 10px;
+  text-align: left;
+  font-size: 28px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.project-grid{
+  display: grid;
+  grid-template-columns: 20% 1fr;
+}
+
+.project-image{
+  width: 100%;
+}
+
+.project-description{
+  font-size: medium;
+  margin: auto;
+}
+
+.project-linkgrid2{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.project-linkgrid3{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.project-link-button{
+  border-style: solid; 
+  border-color: red;
+
+  margin: auto;
+}
+
+/* Test2 */
+
+
