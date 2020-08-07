@@ -128,6 +128,11 @@ h2 {
 .project-linkgrid2{
   display: grid;
   grid-template-columns: 1fr 1fr;
+
+  width: 50%;
+
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .project-linkgrid3{
@@ -139,7 +144,8 @@ h2 {
   border-style: solid; 
   border-color: red;
 
-  margin: auto;
+  width: 50%;
+  text-align: center;
 }
 
 /* Test2 */
