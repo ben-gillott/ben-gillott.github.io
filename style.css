@@ -15,6 +15,8 @@
   --banner-text-color: white;
   --content-text-color: black;
   --hover-color: grey;
+  --lightblack-color: #404040;
+  --border-color : black;
 }
 
 body {
@@ -72,6 +74,7 @@ p {
   margin: 10px;
   display: grid;
   grid-template-columns: 20% 1fr;
+
 }
 
 .icon-pair:hover{
@@ -120,34 +123,61 @@ h2 {
   width: 100%;
 }
 
+.project-rightbox{
+  margin-left: 2%;
+}
+
+.project-org{
+  margin-top: 1%;
+  margin-bottom: 0px;
+  /* margin: 0%; */
+}
+
+.project-date{
+  margin-top: 1%;
+  margin-bottom: 0px;
+  color: var(--lightblack-color);
+  /* margin: 0%; */
+}
+
 .project-description{
   font-size: medium;
-  margin: auto;
+  margin-top: 1%;
+
 }
 
 .project-linkgrid2{
+  width: 60%;
+
   display: grid;
   grid-template-columns: 1fr 1fr;
-
-  width: 50%;
-
   margin-left: auto;
   margin-right: auto;
 }
 
 .project-linkgrid3{
+  width: 60%;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .project-link-button{
   border-style: solid; 
-  border-color: red;
+  border-color: var(--border-color);
 
-  width: 50%;
+  width: 80%;
   text-align: center;
+  border-radius: 15px;
 }
 
-/* Test2 */
+.project-link-button:hover{
+  background-color: var(--hover-color);
+  text-decoration: underline;
+  border-radius: 15px;
+}
+
+/* Test3 */
 
 
