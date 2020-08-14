@@ -45,7 +45,7 @@ p {
   height: auto;
   background-color: var(--block-color);
   margin: auto;
-  margin-top: 70px;
+  margin-top: 100px;
   padding: 10px;
 }
 
@@ -212,6 +212,15 @@ h2 {
   border-radius: 15px;
 }
 
-/* Test3 */
+/* Contact Section*/
 
+.contactbox {
+  width: 750px;
+  height: auto;
+  background-color: var(--block-color);
+  margin: auto;
+  margin-top: 100px;
+  margin-bottom: 0px;
+  padding: 10px;
 
+}
