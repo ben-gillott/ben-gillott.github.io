@@ -53,6 +53,7 @@ p {
 .profile-image{
   width: 90%;
   padding: 10px;
+  border-radius: 50%;
 }
 
 .image-about-box{
@@ -100,7 +101,6 @@ p {
 /* Experience and PROJECTS */
 
 /* Update test1 */
-
 .project-box{
   /* background-color: var(--hover-color); */
   border-style: solid;
@@ -123,12 +123,27 @@ h2 {
   grid-template-columns: 20% 1fr;
 }
 
+.experience-grid{
+  display: grid;
+  grid-template-columns: 15% 1fr;
+}
+
 .project-image{
   width: 100%;
   margin-left: 1%;
   margin-top: 1%;
   margin-bottom: 1%;
   /* border-style: solid; */
+}
+
+
+.experience-image{
+  width: 100%;
+  /* padding-top: 20%; */
+  /* padding-top: 20%; */
+  margin-left: 2%;
+  margin-top: 20%;
+  margin-bottom: 1%;
 }
 
 .project-rightbox{
