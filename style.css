@@ -19,6 +19,11 @@
   --border-color : black;
 }
 
+br{
+  display: block; /* makes it have a width */
+  content: ""; /* clears default height */
+  margin-top: 1.5%;
+}
 body {
   background-color: var(--base-color);
   background-size: cover;
