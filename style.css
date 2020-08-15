@@ -1,12 +1,16 @@
 @font-face {
   font-family: BannerFont;
-  src: url(../assets/Silkscreen/slkscreb.ttf);
+  src: url(./assets/Silkscreen/slkscreb.ttf);
   font-weight: bold;
 }
+
 @font-face {
   font-family: ContentFont;
-  src: url(../assets/Silkscreen/slkscr.ttf);
+  src: url(./assets/Silkscreen/slkscr.ttf);
+  /* src: url(./assets/league-spartan/LeagueSpartan-Bold.otf); */
 }
+
+
 
 :root {
   --banner-color: black;
@@ -24,6 +28,7 @@ br{
   content: ""; /* clears default height */
   margin-top: 1.5%;
 }
+
 body {
   background-color: var(--base-color);
   background-size: cover;
@@ -33,6 +38,7 @@ body {
 
 
 h1 {
+  font-family: BannerFont;
   background-color: var(--banner-color);
   color: var(--banner-text-color);
   margin: auto;
@@ -40,6 +46,18 @@ h1 {
   text-align: center;
   font-size: 40px;
 }
+
+h2 {
+  font-family: BannerFont;
+  background-color: var(--banner-color);
+  color: var(--banner-text-color);
+  padding: 10px;
+  text-align: left;
+  font-size: 28px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
 
 p {
   color: var(--content-text-color);
@@ -113,15 +131,7 @@ p {
   margin-top: 10px;
 }
 
-h2 {
-  background-color: var(--banner-color);
-  color: var(--banner-text-color);
-  padding: 10px;
-  text-align: left;
-  font-size: 28px;
-  margin-top: 0px;
-  margin-bottom: 0px;
-}
+
 
 .project-grid{
   display: grid;
