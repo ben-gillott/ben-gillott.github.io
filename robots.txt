@@ -1,0 +1,4 @@
+Sitemap: http://ben-gillott.com/sitemapindex.xml
+
+User-Agent: *
+Host: ben-gillott.com
