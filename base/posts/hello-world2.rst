@@ -1,5 +1,5 @@
 .. title: Hello - Again
-.. slug: hello-world
+.. slug: hello-world2
 .. date: 2021-12-19 22:09:13 UTC-05:00
 .. tags: blog
 .. category: philosophy
