@@ -7,38 +7,34 @@
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <url>
   <loc>http://ben-gillott.com/</loc>
-  <lastmod>2021-12-21T01:47:00Z</lastmod>
+  <lastmod>2021-12-21T04:14:00Z</lastmod>
  </url>
  <url>
   <loc>http://ben-gillott.com/2021/</loc>
-  <lastmod>2021-12-21T01:47:00Z</lastmod>
+  <lastmod>2021-12-21T04:14:00Z</lastmod>
  </url>
  <url>
   <loc>http://ben-gillott.com/archive.html</loc>
-  <lastmod>2021-12-21T01:47:00Z</lastmod>
+  <lastmod>2021-12-21T04:14:00Z</lastmod>
  </url>
  <url>
   <loc>http://ben-gillott.com/categories/</loc>
-  <lastmod>2021-12-21T01:47:00Z</lastmod>
+  <lastmod>2021-12-21T04:14:00Z</lastmod>
  </url>
  <url>
   <loc>http://ben-gillott.com/categories/blog/</loc>
-  <lastmod>2021-12-21T01:47:00Z</lastmod>
+  <lastmod>2021-12-21T04:14:00Z</lastmod>
  </url>
  <url>
   <loc>http://ben-gillott.com/categories/cat_philosophy/</loc>
-  <lastmod>2021-12-21T01:47:00Z</lastmod>
- </url>
- <url>
-  <loc>http://ben-gillott.com/galleries/</loc>
-  <lastmod>2021-12-21T01:47:00Z</lastmod>
- </url>
- <url>
-  <loc>http://ben-gillott.com/listings/</loc>
-  <lastmod>2021-12-21T01:47:00Z</lastmod>
+  <lastmod>2021-12-21T04:14:00Z</lastmod>
  </url>
  <url>
   <loc>http://ben-gillott.com/posts/hello-world/</loc>
-  <lastmod>2021-12-21T01:47:00Z</lastmod>
+  <lastmod>2021-12-21T04:14:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://ben-gillott.com/posts/hello-world2/</loc>
+  <lastmod>2021-12-21T04:14:00Z</lastmod>
  </url>
 </urlset>
