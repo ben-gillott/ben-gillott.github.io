@@ -17,7 +17,7 @@ import time
 
 # Data about this site
 BLOG_AUTHOR = "Ben Gillott"  # (translatable)
-BLOG_TITLE = "Ben Site 1"  # (translatable)
+BLOG_TITLE = "Ben Site"  # (translatable)
 # This is the main URL for your site. It will be used
 # in a prominent link. Don't forget the protocol (http/https)!
 SITE_URL = "http://ben-gillott.com/"
@@ -25,7 +25,7 @@ SITE_URL = "http://ben-gillott.com/"
 # If not set, defaults to SITE_URL
 # BASE_URL = "http://ben-gillott.com/"
 BLOG_EMAIL = "benjaminrgillott@gmail.com"
-BLOG_DESCRIPTION = "A portfolio and blog for my code and thoughts."  # (translatable)
+BLOG_DESCRIPTION = "A portfolio and blog for my projects and tutorials."  # (translatable)
 
 # Nikola is multilingual!
 #
@@ -146,15 +146,14 @@ TRANSLATIONS_PATTERN = '{path}.{lang}.{ext}'
 #     ),
 # }
 NAVIGATION_LINKS = {
-    DEFAULT_LANG: (
-        ('/index.html', 'Home', 'fa fa-home'),
-        ('/archive.html', 'Archives', 'fa fa-folder-open'),
-        ('/categories/index.html', 'Tags', 'fa fa-tags'),
-        ('/rss.xml', 'RSS', 'fa fa-rss'),
-        ('https://getnikola.com', 'About me', 'fa fa-user'),
-        ('https://twitter.com/getnikola', 'My Twitter', 'fab fa-twitter'),
-        ('https://github.com/getnikola', 'My Github', 'fab fa-github'),
-    )
+    # DEFAULT_LANG: (
+    #     ('/index.html', 'Home', 'fa fa-home'),
+    #     ('/archive.html', 'Archives', 'fa fa-folder-open'),
+    #     ('/categories/index.html', 'Tags', 'fa fa-tags'),
+    #     ('/rss.xml', 'RSS', 'fa fa-rss'),
+    #     ('https://getnikola.com', 'About me', 'fa fa-user'),
+    #     ('https://github.com/getnikola', 'My Github', 'fab fa-github'),
+    # )
 }
 
 # Alternative navigation links. Works the same way NAVIGATION_LINKS does,
@@ -165,7 +164,7 @@ NAVIGATION_ALT_LINKS = {
 }
 
 # Name of the theme to use.
-THEME = "gruberwine"
+THEME="bootstrap3-jinja"
 
 # A theme color. In default themes, it might be displayed by some browsers as
 # the browser UI color (eg. Chrome on Android). Other themes might also use it
