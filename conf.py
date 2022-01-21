@@ -2,96 +2,12 @@
 
 import time
 
-# !! This is the configuration of Nikola. !! #
-# !!  You should edit it to your liking.  !! #
-
-
-# ! Some settings can be different in different languages.
-# ! A comment stating (translatable) is used to denote those.
-# ! There are two ways to specify a translatable setting:
-# ! (a) BLOG_TITLE = "My Blog"
-# ! (b) BLOG_TITLE = {"en": "My Blog", "es": "Mi Blog"}
-# ! Option (a) is used when you don't want that setting translated.
-# ! Option (b) is used for settings that are different in different languages.
-
-
-# Data about this site
 BLOG_AUTHOR = "Ben Gillott"  # (translatable)
-BLOG_TITLE = "Ben Site"  # (translatable)
-# This is the main URL for your site. It will be used
-# in a prominent link. Don't forget the protocol (http/https)!
-SITE_URL = "http://ben-gillott.com/"
-# This is the URL where Nikola's output will be deployed.
-# If not set, defaults to SITE_URL
-# BASE_URL = "http://ben-gillott.com/"
+BLOG_TITLE = "Ben Gillott"  # (translatable)
+SITE_URL = "https://ben-gillott.com/"
 BLOG_EMAIL = "benjaminrgillott@gmail.com"
 BLOG_DESCRIPTION = "A portfolio and blog for my projects and tutorials."  # (translatable)
 
-# Nikola is multilingual!
-#
-# Currently supported languages are:
-#
-# en        English
-# af        Afrikaans
-# ar        Arabic
-# az        Azerbaijani
-# bg        Bulgarian
-# bs        Bosnian
-# ca        Catalan
-# cs        Czech [ALTERNATIVELY cz]
-# da        Danish
-# de        German
-# el        Greek [NOT gr]
-# eo        Esperanto
-# es        Spanish
-# et        Estonian
-# eu        Basque
-# fa        Persian
-# fi        Finnish
-# fr        French
-# fur       Friulian
-# gl        Galician
-# he        Hebrew
-# hi        Hindi
-# hr        Croatian
-# hu        Hungarian
-# ia        Interlingua
-# id        Indonesian
-# it        Italian
-# ja        Japanese [NOT jp]
-# ko        Korean
-# lt        Lithuanian
-# ml        Malayalam
-# mr        Marathi
-# nb        Norwegian (Bokmål)
-# nl        Dutch
-# pa        Punjabi
-# pl        Polish
-# pt        Portuguese
-# pt_br     Portuguese (Brazil)
-# ru        Russian
-# sk        Slovak
-# sl        Slovene
-# sq        Albanian
-# sr        Serbian (Cyrillic)
-# sr_latin  Serbian (Latin)
-# sv        Swedish
-# te        Telugu
-# th        Thai
-# tr        Turkish [NOT tr_TR]
-# uk        Ukrainian
-# ur        Urdu
-# vi        Vietnamese
-# zh_cn     Chinese (Simplified)
-# zh_tw     Chinese (Traditional)
-#
-# If you want to use Nikola with a non-supported language you have to provide
-# a module containing the necessary translations
-# (cf. the modules at nikola/data/themes/base/messages/).
-# If a specific post is not translated to a language, then the version
-# in the default language will be shown instead.
-
-# What is the default language?
 DEFAULT_LANG = "en"
 
 # What other languages do you have?
@@ -99,18 +15,7 @@ DEFAULT_LANG = "en"
 # the path will be used as a prefix for the generated pages location
 TRANSLATIONS = {
     DEFAULT_LANG: "",
-    # Example for another language:
-    # "es": "./es",
 }
-
-# What will translated input files be named like?
-
-# If you have a page something.rst, then something.pl.rst will be considered
-# its Polish translation.
-#     (in the above example: path == "something", ext == "rst", lang == "pl")
-# this pattern is also used for metadata:
-#     something.meta -> something.pl.meta
-
 TRANSLATIONS_PATTERN = '{path}.{lang}.{ext}'
 
 # Links for the sidebar / navigation bar.  (translatable)
@@ -138,32 +43,27 @@ TRANSLATIONS_PATTERN = '{path}.{lang}.{ext}'
 #          with a ``/``, otherwise end them with ``/index.html`` — or
 #          else they won’t be highlighted when active.
 
-# NAVIGATION_LINKS = {
-#     DEFAULT_LANG: (
-#         ("/archive.html", "Archive"),
-#         ("/categories/", "Tags"),
-#         ("/rss.xml", "RSS feed"),
-#     ),
-# }
 NAVIGATION_LINKS = {
-    # DEFAULT_LANG: (
-    #     ('/index.html', 'Home', 'fa fa-home'),
-    #     ('/archive.html', 'Archives', 'fa fa-folder-open'),
-    #     ('/categories/index.html', 'Tags', 'fa fa-tags'),
-    #     ('/rss.xml', 'RSS', 'fa fa-rss'),
-    #     ('https://getnikola.com', 'About me', 'fa fa-user'),
-    #     ('https://github.com/getnikola', 'My Github', 'fab fa-github'),
-    # )
+    DEFAULT_LANG: (
+        ('/index.html', 'Main'),
+        ('/archive.html', 'Archives'),
+        ('/categories/index.html', 'Tags'),
+        ('/rss.xml', 'RSS'),
+
+    )
 }
 
 # Alternative navigation links. Works the same way NAVIGATION_LINKS does,
 # although themes may not always support them. (translatable)
 # (Bootstrap 4: right-side of navbar, Bootblog 4: right side of title)
 NAVIGATION_ALT_LINKS = {
-    DEFAULT_LANG: ()
+    DEFAULT_LANG: (
+        ('https://getnikola.com', 'ALT LINK HERE'),
+        # ('https://github.com/getnikola', 'My Github', 'fab fa-github'),
+    )
 }
 
-# Name of the theme to use.
+
 THEME="simulacrum"
 
 # A theme color. In default themes, it might be displayed by some browsers as
@@ -193,21 +93,17 @@ THEME_CONFIG = {
         # Strip HTML from featured post text.
         'featured_strip_html': False,
         # Contents of the sidebar, If empty, the sidebar is not displayed.
-        'sidebar': ''
+        'sidebar': '',
+        # Use a light navbar with dark text. Defaults to False.
+        'navbar_light': False,
+        # Use a custom navbar color. If unset, 'navbar_light' sets text +
+        # background color. If set, navbar_light controls only background
+        # color. Supported values: bg-dark, bg-light, bg-primary, bg-secondary,
+        # bg-success, bg-danger, bg-warning, bg-info, bg-white, bg-transparent.
+        # 'navbar_custom_bg': 'bg-light'
     }
 }
-# Config for bootstrap4:
-# THEME_CONFIG = {
-#     DEFAULT_LANG: {
-#         # Use a light navbar with dark text. Defaults to False.
-#         'navbar_light': False,
-#         # Use a custom navbar color. If unset, 'navbar_light' sets text +
-#         # background color. If set, navbar_light controls only background
-#         # color. Supported values: bg-dark, bg-light, bg-primary, bg-secondary,
-#         # bg-success, bg-danger, bg-warning, bg-info, bg-white, bg-transparent.
-#         'navbar_custom_bg': '',
-#     }
-# }
+
 
 # POSTS and PAGES contains (wildcard, destination, template) tuples.
 # (translatable)
@@ -268,15 +164,10 @@ PAGES = (
 # you can use the ISO 8601/RFC 3339 format (ex. 2012-03-30T23:00:00+02:00)
 TIMEZONE = "America/New_York"
 
-# If you want to use ISO 8601 (also valid RFC 3339) throughout Nikola
-# (especially in new_post), set this to True.
-# Note that this does not affect DATE_FORMAT.
-# FORCE_ISO8601 = False
-
 # Date format used to display post dates. (translatable)
 # Used by babel.dates, CLDR style: http://cldr.unicode.org/translation/date-time-1/date-time
 # You can also use 'full', 'long', 'medium', or 'short'
-# DATE_FORMAT = 'yyyy-MM-dd HH:mm'
+DATE_FORMAT = 'short' #yyyy-MM-dd HH:mm'
 
 # Date format used to display post dates, if local dates are used. (translatable)
 # Used by Luxon: https://moment.github.io/luxon/docs/manual/formatting
@@ -292,7 +183,7 @@ TIMEZONE = "America/New_York"
 # 2 = using a string like “2 days ago” (JS, using Luxon)
 #
 # Your theme must support it, Bootstrap already does.
-# DATE_FANCINESS = 0
+DATE_FANCINESS = 1
 
 # Customize the locale/region used for a language.
 # For example, to use British instead of US English: LOCALES = {'en': 'en_GB'}
