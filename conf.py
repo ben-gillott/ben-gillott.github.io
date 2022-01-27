@@ -6,7 +6,7 @@ BLOG_AUTHOR = "Ben Gillott"  # (translatable)
 BLOG_TITLE = "Ben Gillott"  # (translatable)
 SITE_URL = "https://ben-gillott.com/"
 BLOG_EMAIL = "benjaminrgillott@gmail.com"
-BLOG_DESCRIPTION = "A portfolio and blog for my projects and tutorials."  # (translatable)
+BLOG_DESCRIPTION = "My personal website,"  # (translatable)
 
 DEFAULT_LANG = "en"
 
@@ -45,13 +45,14 @@ TRANSLATIONS_PATTERN = '{path}.{lang}.{ext}'
 
 NAVIGATION_LINKS = {
     DEFAULT_LANG: (
-        ('/index.html', 'Main'),
+        ('/pages/index.html', 'Main'),
         ('/archive.html', 'Archives'),
         ('/categories/index.html', 'Tags'),
         ('/rss.xml', 'RSS'),
 
     )
 }
+
 
 # Alternative navigation links. Works the same way NAVIGATION_LINKS does,
 # although themes may not always support them. (translatable)
@@ -145,6 +146,7 @@ POSTS = (
     ("posts/*.txt", "posts", "post.tmpl"),
     ("posts/*.html", "posts", "post.tmpl"),
 )
+
 PAGES = (
     ("pages/*.rst", "pages", "page.tmpl"),
     ("pages/*.md", "pages", "page.tmpl"),
@@ -183,11 +185,7 @@ DATE_FORMAT = 'short' #yyyy-MM-dd HH:mm'
 # 2 = using a string like “2 days ago” (JS, using Luxon)
 #
 # Your theme must support it, Bootstrap already does.
-DATE_FANCINESS = 1
-
-# Customize the locale/region used for a language.
-# For example, to use British instead of US English: LOCALES = {'en': 'en_GB'}
-# LOCALES = {}
+# DATE_FANCINESS = 1
 
 # One or more folders containing files to be copied as-is into the output.
 # The format is a dictionary of {source: relative destination}.
@@ -475,7 +473,7 @@ HIDDEN_AUTHORS = ['Guest']
 # Final location for the main blog page and sibling paginated pages is
 # output / TRANSLATION[lang] / INDEX_PATH / index-*.html
 # (translatable)
-# INDEX_PATH = ""
+INDEX_PATH = "blog"
 
 # Optional HTML that displayed on “main” blog index.html files.
 # May be used for a greeting. (translatable)
