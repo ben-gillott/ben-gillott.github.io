@@ -6,47 +6,47 @@
     xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <url>
+  <loc>https://ben-gillott.com/</loc>
+  <lastmod>2022-01-27T22:14:00Z</lastmod>
+ </url>
+ <url>
   <loc>https://ben-gillott.com/2021/</loc>
-  <lastmod>2022-01-27T09:10:00Z</lastmod>
+  <lastmod>2022-01-27T22:14:00Z</lastmod>
  </url>
  <url>
   <loc>https://ben-gillott.com/2022/</loc>
-  <lastmod>2022-01-27T09:10:00Z</lastmod>
+  <lastmod>2022-01-27T22:14:00Z</lastmod>
  </url>
  <url>
   <loc>https://ben-gillott.com/archive.html</loc>
-  <lastmod>2022-01-27T09:10:00Z</lastmod>
- </url>
- <url>
-  <loc>https://ben-gillott.com/blog/</loc>
-  <lastmod>2022-01-27T09:10:00Z</lastmod>
+  <lastmod>2022-01-27T22:14:00Z</lastmod>
  </url>
  <url>
   <loc>https://ben-gillott.com/categories/</loc>
-  <lastmod>2022-01-27T09:10:00Z</lastmod>
+  <lastmod>2022-01-27T22:14:00Z</lastmod>
  </url>
  <url>
   <loc>https://ben-gillott.com/categories/blog/</loc>
-  <lastmod>2022-01-27T09:10:00Z</lastmod>
+  <lastmod>2022-01-27T22:14:00Z</lastmod>
  </url>
  <url>
   <loc>https://ben-gillott.com/categories/cat_philosophy/</loc>
-  <lastmod>2022-01-27T09:10:00Z</lastmod>
+  <lastmod>2022-01-27T22:14:00Z</lastmod>
  </url>
  <url>
-  <loc>https://ben-gillott.com/pages/</loc>
-  <lastmod>2022-01-27T09:10:00Z</lastmod>
+  <loc>https://ben-gillott.com/posts/</loc>
+  <lastmod>2022-01-27T22:14:00Z</lastmod>
  </url>
  <url>
   <loc>https://ben-gillott.com/posts/hello-win/</loc>
-  <lastmod>2022-01-27T09:10:00Z</lastmod>
+  <lastmod>2022-01-27T22:14:00Z</lastmod>
  </url>
  <url>
   <loc>https://ben-gillott.com/posts/hello-world/</loc>
-  <lastmod>2022-01-27T09:10:00Z</lastmod>
+  <lastmod>2022-01-27T22:14:00Z</lastmod>
  </url>
  <url>
   <loc>https://ben-gillott.com/posts/hello-world2/</loc>
-  <lastmod>2022-01-27T09:10:00Z</lastmod>
+  <lastmod>2022-01-27T22:14:00Z</lastmod>
  </url>
 </urlset>
