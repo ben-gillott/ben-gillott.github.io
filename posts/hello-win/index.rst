@@ -5,7 +5,11 @@
 .. category: philosophy
 .. link: 
 .. description: 
-.. type: text
+.. type: rst
 
+Star wars reference below.
 
+.. TEASER_END
+
+*drops in*
 Why hello there, general kenobi.

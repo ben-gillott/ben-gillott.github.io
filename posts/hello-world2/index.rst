@@ -5,11 +5,12 @@
 .. category: philosophy
 .. link: 
 .. description: 
-.. type: text
+.. type: rst
 
+Rick Astley was kinda good.
+
+.. TEASER_END
 
 Never gonna give you up,
 Never gonna let you down.
 Never gonna run around, and, desert you.
-
-Hello post git setup
