@@ -32,16 +32,6 @@ TRANSLATIONS_PATTERN = '{path}.{lang}.{ext}'
 #         ),
 #         'Fruits'
 #     )
-#
-# WARNING: Support for submenus is theme-dependent.
-#          Only one level of submenus is supported.
-# WARNING: Some themes, including the default Bootstrap 4 theme,
-#          may present issues if the menu is too large.
-#          (in Bootstrap, the navbar can grow too large and cover contents.)
-# WARNING: If you link to directories, make sure to follow
-#          ``STRIP_INDEXES``.  If it’s set to ``True``, end your links
-#          with a ``/``, otherwise end them with ``/index.html`` — or
-#          else they won’t be highlighted when active.
 
 NAVIGATION_LINKS = {
     DEFAULT_LANG: (
@@ -49,37 +39,23 @@ NAVIGATION_LINKS = {
         ('/archive.html', 'Archives'),
         ('/categories/index.html', 'Tags'),
         ('/rss.xml', 'RSS'),
-
     )
 }
 
+#Test
 
 # Alternative navigation links. Works the same way NAVIGATION_LINKS does,
 # although themes may not always support them. (translatable)
-# (Bootstrap 4: right-side of navbar, Bootblog 4: right side of title)
 NAVIGATION_ALT_LINKS = {
     DEFAULT_LANG: (
-        ('https://getnikola.com', 'ALT LINK HERE'),
-        # ('https://github.com/getnikola', 'My Github', 'fab fa-github'),
+        ('https://getnikola.com', 'test alt link'),
     )
 }
 
 
 THEME="simulacrum"
-
-# A theme color. In default themes, it might be displayed by some browsers as
-# the browser UI color (eg. Chrome on Android). Other themes might also use it
-# as an accent color (the default ones don’t). Must be a HEX value.
 THEME_COLOR = '#5670d4'
 
-# Theme configuration. Fully theme-dependent. (translatable)
-# Samples for bootblog4 (enabled) and bootstrap4 (commented) follow.
-# bootblog4 supports: featured_large featured_small featured_on_mobile
-#                     featured_large_image_on_mobile featured_strip_html sidebar
-# bootstrap4 supports: navbar_light (defaults to False)
-#                      navbar_custom_bg (defaults to '')
-
-# Config for bootblog4:
 THEME_CONFIG = {
     DEFAULT_LANG: {
         # Show the latest featured post in a large box, with the previewimage as its background.
@@ -109,36 +85,9 @@ THEME_CONFIG = {
 # POSTS and PAGES contains (wildcard, destination, template) tuples.
 # (translatable)
 #
-# The wildcard is used to generate a list of source files
-# (whatever/thing.rst, for example).
-#
-# That fragment could have an associated metadata file (whatever/thing.meta),
-# and optionally translated files (example for Spanish, with code "es"):
-#     whatever/thing.es.rst and whatever/thing.es.meta
-#
-#     This assumes you use the default TRANSLATIONS_PATTERN.
-#
-# From those files, a set of HTML fragment files will be generated:
-# cache/whatever/thing.html (and maybe cache/whatever/thing.html.es)
-#
-# These files are combined with the template to produce rendered
-# pages, which will be placed at
-# output/TRANSLATIONS[lang]/destination/pagename.html
-#
-# where "pagename" is the "slug" specified in the metadata file.
-# The page might also be placed in /destination/pagename/index.html
-# if PRETTY_URLS are enabled.
-#
 # The difference between POSTS and PAGES is that POSTS are added
 # to feeds, indexes, tag lists and archives and are considered part
 # of a blog, while PAGES are just independent HTML pages.
-#
-# Finally, note that destination can be translated, i.e. you can
-# specify a different translation folder per language. Example:
-#     PAGES = (
-#         ("pages/*.rst", {"en": "pages", "de": "seiten"}, "page.tmpl"),
-#         ("pages/*.md", {"en": "pages", "de": "seiten"}, "page.tmpl"),
-#     )
 
 POSTS = (
     ("posts/*.rst", "posts", "post.tmpl"),
@@ -156,36 +105,10 @@ PAGES = (
 
 
 # Below this point, everything is optional
-
-# Post's dates are considered in UTC by default, if you want to use
-# another time zone, please set TIMEZONE to match. Check the available
-# list from Wikipedia:
-# https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
-# (e.g. 'Europe/Zurich')
-# Also, if you want to use a different time zone in some of your posts,
-# you can use the ISO 8601/RFC 3339 format (ex. 2012-03-30T23:00:00+02:00)
 TIMEZONE = "America/New_York"
 
-# Date format used to display post dates. (translatable)
-# Used by babel.dates, CLDR style: http://cldr.unicode.org/translation/date-time-1/date-time
 # You can also use 'full', 'long', 'medium', or 'short'
 DATE_FORMAT = 'short' #yyyy-MM-dd HH:mm'
-
-# Date format used to display post dates, if local dates are used. (translatable)
-# Used by Luxon: https://moment.github.io/luxon/docs/manual/formatting
-# Example for presets: {'preset': True, 'format': 'DATE_FULL'}
-# LUXON_DATE_FORMAT = {
-#     DEFAULT_LANG: {'preset': False, 'format': 'yyyy-MM-dd HH:mm'},
-# }
-
-# Date fanciness.
-#
-# 0 = using DATE_FORMAT and TIMEZONE (without JS)
-# 1 = using LUXON_DATE_FORMAT and local user time (JS, using Luxon)
-# 2 = using a string like “2 days ago” (JS, using Luxon)
-#
-# Your theme must support it, Bootstrap already does.
-# DATE_FANCINESS = 1
 
 # One or more folders containing files to be copied as-is into the output.
 # The format is a dictionary of {source: relative destination}.
