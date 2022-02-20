@@ -5,9 +5,10 @@
 .. category: philosophy
 .. link: 
 .. description: 
-.. type: text
-
+.. type: rst
 
 Help, for I am trapped in a website factory.
+
 .. TEASER_END
+
 More info this is.

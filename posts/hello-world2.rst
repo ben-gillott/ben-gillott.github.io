@@ -5,11 +5,11 @@
 .. category: philosophy
 .. link: 
 .. description: 
-.. type: text
+.. type: rst
 
-Never gonna
+Rick Astley was kinda good.
+
 .. TEASER_END
-More info this is.
 
 Never gonna give you up,
 Never gonna let you down.

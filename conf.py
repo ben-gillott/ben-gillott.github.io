@@ -35,7 +35,7 @@ TRANSLATIONS_PATTERN = '{path}.{lang}.{ext}'
 
 NAVIGATION_LINKS = {
     DEFAULT_LANG: (
-        ('/', 'Aboout'),
+        ('/', 'About'),
         ('/posts/index.html', 'Blog'),
         # ('/archive.html', 'Archives'),
         ('/categories/index.html', 'Tags'),
