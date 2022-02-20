@@ -37,8 +37,9 @@ NAVIGATION_LINKS = {
     DEFAULT_LANG: (
         ('/', 'About'),
         ('/posts/index.html', 'Blog'),
+        # ('/pages/projects/index.html', 'Projects'),
         # ('/archive.html', 'Archives'),
-        ('/categories/index.html', 'Tags'),
+        # ('/categories/index.html', 'Tags'),
         # ('/rss.xml', 'RSS'),
     )
 }
