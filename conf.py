@@ -35,14 +35,13 @@ TRANSLATIONS_PATTERN = '{path}.{lang}.{ext}'
 
 NAVIGATION_LINKS = {
     DEFAULT_LANG: (
-        ('/', 'About'),
-        ('/archive.html', 'Archives'),
+        ('/', 'Aboout'),
+        ('/posts/index.html', 'Blog'),
+        # ('/archive.html', 'Archives'),
         ('/categories/index.html', 'Tags'),
-        ('/rss.xml', 'RSS'),
+        # ('/rss.xml', 'RSS'),
     )
 }
-
-#Test
 
 # Alternative navigation links. Works the same way NAVIGATION_LINKS does,
 # although themes may not always support them. (translatable)
@@ -755,7 +754,7 @@ IMAGE_FOLDERS = {'images': 'images'}
 # )
 
 # Show teasers (instead of full posts) in indexes? Defaults to False.
-# INDEX_TEASERS = False
+INDEX_TEASERS = True
 
 # HTML fragments with the Read more... links.
 # The following tags exist and are replaced for you:

@@ -7,5 +7,7 @@
 .. description: 
 .. type: text
 
+*drops in*
+.. TEASER_END
 
 Why hello there, general kenobi.

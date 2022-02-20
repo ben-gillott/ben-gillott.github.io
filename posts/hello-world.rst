@@ -9,3 +9,5 @@
 
 
 Help, for I am trapped in a website factory.
+.. TEASER_END
+More info this is.
