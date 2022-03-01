@@ -8,3 +8,7 @@
 
 Here is a gallery of projects.
 [Under Construction]
+
+Here is p1.
+
+.. include:: /project1/index.rst

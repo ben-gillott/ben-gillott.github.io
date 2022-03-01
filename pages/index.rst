@@ -1,4 +1,4 @@
-.. title: about
+.. title: About
 .. slug: index
 .. date: 2022-01-24 02:51:07 UTC-05:00
 .. tags: 
@@ -9,13 +9,13 @@
 
 .. class:: jumbotron col-md-6
 
-.. admonition:: This is a Fake Site
+.. admonition:: About me
 
-    It pretends to be about things, but is really just an example.
+    Made with nikola
 
     .. raw:: html
 
-       <a href="https://getnikola.com/" class="btn btn-primary btn-lg">Click Me!</a>
+       <a href="https://getnikola.com/" class="btn btn-primary btn-sm">Nikola</a>
 
 
 .. class:: col-md-5

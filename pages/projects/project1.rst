@@ -9,3 +9,6 @@
 
 Here is a project ive been working on.
 [Imagine a devlog here]
+
+.. image:: /images/projects/project1/ed.jpg
+   :alt: Ed
