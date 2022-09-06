@@ -1,0 +1,8 @@
+@import "../../global.scss";
+.contact {
+  background-color: lightcyan;
+  flex-direction: column;
+  align-items: center;
+  margin-top: $topbarHeight;
+  min-height: 100%;
+}
