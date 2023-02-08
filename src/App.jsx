@@ -14,13 +14,16 @@ function App() {
     <div className="app">
       <Topbar menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
 
-      <Router>
+      <Intro />
+      <Projects/>
+      
+      {/* <Router>
         <Routes>
           <Route path="/" element={<Intro />} />
-          <Route path="/projects" element={<Projects />} />
-          {/* <Route path="/contact" element={<Contact />} /> */}
+          {/* <Route path="/portfolio" element={<Projects />} />
+          <Route path="/contact" element={<Contact />} /> 
         </Routes>
-      </Router>
+      </Router> */}
     </div>
   );
 }

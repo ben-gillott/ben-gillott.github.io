@@ -17,7 +17,7 @@ export default function Topbar({ menuOpen, setMenuOpen }) {
           </div>
 
           <div className="sectionLink">
-            <a href="/projects">Projects</a>
+            <a href="/portfolio">Portfolio</a>
           </div>
 
           {/* <div className="sectionLink">

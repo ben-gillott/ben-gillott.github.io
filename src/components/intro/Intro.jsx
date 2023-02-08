@@ -9,7 +9,7 @@ export default function Intro() {
       </div>
 
       <div className="blurbContainer">
-        <h2 className="blurbTitle">About</h2>
+        <h1 className="sectionTitle">About</h1>
         <p className="blurb">
           I love using computational and graphical methods to create what looks
           like modern day magic. I am currently conducting graphics shader

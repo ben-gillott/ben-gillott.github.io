@@ -1,26 +1,22 @@
-export const featuredProjects = [
+export const projects = [
   {
     id: 1,
     title: "Project 1",
-    img: "https://s1.qwant.com/thumbr/0x380/8/a/54bd4c603e9dc8620401d9b27ea6e34918842614b03c945a4953ac3073dc3f/istock-542822578.jpg.1155x0_q85.jpg?u=https%3A%2F%2Fimages.worthwhile.com%2Fuploads%2Fzinnia%2F2017%2F06%2F05%2Fistock-542822578.jpg.1155x0_q85.jpg&q=0&b=1&p=0&a=0",
-  },
-];
-
-export const projectTypes = [
-  {
-    id: "featured",
-    title: "Featured",
+    img: "https://ih1.redbubble.net/image.1402053180.7949/pp,504x498-pad,600x600,f8f8f8.jpg",
   },
   {
-    id: "software",
-    title: "Software",
+    id: 2,
+    title: "Project 2",
+    img: "https://ih1.redbubble.net/image.1402053180.7949/pp,504x498-pad,600x600,f8f8f8.jpg",
   },
   {
-    id: "games",
-    title: "Games",
+    id: 3,
+    title: "Project 3",
+    img: "https://ih1.redbubble.net/image.1402053180.7949/pp,504x498-pad,600x600,f8f8f8.jpg",
   },
   {
-    id: "graphics",
-    title: "Graphics",
+    id: 4,
+    title: "Project 4",
+    img: "https://ih1.redbubble.net/image.1402053180.7949/pp,504x498-pad,600x600,f8f8f8.jpg",
   },
 ];
