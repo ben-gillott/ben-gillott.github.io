@@ -17,16 +17,13 @@ export default function Intro() {
 
         <p className="blurb">
           I love using computational and graphical methods to create what looks
-          like modern day magic. I am currently conducting graphics shader
-          research at Cornell while working on game dev and creating fun
-          simulations in my spare time.
+          like modern day magic.
           <br />
           <br />
-          Planned graduation from Cornell with a Masters of Engineering in
-          Computer Science December 2021.
+          Graduated from Cornell in 2021 with a B.A. in Computer Science, and
+          currently working at the geospatial startup Whiteout Solutions.
           <br />
           <br />
-          Searching for a Summer 2021 internship, please reach out!
         </p>
       </div>
     </div>
