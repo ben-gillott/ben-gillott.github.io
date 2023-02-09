@@ -13,11 +13,11 @@ export default function Topbar({ menuOpen, setMenuOpen }) {
         </div>
         <div className="right">
           <div className="sectionLink">
-            <a href="/">About</a>
+            <a href="#about">About</a>
           </div>
 
           <div className="sectionLink">
-            <a href="/portfolio">Portfolio</a>
+            <a href="#portfolio">Portfolio</a>
           </div>
 
           {/* <div className="sectionLink">

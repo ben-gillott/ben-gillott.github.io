@@ -3,7 +3,7 @@ import profileImg from "../../assets/profile/coffee.png";
 
 export default function Intro() {
   return (
-    <div className="intro containerbox">
+    <div className="intro containerbox" id="about">
       <div className="imageContainer">
         <img className="image" src={profileImg} alt="Profile Image" />
       </div>

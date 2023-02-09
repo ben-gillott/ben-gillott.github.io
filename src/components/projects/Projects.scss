@@ -2,10 +2,13 @@
 
 .projects {
   // background-color: lightblue;
+  scroll-snap-align: start;
+
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 140px;
+  margin-top: 200px;
+
   min-height: 100%;
 
   //Section title

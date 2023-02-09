@@ -4,7 +4,7 @@ import { projects } from "../../assets/data";
 
 export default function Projects() {
   return (
-    <div className="projects" id="projects">
+    <div className="projects" id="portfolio">
       <div className="projectList">
         <h1 className="sectionTitle">Portfolio</h1>
 

@@ -1,4 +1,10 @@
+@import "./global.scss";
+
 .app {
+  scroll-behavior: smooth;
+  scroll-padding-top: $topbarHeight;
+  scroll-snap-type: y mandatory;
+
   height: 100vh;
   scrollbar-width: none;
   &::-webkit-scrollbar {

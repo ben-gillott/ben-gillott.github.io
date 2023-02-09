@@ -1,24 +1,20 @@
 @import "../../global.scss";
 
 .intro {
-  width: 85%;
+    // background-color: blue;
+  width: 90%;
   height: auto;
   margin: auto;
   margin-top: $topbarHeight;
   padding: 20px;
 
-  background-color: white;
+  scroll-snap-align: start;
 
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
 
   justify-content: center;
-
-  //Flex: grow shrink basis.
-  //flex-grow: How much of the positive free space does this item get?
-  //flex-shrink: How much negative free space can be removed from this item?
-  //flex-basis: What is the size of the item before growing and shrinking happens?
 
   .blurbContainer {
     // background-color: red;
