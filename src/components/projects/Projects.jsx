@@ -5,13 +5,27 @@ import { projects } from "../../assets/data";
 export default function Projects() {
   return (
     <div className="projects" id="projects">
-      <h1 className="sectionTitle">Portfolio</h1>
+      <div className="projectList">
+        <h1 className="sectionTitle">Portfolio</h1>
 
-      <div className="container">
-        {projects.map((d) => (
-          <div className="item">
-            <img src={d.img} alt="" />
-            <h3> {d.title} </h3>
+        <div className="lineContainer">
+          <div className="hLine"></div>
+        </div>
+
+        {projects.map((p) => (
+          <div className="projectContainer">
+            <div className="imageContainer">
+              <img src={p.img} alt={p.title} />
+            </div>
+
+            <div className="lineContainer">
+              <div className="vLine"></div>
+            </div>
+
+            <div className="right">
+              <h3> {p.title} </h3>
+              <p>{p.description}</p>
+            </div>
           </div>
         ))}
       </div>

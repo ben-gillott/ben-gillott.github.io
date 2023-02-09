@@ -1,5 +1,5 @@
 import "./Intro.scss";
-import profileImg from "../../assets/profile_photo.jpeg";
+import profileImg from "../../assets/profile/coffee.png";
 
 export default function Intro() {
   return (
@@ -10,6 +10,11 @@ export default function Intro() {
 
       <div className="blurbContainer">
         <h1 className="sectionTitle">About</h1>
+
+        <div className="lineContainer">
+          <div className="hLine "></div>
+        </div>
+
         <p className="blurb">
           I love using computational and graphical methods to create what looks
           like modern day magic. I am currently conducting graphics shader

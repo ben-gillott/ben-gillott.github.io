@@ -12,6 +12,33 @@ $width: 768px;
 }
 
 .sectionTitle {
-  // background-color: yellow;
-  text-decoration: underline;
+  font-size: 40px;
+}
+
+.lineContainer {
+  // background-color: pink;
+
+  align-items: stretch;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+
+  .hLine {
+    width: 80%;
+    height: 3px;
+
+    background-color: $mainColor;
+    border-radius: 100px;
+  }
+
+  .vLine {
+    margin-left: 8px;
+    margin-right: 8px;
+
+    width: 2px;
+    height: 80%;
+
+    background-color: $mainColor;
+    border-radius: 100px;
+  }
 }
