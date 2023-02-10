@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.531fbd41.css",
+    "main.css": "/static/css/main.09f9c743.css",
     "main.js": "/static/js/main.346ef6c0.js",
     "static/media/terrain_world.png": "/static/media/terrain_world.ed664e894775710f449f.png",
     "static/media/conway_3D.png": "/static/media/conway_3D.3ad1d2a84157fa2e316d.png",
@@ -13,11 +13,11 @@
     "static/media/edna.png": "/static/media/edna.5a1cd67b4a75dfe8901f.png",
     "static/media/conway_snail.png": "/static/media/conway_snail.272b77ac33eca37d1794.png",
     "index.html": "/index.html",
-    "main.531fbd41.css.map": "/static/css/main.531fbd41.css.map",
+    "main.09f9c743.css.map": "/static/css/main.09f9c743.css.map",
     "main.346ef6c0.js.map": "/static/js/main.346ef6c0.js.map"
   },
   "entrypoints": [
-    "static/css/main.531fbd41.css",
+    "static/css/main.09f9c743.css",
     "static/js/main.346ef6c0.js"
   ]
 }
