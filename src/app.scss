@@ -3,26 +3,24 @@
 .app {
   scroll-behavior: smooth;
   scroll-padding-top: $topbarHeight;
-  scroll-snap-type: y mandatory;
+  scroll-snap-type: y proximity;
 
   height: 100vh;
   scrollbar-width: none;
   &::-webkit-scrollbar {
     display: none;
   }
-  .sections {
-    width: 100%;
-    height: calc(100vh - 70px);
-    position: relative;
-    top: 70px;
-    scroll-behavior: smooth;
-    scroll-snap-type: y mandatory;
+  // .sections {
+  //   width: 100%;
+  //   height: calc(100vh - 70px);
+  //   position: relative;
+  //   top: 70px;
 
-    //   For each sub element
-    > * {
-      width: 100vw;
-      height: calc(100vh - 70px);
-      scroll-snap-align: start;
-    }
-  }
+  //   //   For each sub element
+  //   > * {
+  //     width: 100vw;
+  //     height: calc(100vh - 70px);
+  //     scroll-snap-align: start;
+  //   }
+  // }
 }

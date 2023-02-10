@@ -15,8 +15,9 @@ function App() {
       <Topbar menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
 
       <Intro />
-      <Projects/>
-      
+      <Projects />
+      <Contact />
+
       {/* <Router>
         <Routes>
           <Route path="/" element={<Intro />} />

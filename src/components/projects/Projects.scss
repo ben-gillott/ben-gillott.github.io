@@ -3,6 +3,7 @@
 .projects {
   // background-color: lightblue;
   scroll-snap-align: start;
+  scroll-padding-bottom: 400px;
 
   display: flex;
   flex-direction: column;
@@ -32,11 +33,13 @@
 
     //For each project
     .projectContainer {
+      // scroll-snap-align: center;
+
       display: flex;
       flex-direction: row;
       justify-content: center;
-      padding-top: 20px;
-      padding-bottom: 20px;
+      padding-top: 40px;
+      padding-bottom: 40px;
       padding-left: 5px;
       padding-left: 5px;
 
@@ -51,7 +54,7 @@
         justify-content: right;
 
         img {
-          width: 70%;
+          width: 65%;
           height: auto;
         }
       }
