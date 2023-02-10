@@ -8,58 +8,81 @@ import otetris from "./projects/otetris.png";
 import terrible_tiles from "./projects/terrible_tiles.png";
 import terrain_world from "./projects/terrain_world.png";
 
+// {
+//   title: "",
+//   img: ,
+//   description:
+//     "",
+// },
+
 export const projects = [
   {
-    id: 2,
+    title: "Panic Painter",
+    img: momo,
+    description: "Ye.",
+  },
+  {
+    title: "Skitters at Night",
+    img: momo,
+    description: "Ye.",
+  },
+  {
+    title: "Hyper Loop",
+    img: momo,
+    description:
+      "Retro synthwave racing game, made for the Ludum Dare 47 game jam.",
+  },
+  {
     title: "Terrible Tiles",
     img: terrible_tiles,
-    description:
-      "Created an indie game using Lua, and published to Itch.io with 40 downloads",
+    description: "Made with Lua and LOVE2D.",
   },
   {
-    id: 3,
-    title: "Greedy Cube",
-    img: greedy_cube,
-    description:
-      "Designed a platformer game with parallax camera and physics based movement in Unity and C#",
+    title: "Plan Bee",
+    img: momo,
+    description: "Ye.",
   },
+];
+
+export const otherProjects = [
   {
-    id: 4,
-    title: "Terrain World",
-    img: terrain_world,
-    description:
-      "Communicated with a small team to develop a procedural terrain simulation, with a game engine and shader pipeline built in OpenGL and GLSL (~3000 LOC)",
-  },
-  {
-    id: 5,
     title: "Conway and the Snail",
     img: conway_snail,
     description:
-      "Researched linguistic change theory and simulated Japanese historical linguistics with cellular automata",
+      "Researched linguistic change theory and simulated Japanese historical linguistics with cellular automata.",
   },
   {
-    id: 6,
+    title: "Terrain World",
+    img: terrain_world,
+    description:
+      "A shader pipeline and procedural terrain simulation made in OpenGL.",
+  },
+
+  {
     title: "E.D.N.A. Authorization System",
     img: edna,
     description:
       "Prototyped a VR banking interface in Unity in 48 hours, with ML signature recognition via Microsoft Azure",
   },
   {
-    id: 7,
     title: "OTetris",
     img: otetris,
     description:
       "Developed a Tetris clone with a genetic programming AI using OCaml and JS",
   },
   {
-    id: 8,
     title: "Medtracker",
     img: medtracker,
     description:
       "Collaborated to build a crossplatform gamified prescription tracking app in 72 hours with Bootstrap and JS",
   },
   {
-    id: 9,
+    title: "Greedy Cube",
+    img: greedy_cube,
+    description:
+      "Designed a platformer game with parallax camera and physics based movement in Unity and C#",
+  },
+  {
     title: "Conway's Game of Life 3D",
     img: conway_3D,
     description:
