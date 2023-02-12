@@ -5,9 +5,16 @@ import edna from "./projects/edna.png";
 import greedy_cube from "./projects/greedy_cube.png";
 import medtracker from "./projects/medtracker.png";
 import otetris from "./projects/otetris.png";
-import terrible_tiles from "./projects/terrible_tiles.png";
+
 import terrain_world from "./projects/terrain_world.png";
 
+import hyperloop from "./projects/hyperloop_sc.png";
+import panic from "./projects/PP_2.png";
+import skitters from "./projects/skitters_sc.png";
+import terrible_tiles from "./projects/tt_sc2.png";
+import plan_bee from "./projects/pb_2.png";
+
+// import blank from "./projects/.png";
 // {
 //   title: "",
 //   img: ,
@@ -17,21 +24,22 @@ import terrain_world from "./projects/terrain_world.png";
 
 export const projects = [
   {
+    title: "Hyper Loop",
+    img: hyperloop,
+    description:
+      "Retro synthwave racing game, made for the Ludum Dare 47 game jam.",
+  },
+  {
     title: "Panic Painter",
-    img: momo,
+    img: panic,
     description: "Ye.",
   },
   {
     title: "Skitters at Night",
-    img: momo,
+    img: skitters,
     description: "Ye.",
   },
-  {
-    title: "Hyper Loop",
-    img: momo,
-    description:
-      "Retro synthwave racing game, made for the Ludum Dare 47 game jam.",
-  },
+
   {
     title: "Terrible Tiles",
     img: terrible_tiles,
@@ -39,7 +47,7 @@ export const projects = [
   },
   {
     title: "Plan Bee",
-    img: momo,
+    img: plan_bee,
     description: "Ye.",
   },
 ];
