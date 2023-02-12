@@ -26,29 +26,32 @@ export const projects = [
   {
     title: "Hyper Loop",
     img: hyperloop,
-    description:
-      "Retro synthwave racing game, made for the Ludum Dare 47 game jam.",
+    description: "Synthwave racing game made for the Ludum Dare 47 game jam.",
   },
   {
     title: "Panic Painter",
     img: panic,
-    description: "Ye.",
+    description:
+      "Group mobile game made for the CS 4152 game development class. ",
   },
   {
     title: "Skitters at Night",
     img: skitters,
-    description: "Ye.",
+    description:
+      "Audio horror game where you must escape an unseen horror using sound alone. Made in Unity.",
   },
 
   {
     title: "Terrible Tiles",
     img: terrible_tiles,
-    description: "Made with Lua and LOVE2D.",
+    description:
+      "Arcade game about gathering golden tiles before they fall. Made with Lua.",
   },
   {
     title: "Plan Bee",
     img: plan_bee,
-    description: "Ye.",
+    description:
+      "Group game jam entry about a bear seekng to rescue the queen bee. Won second place for visuals.",
   },
 ];
 

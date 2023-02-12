@@ -16,8 +16,12 @@ export default function Intro() {
         </div>
 
         <p className="blurb">
-          I love using computational and graphical methods to create what looks
-          like modern day magic.
+          I've always been fascinated by the blend of art and technology used to
+          create digital media. I passionately believe that this combination can
+          and should be used to create profound emotional experiences.
+          <br />
+          <br />
+          Hobbyist indie game devloper under the moniker "Cloudlight Games".
           <br />
           <br />
           Graduated from Cornell in 2021 with a B.A. in Computer Science, and
