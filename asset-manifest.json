@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.cc721fbc.css",
-    "main.js": "/static/js/main.bd18daac.js",
+    "main.js": "/static/js/main.f4939b72.js",
     "static/media/pb_2.png": "/static/media/pb_2.3e669002cf9a2af72224.png",
     "static/media/skitters_sc.png": "/static/media/skitters_sc.bb03169d18add3a4996c.png",
     "static/media/hyperloop_sc.png": "/static/media/hyperloop_sc.34c87b004c4de514b612.png",
@@ -18,10 +18,10 @@
     "static/media/conway_snail.png": "/static/media/conway_snail.272b77ac33eca37d1794.png",
     "index.html": "/index.html",
     "main.cc721fbc.css.map": "/static/css/main.cc721fbc.css.map",
-    "main.bd18daac.js.map": "/static/js/main.bd18daac.js.map"
+    "main.f4939b72.js.map": "/static/js/main.f4939b72.js.map"
   },
   "entrypoints": [
     "static/css/main.cc721fbc.css",
-    "static/js/main.bd18daac.js"
+    "static/js/main.f4939b72.js"
   ]
 }
