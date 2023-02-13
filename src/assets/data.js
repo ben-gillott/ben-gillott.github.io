@@ -24,34 +24,35 @@ import plan_bee from "./projects/pb_2.png";
 
 export const projects = [
   {
-    title: "Hyper Loop",
-    img: hyperloop,
-    description: "Synthwave racing game made for the Ludum Dare 47 game jam.",
-  },
-  {
     title: "Panic Painter",
     img: panic,
     description:
-      "Group mobile game made for the CS 4152 game development class. ",
+      "Casual mobile game made in Walker White’s CS 4152 advanced game development class. I implemented basic game code, and added the signature paint splatter shader by modifying the custom C# game engine’s shading pipeline.",
+  },
+  {
+    title: "Hyper Loop",
+    img: hyperloop,
+    description:
+      "Synthwave inspired racing game I made as a solo participant in the Ludum Dare 47 game jam. The focus of this project was on the lighting and environment, which I implemented using the Unity shader graph.",
   },
   {
     title: "Skitters at Night",
     img: skitters,
     description:
-      "Audio horror game where you must escape an unseen horror using sound alone. Made in Unity.",
+      "Audio horror game I made for a monthly game jam. For this project I used moody and minimal visuals to create a horror aesthetic. I created the main mechanic of distance based audio using spatial blending.",
   },
 
   {
     title: "Terrible Tiles",
     img: terrible_tiles,
     description:
-      "Arcade game about gathering golden tiles before they fall. Made with Lua.",
+      "Arcade style game about gathering tiles and avoiding enemies, made in Lua and the LOVE2D engine. The key element of this game was managing difficulty balance.",
   },
   {
     title: "Plan Bee",
     img: plan_bee,
     description:
-      "Group game jam entry about a bear seekng to rescue the queen bee. Won second place for visuals.",
+      "Group entry for the ArtCenter game jam, made in Unity in 48 hours. Primary effort was in assisting artists with the art pipeline and managing animation code. Won second place for visuals, and fifth overall.",
   },
 ];
 
