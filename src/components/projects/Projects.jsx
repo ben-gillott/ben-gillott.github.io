@@ -14,7 +14,7 @@ export default function Projects() {
 
         {projects.map((p) => (
           <div className="projectContainer">
-            <div className="imageContainer">
+            <div className="left">
               <img src={p.img} alt={p.title} />
             </div>
 

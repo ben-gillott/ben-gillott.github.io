@@ -50,7 +50,19 @@
     }
 
     .iconContainer {
-      // display: flex;
+      // background-color: aqua;
+      display: flex;
+      flex-direction: column;
     }
+  }
+}
+
+@include mobile {
+  .intro {
+    flex-direction: column;
+  }
+
+  .image {
+    max-width: 200px;
   }
 }

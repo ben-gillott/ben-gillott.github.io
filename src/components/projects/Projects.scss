@@ -34,19 +34,18 @@
     //For each project
     .projectContainer {
       // scroll-snap-align: center;
-
       display: flex;
       flex-direction: row;
       justify-content: center;
-      padding-top: 40px;
-      padding-bottom: 40px;
-      padding-left: 5px;
-      padding-left: 5px;
+      margin-top: 40px;
+      margin-bottom: 40px;
+      margin-left: 5px;
+      margin-right: 5px;
 
-      // background-color: orange;
+      background-color: orange;
 
-      .imageContainer {
-        // background-color: blue;
+      .left {
+        background-color: blue;
         flex: 3 1 0;
 
         display: flex;
@@ -54,8 +53,7 @@
         justify-content: right;
 
         img {
-          width: 65%;
-          // width: 400px;
+          width: 90%;
           height: auto;
         }
       }
@@ -63,14 +61,30 @@
       .right {
         flex: 4 1 0;
         align-self: center;
-        //Title
-        h3 {
-          // background-color: yellow;
+      }
+    }
+    @include mobile {
+      .projectContainer {
+        flex-direction: column;
+
+        .left {
+          flex: 1 1 0;
+
+          display: flex;
+          justify-content: center;
+
+          img {
+            width: 100%;
+            height: auto;
+          }
         }
 
-        //description
-        p {
-          // background-color: violet;
+        .lineContainer {
+          display: none;
+        }
+
+        .right {
+          flex: 1 1 0;
         }
       }
     }
