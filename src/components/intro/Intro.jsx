@@ -1,9 +1,15 @@
 import "./Intro.scss";
+import Icon from "../icon/Icon";
+
 import profileImg from "../../assets/profile/coffee.png";
+import gitIcon from "../../assets/icons/git_icon.svg";
+import itchIcon from "../../assets/icons/itch.png";
+import linkedinIcon from "../../assets/icons/linkedin.png";
+import resumeIcon from "../../assets/icons/resume.png";
 
 export default function Intro() {
   return (
-    <div className="intro containerbox" id="about">
+    <div className="intro" id="about">
       <div className="imageContainer">
         <img className="image" src={profileImg} alt="Profile Image" />
       </div>
@@ -16,19 +22,38 @@ export default function Intro() {
         </div>
 
         <p className="blurb">
-          I've always been fascinated by the blend of art and technology used to
-          create digital media. I passionately believe that this combination can
-          and should be used to create profound emotional experiences.
+          I am fascinated by the blend of art and technology used to create
+          digital media. I passionately believe that this combination can and
+          should be used to create profound emotional experiences.
           <br />
           <br />
-          Hobbyist indie game devloper under the moniker "Cloudlight Games".
+          I make independant games under the moniker "Cloudlight Games".
           <br />
           <br />
-          Graduated from Cornell in 2021 with a B.A. in Computer Science, and
-          currently working at the geospatial startup Whiteout Solutions.
+          Graduated from Cornell in 2021 with a B.A. in Computer Science.
+          Currently working at the geospatial startup Whiteout Solutions.
           <br />
           <br />
         </p>
+
+        <div className="iconContainer">
+          <Icon
+            name="Cloudlight Games"
+            link="https://cloudlight-games.itch.io/"
+            img={itchIcon}
+          />
+
+          <Icon
+            name="LinkedIn"
+            link="https://www.linkedin.com/in/ben-gillott/"
+            img={linkedinIcon}
+          />
+          <Icon
+            name="Github"
+            link="https://github.com/ben-gillott"
+            img={gitIcon}
+          />
+        </div>
       </div>
     </div>
   );

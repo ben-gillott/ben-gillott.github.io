@@ -24,18 +24,21 @@ import plan_bee from "./projects/pb_2.png";
 
 export const projects = [
   {
+    key: "pp",
     title: "Panic Painter",
     img: panic,
     description:
       "Casual mobile game made in Walker White’s CS 4152 advanced game development class. I implemented basic game code, and added the signature paint splatter shader by modifying the custom C# game engine’s shading pipeline.",
   },
   {
+    key: "hl",
     title: "Hyper Loop",
     img: hyperloop,
     description:
       "Synthwave inspired racing game I made as a solo participant in the Ludum Dare 47 game jam. The focus of this project was on the lighting and environment, which I implemented using the Unity shader graph.",
   },
   {
+    key: "sn",
     title: "Skitters at Night",
     img: skitters,
     description:
@@ -43,12 +46,14 @@ export const projects = [
   },
 
   {
+    key: "tt",
     title: "Terrible Tiles",
     img: terrible_tiles,
     description:
       "Arcade style game about gathering tiles and avoiding enemies, made in Lua and the LOVE2D engine. The key element of this game was managing difficulty balance.",
   },
   {
+    key: "pb",
     title: "Plan Bee",
     img: plan_bee,
     description:

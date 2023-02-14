@@ -3,7 +3,7 @@
 .app {
   scroll-behavior: smooth;
   scroll-padding-top: $topbarHeight;
-  scroll-snap-type: y proximity;
+  // scroll-snap-type: y proximity;
 
   height: 100vh;
   scrollbar-width: none;
