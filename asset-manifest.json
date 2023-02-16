@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.182b786a.css",
-    "main.js": "/static/js/main.b76054f2.js",
+    "main.js": "/static/js/main.a795b32c.js",
     "static/media/pb_2.png": "/static/media/pb_2.3e669002cf9a2af72224.png",
     "static/media/skitters_sc.png": "/static/media/skitters_sc.bb03169d18add3a4996c.png",
     "static/media/hyperloop_sc.png": "/static/media/hyperloop_sc.34c87b004c4de514b612.png",
@@ -21,10 +21,10 @@
     "static/media/git_icon.svg": "/static/media/git_icon.d1bb13ce1a593d82e4c0d821dc7f1b41.svg",
     "index.html": "/index.html",
     "main.182b786a.css.map": "/static/css/main.182b786a.css.map",
-    "main.b76054f2.js.map": "/static/js/main.b76054f2.js.map"
+    "main.a795b32c.js.map": "/static/js/main.a795b32c.js.map"
   },
   "entrypoints": [
     "static/css/main.182b786a.css",
-    "static/js/main.b76054f2.js"
+    "static/js/main.a795b32c.js"
   ]
 }
