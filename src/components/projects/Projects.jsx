@@ -1,6 +1,6 @@
 import "./Projects.scss";
 import { useState, useEffect } from "react";
-import { projects } from "../../assets/data";
+import { projects } from "../../assets/projects";
 
 export default function Projects() {
   return (

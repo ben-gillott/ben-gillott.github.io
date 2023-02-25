@@ -1,3 +1,4 @@
+import Art from "./components/art/Art";
 import Contact from "./components/contact/Contact";
 import Projects from "./components/projects/Projects";
 import Topbar from "./components/topbar/Topbar";
@@ -16,6 +17,7 @@ function App() {
 
       <Intro />
       <Projects />
+      <Art />
       <Contact />
 
       {/* <Router>

@@ -1,0 +1,47 @@
+@import "../../global.scss";
+
+.art {
+  // background-color: lightblue;
+  scroll-snap-align: start;
+  // scroll-padding-bottom: 400px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 200px;
+
+  min-height: 100%;
+
+  //Section title
+  h1 {
+    margin: auto;
+    justify-self: center;
+    top: 150px;
+    // background-color: gray;
+  }
+
+  .lineContainer {
+    padding-bottom: 30px;
+    width: 100%;
+    // background-color: blue;
+  }
+
+  .imageGallery {
+    background-color: grey;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+
+    img {
+      // position: relative;
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+      vertical-align: middle;
+      border-radius: 5px;
+    }
+  }
+}
