@@ -2,10 +2,12 @@ import "./Intro.scss";
 import Icon from "../icon/Icon";
 
 import profileImg from "../../assets/profile/coffee.png";
-import gitIcon from "../../assets/icons/git_icon.svg";
-import itchIcon from "../../assets/icons/itch.png";
-import linkedinIcon from "../../assets/icons/linkedin.png";
+
+import gitIcon from "../../assets/icons/git.svg";
+import itchIcon from "../../assets/icons/itch.svg";
+import linkedinIcon from "../../assets/icons/linkedin.svg";
 import resumeIcon from "../../assets/icons/resume.png";
+import instaIcon from "../../assets/icons/instagram.svg";
 
 export default function Intro() {
   return (
@@ -38,16 +40,23 @@ export default function Intro() {
 
         <div className="iconContainer">
           <Icon
-            name="Cloudlight Games"
+            name="Games"
             link="https://cloudlight-games.itch.io/"
             img={itchIcon}
           />
 
           <Icon
-            name="LinkedIn"
+            name="Art"
+            link="https://www.instagram.com/littleartbean/"
+            img={instaIcon}
+          />
+
+          <Icon
+            name="Linkedin"
             link="https://www.linkedin.com/in/ben-gillott/"
             img={linkedinIcon}
           />
+
           <Icon
             name="Github"
             link="https://github.com/ben-gillott"
