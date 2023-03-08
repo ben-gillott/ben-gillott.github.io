@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.182b786a.css",
-    "main.js": "/static/js/main.a795b32c.js",
+    "main.css": "/static/css/main.6b8802f2.css",
+    "main.js": "/static/js/main.732c0ec8.js",
     "static/media/pb_2.png": "/static/media/pb_2.3e669002cf9a2af72224.png",
     "static/media/skitters_sc.png": "/static/media/skitters_sc.bb03169d18add3a4996c.png",
     "static/media/hyperloop_sc.png": "/static/media/hyperloop_sc.34c87b004c4de514b612.png",
@@ -14,17 +14,18 @@
     "static/media/coffee.png": "/static/media/coffee.757aa78d59b31376d144.png",
     "static/media/momo.png": "/static/media/momo.4c301f5d9bf4bd7597f6.png",
     "static/media/greedy_cube.png": "/static/media/greedy_cube.5f6b98d15d89673342a5.png",
-    "static/media/itch.png": "/static/media/itch.dc708959f50b5c07e171.png",
     "static/media/edna.png": "/static/media/edna.5a1cd67b4a75dfe8901f.png",
     "static/media/conway_snail.png": "/static/media/conway_snail.272b77ac33eca37d1794.png",
-    "static/media/linkedin.png": "/static/media/linkedin.17ba2d835694f08f3969.png",
-    "static/media/git_icon.svg": "/static/media/git_icon.d1bb13ce1a593d82e4c0d821dc7f1b41.svg",
+    "static/media/itch.svg": "/static/media/itch.285e0135a6a7781c0eeaff69089c4755.svg",
+    "static/media/git.svg": "/static/media/git.ccd66b84179dd362762f85999bfe6d6b.svg",
+    "static/media/instagram.svg": "/static/media/instagram.eaf605765b9e49e3c32ea4163d64ad3f.svg",
+    "static/media/linkedin.svg": "/static/media/linkedin.aee20d054a41828aa2a61bd6e95a2b10.svg",
     "index.html": "/index.html",
-    "main.182b786a.css.map": "/static/css/main.182b786a.css.map",
-    "main.a795b32c.js.map": "/static/js/main.a795b32c.js.map"
+    "main.6b8802f2.css.map": "/static/css/main.6b8802f2.css.map",
+    "main.732c0ec8.js.map": "/static/js/main.732c0ec8.js.map"
   },
   "entrypoints": [
-    "static/css/main.182b786a.css",
-    "static/js/main.a795b32c.js"
+    "static/css/main.6b8802f2.css",
+    "static/js/main.732c0ec8.js"
   ]
 }
