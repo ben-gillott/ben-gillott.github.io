@@ -17,7 +17,6 @@ function App() {
 
       <Intro />
       <Projects />
-      <Art />
       <Contact />
 
       {/* <Router>

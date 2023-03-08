@@ -27,21 +27,17 @@
     // background-color: blue;
   }
 
-  .imageGallery {
-    background-color: grey;
+  .gallery {
+    width: 95%;
+    background-color: red;
+    flex: auto;
 
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 10px;
-
-    img {
-      // position: relative;
-      object-fit: cover;
-      width: 100%;
-      height: 100%;
-      vertical-align: middle;
-      border-radius: 5px;
+    .imageContainer {
+      img {
+        width: 100%;
+      }
+      img:hover {
+      }
     }
   }
 }

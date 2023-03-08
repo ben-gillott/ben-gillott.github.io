@@ -1,6 +1,7 @@
 import "./Art.scss";
-import { useState, useEffect } from "react";
+// import { useState, useEffect } from "react";
 import { artgallery } from "../../assets/artgallery";
+import Masonry, { ResponsiveMasonry } from "react-responsive-masonry";
 
 export default function Art() {
   return (
@@ -11,13 +12,16 @@ export default function Art() {
         <div className="hLine"></div>
       </div>
 
-      <div className="imageGallery">
-        {artgallery.map((i) => (
-          // <div className="imageContainer">
-          <img src={i.img} alt={i.alt} />
-          // {/* <p>{i.alt}</p> */}
-          // </div>
-        ))}
+      <div className="gallery">
+        <ResponsiveMasonry columnsCountBreakPoints={{ 350: 1, 750: 2, 900: 3 }}>
+          <Masonry gutter="10px">
+            {artgallery.map((i) => (
+              <div className="imageContainer">
+                <img src={i.img} alt={i.alt} />
+              </div>
+            ))}
+          </Masonry>
+        </ResponsiveMasonry>
       </div>
     </div>
   );
