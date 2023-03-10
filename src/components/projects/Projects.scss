@@ -61,6 +61,13 @@
       .right {
         flex: 4 1 0;
         align-self: center;
+
+        .iconContainer {
+          padding-top: 10px;
+          padding-left: 10px;
+          // background-color: aqua;
+          // justify-content: space-around;
+        }
       }
     }
     @include mobile {

@@ -34,6 +34,7 @@ export const projects = [
     key: "hl",
     title: "Hyper Loop",
     img: hyperloop,
+    link: "https://cloudlight-games.itch.io/hyper-loop",
     description:
       "Synthwave inspired racing game I made as a solo participant in the Ludum Dare 47 game jam. The focus of this project was on the lighting and environment, which I implemented using the Unity shader graph.",
   },
@@ -41,6 +42,7 @@ export const projects = [
     key: "sn",
     title: "Skitters at Night",
     img: skitters,
+    link: "https://cloudlight-games.itch.io/skitters",
     description:
       "Audio horror game I made for a monthly game jam. For this project I used moody and minimal visuals to create a horror aesthetic. I created the main mechanic of distance based audio using spatial blending.",
   },
@@ -49,6 +51,7 @@ export const projects = [
     key: "tt",
     title: "Terrible Tiles",
     img: terrible_tiles,
+    link: "https://cloudlight-games.itch.io/terrible-tiles",
     description:
       "Arcade style game about gathering tiles and avoiding enemies, made in Lua and the LOVE2D engine. The key element of this game was managing difficulty balance.",
   },
@@ -56,6 +59,7 @@ export const projects = [
     key: "pb",
     title: "Plan Bee",
     img: plan_bee,
+    link: "https://itch.io/jam/artcenter-game-jam/rate/974884",
     description:
       "Group entry for the ArtCenter game jam, made in Unity in 48 hours. Primary effort was in assisting artists with the art pipeline and managing animation code. Won second place for visuals, and fifth overall.",
   },

@@ -1,6 +1,12 @@
 import "./Projects.scss";
-import { useState, useEffect } from "react";
+import Icon from "../icon/Icon";
+
+// import { useState, useEffect } from "react";
+
 import { projects } from "../../assets/projects";
+
+import playIcon from "../../assets/icons/play.png";
+import { display } from "@mui/system";
 
 export default function Projects() {
   return (
@@ -24,7 +30,13 @@ export default function Projects() {
 
             <div className="right">
               <h3> {p.title} </h3>
-              <p>{p.description}</p>
+              <p> {p.description} </p>
+
+              <div className="iconContainer">
+                {p.link ? (
+                  <Icon name="Play" link={p.link} img={playIcon} />
+                ) : null}
+              </div>
             </div>
           </div>
         ))}
