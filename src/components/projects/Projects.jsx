@@ -25,7 +25,9 @@ export default function Projects() {
           <div key={p.title} className="projectContainer">
             <div className="left">
               <Loader
-                elem={<img className="projectImg" src={p.img} alt={p.title} />}
+                elem={
+                  <img className="projectImage" src={p.img} alt={p.title} />
+                }
               />
             </div>
 

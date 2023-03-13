@@ -9,7 +9,7 @@ import otetris from "./projects/otetris.png";
 import terrain_world from "./projects/terrain_world.png";
 
 import hyperloop from "./projects/hyperloop_sc.png";
-import panic from "./projects/PP_2.png";
+import panic from "./projects/PP_2-transformed.png";
 import skitters from "./projects/skitters_sc.png";
 import terrible_tiles from "./projects/tt_sc2.png";
 import plan_bee from "./projects/pb_2.png";
