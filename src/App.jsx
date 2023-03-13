@@ -5,7 +5,7 @@ import Topbar from "./components/topbar/Topbar";
 import Intro from "./components/intro/Intro";
 import "./app.scss";
 import { useState } from "react";
-
+import Loader from "./components/loader/Loader";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 function App() {
@@ -15,7 +15,7 @@ function App() {
     <div className="app">
       <Topbar menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
 
-      <Intro />
+      <Loader elem={<Intro />} />
       <Projects />
       <Contact />
 

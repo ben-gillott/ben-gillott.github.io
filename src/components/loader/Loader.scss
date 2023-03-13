@@ -1,15 +1,23 @@
 @import "../../global.scss";
 
-@keyframes fadein {
-  0% {
-    opacity: 0;
-  }
-}
-
-.loading-in {
-  animation: fadein 1s ease-in;
-}
+// @keyframes fadein {
+//   0% {
+//     opacity: 0;
+//   }
+// }
 
 .loader {
   background-color: aqua;
+  transition-property: transform, opacity;
+  transition-duration: 0.7s;
+  transition-timing-function: ease-in;
+}
+
+.in-view {
+  transform: none;
+  opacity: 1;
+}
+.out-of-view {
+  // transform: translateY(50px);
+  opacity: 0;
 }

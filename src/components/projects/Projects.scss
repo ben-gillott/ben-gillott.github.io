@@ -12,28 +12,22 @@
 
   min-height: 100%;
 
-  //Section title
-  h1 {
+  .sectionTitle {
     margin: auto;
     justify-self: center;
     top: 150px;
-    // background-color: blue;
   }
 
-  //List
   .projectList {
     .lineContainer {
       padding-bottom: 30px;
     }
 
-    // background-color: red;
     display: flex;
     flex-direction: column;
     justify-content: center;
 
-    //For each project
     .projectContainer {
-      // scroll-snap-align: center;
       display: flex;
       flex-direction: row;
       justify-content: center;
@@ -42,17 +36,14 @@
       margin-left: 5px;
       margin-right: 5px;
 
-      // background-color: orange;
-
       .left {
-        // background-color: blue;
         flex: 3 1 0;
 
         display: flex;
         align-items: center;
         justify-content: right;
 
-        img {
+        .projectImg {
           width: 90%;
           height: auto;
         }
@@ -80,7 +71,7 @@
           display: flex;
           justify-content: center;
 
-          img {
+          .projectImg {
             width: 100%;
             height: auto;
           }

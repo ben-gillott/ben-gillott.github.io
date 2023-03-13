@@ -4,25 +4,33 @@ import playIcon from "../../assets/icons/play.png";
 import Loader from "../loader/Loader";
 
 import { projects } from "../../assets/projects";
+// import { useInView } from "react-intersection-observer";
+import { useRef, useEffect } from "react";
+
+{
+  /* <Loader elem={} /> */
+}
 
 export default function Projects() {
   return (
     <div className="projects" id="portfolio">
-      <Loader elem={Title()} />
+      <Loader elem={<h1 className="sectionTitle">Portfolio</h1>} />
 
       <div className="projectList">
         <div className="lineContainer">
-          <div className="hLine"></div>
+          <Loader elem={<div className="hLine"></div>} />
         </div>
 
         {projects.map((p) => (
           <div key={p.title} className="projectContainer">
             <div className="left">
-              <img src={p.img} alt={p.title} />
+              <Loader
+                elem={<img className="projectImg" src={p.img} alt={p.title} />}
+              />
             </div>
 
             <div className="lineContainer">
-              <div className="vLine"></div>
+              <Loader elem={<div className="vLine"></div>} />
             </div>
 
             <div className="right">
@@ -50,8 +58,4 @@ function PlayButton(props) {
       {props.link && <Icon name="Play" link={props.link} img={playIcon} />}
     </div>
   );
-}
-
-function Title() {
-  return <h1 className="sectionTitle">Portfolio</h1>;
 }
