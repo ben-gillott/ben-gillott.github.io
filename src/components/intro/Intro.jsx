@@ -2,11 +2,9 @@ import "./Intro.scss";
 import Icon from "../icon/Icon";
 
 import profileImg from "../../assets/profile/coffee.png";
-
 import gitIcon from "../../assets/icons/git.svg";
 import itchIcon from "../../assets/icons/itch.svg";
 import linkedinIcon from "../../assets/icons/linkedin.svg";
-import resumeIcon from "../../assets/icons/resume.png";
 import instaIcon from "../../assets/icons/instagram.svg";
 
 export default function Intro() {
@@ -17,7 +15,7 @@ export default function Intro() {
       </div>
 
       <div className="blurbContainer">
-        <h1 className="sectionTitle">About</h1>
+        <h1>About</h1>
 
         <div className="lineContainer">
           <div className="hLine "></div>

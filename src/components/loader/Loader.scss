@@ -1,0 +1,15 @@
+@import "../../global.scss";
+
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+}
+
+.loading-in {
+  animation: fadein 1s ease-in;
+}
+
+.loader {
+  background-color: aqua;
+}

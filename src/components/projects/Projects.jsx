@@ -1,25 +1,22 @@
 import "./Projects.scss";
 import Icon from "../icon/Icon";
-
-// import { useState, useEffect } from "react";
+import playIcon from "../../assets/icons/play.png";
+import Loader from "../loader/Loader";
 
 import { projects } from "../../assets/projects";
-
-import playIcon from "../../assets/icons/play.png";
-import { display } from "@mui/system";
 
 export default function Projects() {
   return (
     <div className="projects" id="portfolio">
-      <div className="projectList">
-        <h1 className="sectionTitle">Portfolio</h1>
+      <Loader elem={Title()} />
 
+      <div className="projectList">
         <div className="lineContainer">
           <div className="hLine"></div>
         </div>
 
         {projects.map((p) => (
-          <div className="projectContainer">
+          <div key={p.title} className="projectContainer">
             <div className="left">
               <img src={p.img} alt={p.title} />
             </div>
@@ -29,18 +26,32 @@ export default function Projects() {
             </div>
 
             <div className="right">
-              <h3> {p.title} </h3>
-              <p> {p.description} </p>
-
-              <div className="iconContainer">
-                {p.link ? (
-                  <Icon name="Play" link={p.link} img={playIcon} />
-                ) : null}
-              </div>
+              <Loader elem={<h3> {p.title} </h3>} />
+              <Loader elem={<Description desc={p.description} />} />
+              <Loader elem={<PlayButton link={p.link} />} />
             </div>
           </div>
         ))}
       </div>
     </div>
   );
+}
+
+function Description(props) {
+  return (
+    <div className="descContainer">
+      <p> {props.desc} </p>
+    </div>
+  );
+}
+function PlayButton(props) {
+  return (
+    <div className="iconContainer">
+      {props.link && <Icon name="Play" link={props.link} img={playIcon} />}
+    </div>
+  );
+}
+
+function Title() {
+  return <h1 className="sectionTitle">Portfolio</h1>;
 }
