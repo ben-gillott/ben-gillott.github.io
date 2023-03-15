@@ -27,7 +27,7 @@ export default function Intro() {
           should be used to create profound emotional experiences.
           <br />
           <br />
-          I make independant games under the moniker "Cloudlight Games".
+          I make independent games under the moniker "Cloudlight Games".
           <br />
           <br />
           Graduated from Cornell in 2021 with a B.A. in Computer Science.
