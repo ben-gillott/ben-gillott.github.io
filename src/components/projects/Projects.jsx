@@ -4,12 +4,6 @@ import playIcon from "../../assets/icons/play.png";
 import Loader from "../loader/Loader";
 
 import { projects } from "../../assets/projects";
-// import { useInView } from "react-intersection-observer";
-import { useRef, useEffect } from "react";
-
-{
-  /* <Loader elem={} /> */
-}
 
 export default function Projects() {
   return (
@@ -18,29 +12,30 @@ export default function Projects() {
 
       <div className="projectList">
         <div className="lineContainer">
-          <Loader elem={<div className="hLine"></div>} />
+          <Loader className="hLine" />
         </div>
 
         {projects.map((p) => (
-          <div key={p.title} className="projectContainer">
-            <div className="left">
-              <Loader
-                elem={
+          <Loader
+            key={p.title}
+            elem={
+              <div className="projectContainer">
+                <div className="left">
                   <img className="projectImage" src={p.img} alt={p.title} />
-                }
-              />
-            </div>
+                </div>
 
-            <div className="lineContainer">
-              <Loader elem={<div className="vLine"></div>} />
-            </div>
+                <div className="lineContainer">
+                  <div className="vLine" />
+                </div>
 
-            <div className="right">
-              <Loader elem={<h3> {p.title} </h3>} />
-              <Loader elem={<Description desc={p.description} />} />
-              <Loader elem={<PlayButton link={p.link} />} />
-            </div>
-          </div>
+                <div className="right">
+                  <h3> {p.title} </h3>
+                  <Description desc={p.description} />
+                  <PlayButton link={p.link} />
+                </div>
+              </div>
+            }
+          />
         ))}
       </div>
     </div>

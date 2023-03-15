@@ -12,7 +12,11 @@ export default function Loader(props) {
   return (
     <div
       ref={myRef}
-      className={myElementIsVisible ? "loader in-view" : "loader out-of-view"}
+      className={
+        props.className +
+        " loader" +
+        (myElementIsVisible ? " in-view" : " out-of-view")
+      }
     >
       {props.elem}
     </div>

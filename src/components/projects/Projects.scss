@@ -1,10 +1,13 @@
 @import "../../global.scss";
 
 .projects {
-  // overflow: hidden;
   // background-color: lightblue;
   scroll-snap-align: start;
   // scroll-padding-bottom: 400px;
+  // scrollbar-width: none;
+  // &::-webkit-scrollbar {
+  //   display: none;
+  // }
 
   display: flex;
   flex-direction: column;
@@ -20,13 +23,19 @@
   }
 
   .projectList {
-    .lineContainer {
-      padding-bottom: 30px;
+    overflow: hidden;
+    scrollbar-width: none;
+    &::-webkit-scrollbar {
+      display: none;
     }
 
     display: flex;
     flex-direction: column;
     justify-content: center;
+
+    .lineContainer {
+      padding-bottom: 30px;
+    }
 
     .projectContainer {
       display: flex;
@@ -39,11 +48,9 @@
 
       .left {
         flex: 3 1 0;
-
         display: flex;
         align-items: center;
         justify-content: right;
-        // justify-content: center;
 
         .projectImage {
           width: 90%;
@@ -58,8 +65,6 @@
         .iconContainer {
           padding-top: 10px;
           padding-left: 10px;
-          // background-color: aqua;
-          // justify-content: space-around;
         }
       }
     }
