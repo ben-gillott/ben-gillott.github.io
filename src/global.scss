@@ -16,8 +16,6 @@ $width: 768px;
 }
 
 .lineContainer {
-  // background-color: pink;
-
   align-items: stretch;
   align-items: center;
   justify-content: center;
@@ -26,7 +24,6 @@ $width: 768px;
   .hLine {
     width: 80%;
     height: 3px;
-
     background-color: $mainColor;
     border-radius: 100px;
   }

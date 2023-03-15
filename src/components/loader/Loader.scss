@@ -8,7 +8,7 @@
 
 .loader {
   // background-color: aqua;
-  transition-property: transform, opacity;
+  transition-property: transform, opacity, width, height;
   transition-duration: 0.7s;
   transition-timing-function: ease-in;
 }
@@ -20,4 +20,25 @@
 .out-of-view {
   transform: translateY(10px);
   opacity: 0;
+}
+
+.lineContainer {
+  .hLine.in-view {
+    // background-color: red;
+    width: 80%;
+  }
+  .hLine.out-of-view {
+    transform: translateY(0px);
+    // background-color: red;
+    width: 10%;
+  }
+
+  .vLine.in-view {
+    height: 80%;
+  }
+
+  .vLine.out-of-view {
+    transform: translateY(0px);
+    height: 10%;
+  }
 }

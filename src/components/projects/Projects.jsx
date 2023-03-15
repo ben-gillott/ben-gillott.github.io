@@ -25,7 +25,8 @@ export default function Projects() {
                 </div>
 
                 <div className="lineContainer">
-                  <div className="vLine" />
+                  {/* <div className="vLine" /> */}
+                  <Loader className="vLine" />
                 </div>
 
                 <div className="right">
