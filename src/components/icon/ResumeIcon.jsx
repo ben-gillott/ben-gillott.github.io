@@ -1,5 +1,5 @@
 import "./Icon.scss";
-import "./Overlay.scss";
+import "./ResumeOverlay.scss";
 import resumeIcon from "../../assets/icons/resume.png";
 import Overlay from "react-overlay-component";
 import resume from "../../assets/profile/resume.pdf#toolbar=0&navpanes=0&scrollbar=0&view=FitW";

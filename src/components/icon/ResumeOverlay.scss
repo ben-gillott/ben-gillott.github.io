@@ -1,0 +1,27 @@
+@import "../../global.scss";
+@import "./Overlay.scss";
+
+.resumeContainer {
+  // width: 100%;
+  flex: 1 0 0;
+  height: 90vh;
+  width: 80vw;
+  // margin: 0 auto;
+  // padding: 10px;
+  // overflow: hidden;
+  // display: flex;
+  // background-color: pink;
+}
+
+.resume {
+  background-color: blue;
+  justify-self: center;
+  // width: 80vh;
+  // display: flex;
+  // align-self: center;
+  // justify-self: center;
+  width: 100%;
+  height: 100%;
+  // height: 100vh;
+}
+// }s
