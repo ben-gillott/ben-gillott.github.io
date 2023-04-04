@@ -1,23 +1,18 @@
 import "./Intro.scss";
 import Icon from "../icon/Icon";
-// import Popout from "../popout/Popout";
-import ResumeIcon from "../icon/ResumeIcon";
+import ResumeIcon from "../overlays/ResumeOverlayButton";
 
 import profileImg from "../../assets/profile/coffee.png";
 import gitIcon from "../../assets/icons/git.svg";
 import itchIcon from "../../assets/icons/itch.svg";
 import linkedinIcon from "../../assets/icons/linkedin.svg";
 import instaIcon from "../../assets/icons/instagram.svg";
-import Loader from "../loader/Loader";
-
-// import useState from "react";
-// import Overlay from "react-overlay-component";
 
 export default function Intro() {
   return (
     <div className="intro" id="about">
       <div className="imageContainer">
-        <img className="image" src={profileImg} alt="Profile Image" />
+        <img className="image" src={profileImg} alt="Profile" />
       </div>
 
       <div className="blurbContainer">

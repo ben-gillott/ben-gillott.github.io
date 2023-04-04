@@ -1,4 +1,4 @@
-import "./Icon.scss";
+import "../icon/Icon.scss";
 import "./ResumeOverlay.scss";
 import resumeIcon from "../../assets/icons/resume.png";
 import Overlay from "react-overlay-component";

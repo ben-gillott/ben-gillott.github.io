@@ -33,6 +33,7 @@ export default function Projects() {
                   <h3> {p.title} </h3>
                   <Description desc={p.description} />
                   <PlayButton link={p.link} />
+                  <button>More Info</button>
                 </div>
               </div>
             }
