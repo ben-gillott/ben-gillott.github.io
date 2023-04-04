@@ -1,8 +1,8 @@
 import "./Icon.scss";
 import "./Overlay.scss";
-import resumeIcon from "../../assets/icons/git.svg";
+import resumeIcon from "../../assets/icons/resume.png";
 import Overlay from "react-overlay-component";
-import resume from "../../assets/profile/resume.pdf";
+import resume from "../../assets/profile/resume.pdf#view=FitW";
 import React, { useState } from "react";
 
 export default function ResumeIcon() {
@@ -31,8 +31,8 @@ export default function ResumeIcon() {
 
       <Overlay configs={configs} isOpen={isOpen} closeOverlay={closeOverlay}>
         <div className="resumeContainer">
-          {/* <h1>Resume</h1> */}
           <iframe className="resume" src={resume} />
+          {/* <embed className="resume" src={resume} /> */}
         </div>
       </Overlay>
     </div>
