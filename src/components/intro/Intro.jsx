@@ -1,11 +1,16 @@
 import "./Intro.scss";
 import Icon from "../icon/Icon";
+// import Popout from "../popout/Popout";
+import ResumeIcon from "../icon/ResumeIcon";
 
 import profileImg from "../../assets/profile/coffee.png";
 import gitIcon from "../../assets/icons/git.svg";
 import itchIcon from "../../assets/icons/itch.svg";
 import linkedinIcon from "../../assets/icons/linkedin.svg";
 import instaIcon from "../../assets/icons/instagram.svg";
+
+// import useState from "react";
+// import Overlay from "react-overlay-component";
 
 export default function Intro() {
   return (
@@ -37,6 +42,7 @@ export default function Intro() {
         </p>
 
         <div className="iconContainer">
+          <ResumeIcon />
           <Icon
             name="Games"
             link="https://cloudlight-games.itch.io/"
