@@ -2,7 +2,7 @@ import "./Icon.scss";
 import "./Overlay.scss";
 import resumeIcon from "../../assets/icons/resume.png";
 import Overlay from "react-overlay-component";
-import resume from "../../assets/profile/resume.pdf#view=FitW";
+import resume from "../../assets/profile/resume.pdf#toolbar=0&navpanes=0&scrollbar=0&view=FitW";
 import React, { useState } from "react";
 
 export default function ResumeIcon() {
@@ -31,7 +31,7 @@ export default function ResumeIcon() {
 
       <Overlay configs={configs} isOpen={isOpen} closeOverlay={closeOverlay}>
         <div className="resumeContainer">
-          <iframe className="resume" src={resume} />
+          <iframe title="resume" className="resume" src={resume} />
           {/* <embed className="resume" src={resume} /> */}
         </div>
       </Overlay>
