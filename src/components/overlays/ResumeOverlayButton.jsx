@@ -32,7 +32,6 @@ export default function ResumeIcon() {
       <Overlay configs={configs} isOpen={isOpen} closeOverlay={closeOverlay}>
         <div className="resumeContainer">
           <iframe title="resume" className="resume" src={resume} />
-          {/* <embed className="resume" src={resume} /> */}
         </div>
       </Overlay>
     </div>

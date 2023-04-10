@@ -1,4 +1,3 @@
-import momo from "./profile/momo.png";
 import conway_3D from "./projects/conway_3D.png";
 import conway_snail from "./projects/conway_snail.png";
 import edna from "./projects/edna.png";
