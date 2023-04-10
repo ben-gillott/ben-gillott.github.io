@@ -1,0 +1,15 @@
+@import "../../global.scss";
+@import "./Overlay.scss";
+
+.postContainer {
+  flex: 1 0 0;
+  height: 90vh;
+  width: 80vw;
+}
+
+.post {
+  // background-color: blue;
+  justify-self: center;
+  width: 100%;
+  height: 100%;
+}

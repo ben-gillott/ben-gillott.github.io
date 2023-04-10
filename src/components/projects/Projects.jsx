@@ -2,8 +2,8 @@ import "./Projects.scss";
 import Icon from "../icon/Icon";
 import playIcon from "../../assets/icons/play.png";
 import Loader from "../loader/Loader";
-
 import { projects } from "../../assets/projects";
+import PostOverlay from "../overlays/PostOverlay";
 
 export default function Projects() {
   return (
@@ -25,7 +25,6 @@ export default function Projects() {
                 </div>
 
                 <div className="lineContainer">
-                  {/* <div className="vLine" /> */}
                   <Loader className="vLine" />
                 </div>
 
@@ -33,7 +32,7 @@ export default function Projects() {
                   <h3> {p.title} </h3>
                   <Description desc={p.description} />
                   <PlayButton link={p.link} />
-                  <button>More Info</button>
+                  <PostOverlay />
                 </div>
               </div>
             }
