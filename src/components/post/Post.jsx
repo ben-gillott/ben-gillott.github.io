@@ -1,17 +1,24 @@
 import "./Post.scss";
-
-import { NotionAPI } from "notion-client";
-import React from "react";
-// import { NotionRenderer } from 'react-notion-x'
-
-const notion = new NotionAPI();
-const recordMap = await notion.getPage("067dd719a912471ea9a3ac10710e7fdf");
+import React, { useState, useEffect } from "react";
+import ReactMarkdown from "react-markdown";
+import remarkGfm from "remark-gfm";
+// var md = require("../../assets/posts/simple.md");
 
 export default function Post() {
-  return (
-    <div>
-      <h1>Notion header:</h1>
-      {/* <NotionRenderer blockMap={data} /> */}
-    </div>
-  );
+  // const markdown = `Just a link: https://reactjs.com.`;
+  const file_name = "simple.md";
+  const [post, setPost] = useState("");
+
+  useEffect(() => {
+    import(`../../assets/posts/${file_name}`)
+      .then((res) => {
+        fetch(res.default)
+          .then((res) => res.text())
+          .then((res) => setPost(res))
+          .catch((err) => console.log(err));
+      })
+      .catch((err) => console.log(err));
+  });
+
+  return <ReactMarkdown children={post} remarkPlugins={[remarkGfm]} />;
 }
