@@ -2,11 +2,15 @@ import "./Post.scss";
 import React, { useState, useEffect } from "react";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
-// var md = require("../../assets/posts/simple.md");
+
+import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
+import { dark } from "react-syntax-highlighter/dist/esm/styles/prism";
+
+// import retro from "markdown-retro";
 
 export default function Post() {
-  // const markdown = `Just a link: https://reactjs.com.`;
-  const file_name = "simple.md";
+  const file_name = "test.md";
+
   const [post, setPost] = useState("");
 
   useEffect(() => {
@@ -20,5 +24,38 @@ export default function Post() {
       .catch((err) => console.log(err));
   });
 
-  return <ReactMarkdown children={post} remarkPlugins={[remarkGfm]} />;
+  //Post test
+  return (
+    <ReactMarkdown
+      children={post}
+      remarkPlugins={[remarkGfm]}
+      className="markdown"
+    />
+  );
+
+  //Syntax highlighting
+  // return (
+  //   <ReactMarkdown
+  //     remarkPlugins={[remarkGfm]}
+  //     children={post}
+  //     components={{
+  //       code({ node, inline, className, children, ...props }) {
+  //         const match = /language-(\w+)/.exec(className || "");
+  //         return !inline && match ? (
+  //           <SyntaxHighlighter
+  //             {...props}
+  //             children={String(children).replace(/\n$/, "")}
+  //             style={dark}
+  //             language={match[1]}
+  //             PreTag="div"
+  //           />
+  //         ) : (
+  //           <code {...props} className={className}>
+  //             {children}
+  //           </code>
+  //         );
+  //       },
+  //     }}
+  //   />
+  // );
 }
