@@ -17,7 +17,6 @@ function App() {
       <Topbar menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
 
       <Loader elem={<Intro />} />
-      <Post />
       <Projects />
       <Contact />
 

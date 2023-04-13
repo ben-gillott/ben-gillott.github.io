@@ -6,9 +6,9 @@ Paragraphs are separated by a blank line.
 
 Itemized lists look like:
 
-*   this one
-*   that one
-*   the other one
+*this one
+*that one
+*the other one
 
 Note that --- not considering the asterisk --- the actual text
 content starts at 4-columns in.
@@ -27,9 +27,9 @@ Unicode is supported. ☺
 
 Here's a numbered list:
 
-1.  first item
-2.  second item
-3.  third item
+1. first item
+2. second item
+3. third item
 
 Note again how the actual text starts at 4 columns in (4 characters
 from the left side). Here's a code sample:
@@ -60,15 +60,14 @@ for i in range(10):
 
 Now a nested list:
 
-1.  First, get these ingredients:
+1. First, get these ingredients:
+    * carrots
+    * celery
+    * lentils
 
-    *   carrots
-    *   celery
-    *   lentils
+2. Boil some water.
 
-2.  Boil some water.
-
-3.  Dump everything in the pot and follow
+3. Dump everything in the pot and follow
     this algorithm:
 
         find wooden spoon
@@ -86,7 +85,7 @@ that last line which continues item 3 above).
 
 Here's a link to [a website](http://foo.bar), to a [local
 doc](local-doc.html), and to a [section heading in the current
-doc](#an-h2-header). Here's a footnote \[^1].
+doc](#about). Here's a footnote \[^1].
 
 \[^1]: Footnote text goes here.
 
