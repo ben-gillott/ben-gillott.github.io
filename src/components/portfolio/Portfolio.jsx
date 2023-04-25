@@ -1,4 +1,4 @@
-import "./Projects.scss";
+import "./Portfolio.scss";
 import Icon from "../icon/Icon";
 import playIcon from "../../assets/icons/play.png";
 import Loader from "../loader/Loader";
@@ -6,7 +6,7 @@ import { projects } from "../../assets/projects";
 
 export default function Projects() {
   return (
-    <div className="projects" id="portfolio">
+    <div className="portfolio" id="portfolio">
       <Loader elem={<h1 className="sectionTitle">Portfolio</h1>} />
 
       <div className="projectList">

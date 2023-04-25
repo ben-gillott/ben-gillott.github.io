@@ -1,6 +1,6 @@
-import "./Intro.scss";
+import "./About.scss";
 import Icon from "../icon/Icon";
-import ResumeIcon from "../overlays/ResumeOverlayButton";
+import ResumeIcon from "../overlays/ResumeIcon";
 import Loader from "../loader/Loader";
 
 import profileImg from "../../assets/profile/coffee.png";
@@ -9,9 +9,9 @@ import itchIcon from "../../assets/icons/itch.svg";
 import linkedinIcon from "../../assets/icons/linkedin.svg";
 import instaIcon from "../../assets/icons/instagram.svg";
 
-export default function Intro() {
+export default function About() {
   return (
-    <div className="intro" id="about">
+    <div className="about" id="about">
       <Loader
         elem={
           <div className="imageContainer">

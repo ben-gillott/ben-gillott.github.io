@@ -1,8 +1,8 @@
-import Projects from "./components/projects/Projects";
+import Portfolio from "./components/portfolio/Portfolio";
 import Topbar from "./components/topbar/Topbar";
-import Intro from "./components/intro/Intro";
-// import Loader from "./components/loader/Loader";
+import About from "./components/about/About";
 // import Art from "./components/art/Art";
+
 import "./app.scss";
 import { useState } from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
@@ -16,8 +16,8 @@ function App() {
 
       <Router>
         <Routes>
-          <Route path="/" element={<Intro />} />
-          <Route path="/portfolio" element={<Projects />} />
+          <Route path="/" element={<About />} />
+          <Route path="/portfolio" element={<Portfolio />} />
         </Routes>
       </Router>
     </div>
