@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "./Topbar.scss";
 
 export default function Topbar({ menuOpen, setMenuOpen }) {
@@ -14,13 +15,13 @@ export default function Topbar({ menuOpen, setMenuOpen }) {
       <div className="menu">
         <ul>
           <li>
-            <a href="/" onClick={() => setMenuOpen(false)}>
+            <Link to="/" onClick={() => setMenuOpen(false)}>
               About
-            </a>
+            </Link>
           </li>
 
           <li onClick={() => setMenuOpen(false)}>
-            <a href="/portfolio">Portfolio</a>
+            <Link to="/portfolio">Portfolio</Link>
           </li>
         </ul>
       </div>
