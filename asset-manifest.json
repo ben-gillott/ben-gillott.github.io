@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.5ce7ef6c.css",
-    "main.js": "/static/js/main.fed04d5a.js",
+    "main.css": "/static/css/main.58aac374.css",
+    "main.js": "/static/js/main.f9ef8a36.js",
     "static/media/pb_2.png": "/static/media/pb_2.3e669002cf9a2af72224.png",
     "static/media/PP_2-transformed.png": "/static/media/PP_2-transformed.01f6ed46487714b99c9f.png",
     "static/media/skitters_sc.png": "/static/media/skitters_sc.bb03169d18add3a4996c.png",
@@ -13,7 +13,6 @@
     "static/media/otetris.png": "/static/media/otetris.b137d4e08008c3ffd81d.png",
     "static/media/coffee.png": "/static/media/coffee.757aa78d59b31376d144.png",
     "static/media/resume.pdf#toolbar=0&navpanes=0&scrollbar=0&view=FitW": "/static/media/resume.05fdca015c5aff09ffaa.pdf",
-    "static/media/momo.png": "/static/media/momo.4c301f5d9bf4bd7597f6.png",
     "static/media/greedy_cube.png": "/static/media/greedy_cube.5f6b98d15d89673342a5.png",
     "static/media/edna.png": "/static/media/edna.5a1cd67b4a75dfe8901f.png",
     "static/media/conway_snail.png": "/static/media/conway_snail.272b77ac33eca37d1794.png",
@@ -22,11 +21,11 @@
     "index.html": "/index.html",
     "static/media/instagram.svg": "/static/media/instagram.eaf605765b9e49e3c32ea4163d64ad3f.svg",
     "static/media/linkedin.svg": "/static/media/linkedin.aee20d054a41828aa2a61bd6e95a2b10.svg",
-    "main.5ce7ef6c.css.map": "/static/css/main.5ce7ef6c.css.map",
-    "main.fed04d5a.js.map": "/static/js/main.fed04d5a.js.map"
+    "main.58aac374.css.map": "/static/css/main.58aac374.css.map",
+    "main.f9ef8a36.js.map": "/static/js/main.f9ef8a36.js.map"
   },
   "entrypoints": [
-    "static/css/main.5ce7ef6c.css",
-    "static/js/main.fed04d5a.js"
+    "static/css/main.58aac374.css",
+    "static/js/main.f9ef8a36.js"
   ]
 }
