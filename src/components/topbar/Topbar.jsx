@@ -1,11 +1,14 @@
 import { Link } from "react-router-dom";
 import "./Topbar.scss";
+import { useRef, useEffect } from "react";
 
 export default function Topbar({ menuOpen, setMenuOpen }) {
   const topBarClass = "topbar" + (menuOpen ? " active" : "");
+  const wrapperRef = useRef(null);
+  useOutsideAlerter(wrapperRef, setMenuOpen);
 
   return (
-    <div className={topBarClass}>
+    <div ref={wrapperRef} className={topBarClass}>
       <div className="left">
         <a href="/" className="name">
           Ben Gillott
@@ -32,4 +35,23 @@ export default function Topbar({ menuOpen, setMenuOpen }) {
       </div>
     </div>
   );
+}
+
+function useOutsideAlerter(ref, setMenuOpen) {
+  useEffect(() => {
+    /**
+     * Alert if clicked on outside of element
+     */
+    function handleClickOutside(event) {
+      if (ref.current && !ref.current.contains(event.target)) {
+        setMenuOpen(false);
+      }
+    }
+    // Bind the event listener
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      // Unbind the event listener on clean up
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, [ref]);
 }
