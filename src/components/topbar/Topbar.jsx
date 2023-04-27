@@ -4,6 +4,7 @@ import { useRef, useEffect } from "react";
 
 export default function Topbar({ menuOpen, setMenuOpen }) {
   const topBarClass = "topbar" + (menuOpen ? " active" : "");
+
   const wrapperRef = useRef(null);
   useOutsideAlerter(wrapperRef, setMenuOpen);
 
@@ -53,5 +54,5 @@ function useOutsideAlerter(ref, setMenuOpen) {
       // Unbind the event listener on clean up
       document.removeEventListener("mousedown", handleClickOutside);
     };
-  }, [ref]);
+  }, [ref, setMenuOpen]);
 }
