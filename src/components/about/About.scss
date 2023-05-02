@@ -1,80 +1,62 @@
 @import "../../global.scss";
 
-// .fade-in {
-//   animation: fade 0.9s ease-in;
-// }
-
-// @keyframes fade {
-//   0% {
-//     opacity: 0;
-//   }
-// }
-
 .about {
-  // background-color: blue;
-  // animation: fade;
-
-  width: 90%;
-  height: auto;
-  margin: auto;
   margin-top: $topbarHeight;
   padding: 20px;
-
   scroll-snap-align: start;
-
   display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
+  justify-content: space-around;
+  padding-bottom: 10vh;
 
-  justify-content: center;
+  .left {
+    margin-right: 3vw;
+    width: 25vw;
+    .imageContainer {
+      // background-color: purple;
 
-  .imageContainer {
-    // background-color: blue;
-    flex: 2 1 0;
+      .image {
+        height: 100%;
+        width: 100%;
+        border-radius: 50%;
+      }
+    }
+    .iconContainer {
+      // background-color: red;
+      margin-top: 1vw;
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    padding: 10px;
-
-    .image {
-      width: 400px;
-      border-radius: 50%;
-      // border: 1px solid black;
+      display: flex;
+      justify-content: center;
     }
   }
-  .blurbContainer {
-    // background-color: red;
-    flex: 3 1 0;
 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding-right: 30px;
+  .blurbContainer {
+    margin-top: 5vw;
+    width: 65vw;
+    // background-color: blue;
 
     .lineContainer {
       justify-content: left;
     }
-
-    .hLine {
-      width: 80%;
-    }
-
-    .iconContainer {
-      // background-color: aqua;
-      display: flex;
-      flex-direction: column;
-    }
   }
-}
 
-@include mobile {
-  .intro {
+  @include mobile {
     flex-direction: column;
-  }
+    align-items: center;
 
-  .image {
-    max-width: 200px;
+    .left {
+      margin-right: 0vw;
+      width: 50vw;
+    }
+
+    .blurbContainer {
+      margin-top: 1vw;
+      width: 90vw;
+      // background-color: blue;
+
+      .lineContainer {
+        width: 100vw;
+        justify-content: left;
+      }
+    }
   }
 }

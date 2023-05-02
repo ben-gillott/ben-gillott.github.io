@@ -1,3 +1,10 @@
 {
-  "esbonio.sphinx.confDir": ""
+  "esbonio.sphinx.confDir": "",
+  "grammarly.selectors": [
+    {
+      "language": "javascriptreact",
+      "scheme": "file",
+      "pattern": "src/components/about/About.jsx"
+    }
+  ]
 }
