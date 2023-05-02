@@ -10,7 +10,7 @@ import linkedinIcon from "../../assets/icons/linkedin.svg";
 import instaIcon from "../../assets/icons/instagram.svg";
 import Experience from "./experience/Experience";
 
-import { projects } from "../../assets/projects";
+import { experiences } from "../../assets/experiences";
 
 export default function About() {
   return (
@@ -105,7 +105,7 @@ export default function About() {
             <Loader className="hLine" />
           </div>
 
-          {projects.map((e) => (
+          {experiences.map((e) => (
             <Experience key={e.title} e={e} />
           ))}
         </div>

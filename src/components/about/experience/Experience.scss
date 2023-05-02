@@ -1,58 +1,40 @@
 @import "../../../global.scss";
 
 .experience {
+  margin-top: 1vw;
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  margin-top: 40px;
-  margin-bottom: 40px;
-  margin-left: 5px;
-  margin-right: 5px;
 
   .left {
-    flex: 3 1 0;
-    display: flex;
-    align-items: center;
-    justify-content: right;
-
-    .projectImage {
-      width: 90%;
-      height: auto;
+    // width: 10vw;
+    max-width: 100px;
+    .image {
+      width: 100%;
     }
   }
 
   .right {
-    flex: 4 1 0;
-    align-self: center;
-
-    .iconContainer {
-      padding-top: 10px;
-      padding-left: 10px;
+    // width: 60%;
+    .company {
     }
-  }
-}
-@include mobile {
-  .projectContainer {
-    flex-direction: column;
-
-    .left {
-      flex: 1 1 0;
-
+    .roleinfo {
       display: flex;
-      justify-content: center;
-
-      .projectImage {
-        width: 100%;
-        height: auto;
+      flex-wrap: wrap;
+      .role {
+      }
+      .dates {
       }
     }
 
-    .lineContainer {
-      display: none;
-    }
+    .bullets {
+      list-style-type: circle;
+      // list-style: circle;
 
-    .right {
-      flex: 1 1 0;
+      .bullet {
+      }
     }
+  }
+
+  @include mobile {
   }
 }
