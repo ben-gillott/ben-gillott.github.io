@@ -5,12 +5,13 @@
   padding: 20px;
   scroll-snap-align: start;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   padding-bottom: 10vh;
 
   .left {
-    margin-right: 3vw;
+    margin-right: 10px;
     width: 25vw;
+    max-width: 300px;
     .imageContainer {
       // background-color: purple;
 
@@ -29,13 +30,15 @@
     }
   }
 
-  .blurbContainer {
+  .right {
     margin-top: 5vw;
     width: 65vw;
-    // background-color: blue;
 
-    .lineContainer {
-      justify-content: left;
+    .sectionContainer {
+      // background-color: blue;
+      .lineContainer {
+        justify-content: left;
+      }
     }
   }
 
@@ -48,7 +51,7 @@
       width: 50vw;
     }
 
-    .blurbContainer {
+    .right {
       margin-top: 1vw;
       width: 90vw;
       // background-color: blue;

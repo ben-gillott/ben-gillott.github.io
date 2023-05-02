@@ -8,6 +8,9 @@ import gitIcon from "../../assets/icons/git.svg";
 import itchIcon from "../../assets/icons/itch.svg";
 import linkedinIcon from "../../assets/icons/linkedin.svg";
 import instaIcon from "../../assets/icons/instagram.svg";
+import Experience from "./experience/Experience";
+
+import { projects } from "../../assets/projects";
 
 export default function About() {
   return (
@@ -65,33 +68,47 @@ export default function About() {
         </div>
       </div>
 
-      <div className="blurbContainer">
-        <Loader elem={<h1>About</h1>} />
+      <div className="right">
+        <div className="sectionContainer">
+          <Loader elem={<h1>About</h1>} />
 
-        <div className="lineContainer">
-          <Loader className="hLine" />
+          <div className="lineContainer">
+            <Loader className="hLine" />
+          </div>
+
+          <Loader
+            elem={
+              <p className="blurb">
+                I am a software engineer specializing in computer graphics. I am
+                fascinated by the blend of art and technology, and I
+                passionately believe this combination should be used to create
+                profound emotional experiences.
+                <br />
+                <br />
+                In my free time I make indie games, art, and DIY projects.
+                <br />
+                <br />
+                I graduated from Cornell in 2021 with a B.A. in Computer
+                Science, and am currently working at the geospatial startup
+                Whiteout Solutions.
+                <br />
+                <br />
+              </p>
+            }
+          />
         </div>
 
-        <Loader
-          elem={
-            <p className="blurb">
-              I am a software engineer specializing in computer graphics. I am
-              fascinated by the blend of art and technology, and I passionately
-              believe this combination should be used to create profound
-              emotional experiences.
-              <br />
-              <br />
-              In my free time I make indie games, art, and DIY projects.
-              <br />
-              <br />
-              I graduated from Cornell in 2021 with a B.A. in Computer Science,
-              and am currently working at the geospatial startup Whiteout
-              Solutions.
-              <br />
-              <br />
-            </p>
-          }
-        />
+        <div className="sectionContainer">
+          <Loader elem={<h1>Experience</h1>} />
+
+          <div className="lineContainer">
+            <Loader className="hLine" />
+          </div>
+
+          {projects.map((e) => (
+            <Experience key={e.title} e={e} />
+          ))}
+        </div>
       </div>
     </div>
   );
