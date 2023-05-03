@@ -8,7 +8,7 @@ import gitIcon from "../../assets/icons/git.svg";
 import itchIcon from "../../assets/icons/itch.svg";
 import linkedinIcon from "../../assets/icons/linkedin.svg";
 import instaIcon from "../../assets/icons/instagram.svg";
-import Experience from "./experience/Experience";
+import Preview from "../preview/Preview";
 
 import { experiences } from "../../assets/experiences";
 
@@ -106,7 +106,7 @@ export default function About() {
           </div>
 
           {experiences.map((e) => (
-            <Experience key={e.title} e={e} />
+            <Preview key={e.title} e={e} />
           ))}
         </div>
       </div>
