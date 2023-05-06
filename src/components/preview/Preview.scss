@@ -27,10 +27,12 @@
     }
 
     .bullets {
-      list-style-type: circle;
-      // list-style: circle;
+      list-style-type: disc;
+      display: block;
+      padding-left: 15px;
 
       .bullet {
+        overflow-x: visible; //This was key
       }
     }
 
