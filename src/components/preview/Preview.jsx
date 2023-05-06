@@ -26,8 +26,12 @@ export default function Preview(props) {
         </div>
 
         <ul className="bullets">
-          {e.bullets.map((b) => (
-            <li key={b} className="bullet">
+          {e.bullets.map((b, index) => (
+            <li
+              style={!b || b === "" ? { display: "none" } : {}}
+              key={index}
+              className="bullet"
+            >
               {b}
             </li>
           ))}

@@ -1,12 +1,14 @@
 import whiteout from "./experience/whiteout.png";
 
-// import blank from "./projects/.png";
-
 // {
 //   title: "",
-//   img: ,
-//   description:
-//     "",
+//   date: "",
+//   img: "",
+//   role: "",
+//   bullets: ["", ""],
+//   link: "",
+//   src: "",
+//   read: "",
 // },
 
 export const experiences = [
@@ -22,7 +24,17 @@ export const experiences = [
       "Created a C++ tool to generate detailed 3D models of ski resort snow cover.",
     ],
     link: "https://whiteoutsolutions.com",
-    src: "test",
-    read: "test",
+    src: "",
+    read: "",
+  },
+  {
+    title: "",
+    date: "",
+    img: "",
+    role: "",
+    bullets: ["", ""],
+    link: "",
+    src: "",
+    read: "",
   },
 ];
