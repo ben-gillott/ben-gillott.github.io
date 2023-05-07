@@ -13,7 +13,7 @@ export default function Preview(props) {
           className="image"
           src={e.img}
           alt={e.title}
-          style={e.img == null ? { display: "none" } : {}}
+          style={!e.img ? { display: "none" } : {}}
         />
       </div>
 

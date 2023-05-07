@@ -106,7 +106,7 @@ export default function About() {
           </div>
 
           {experiences.map((e) => (
-            <Preview key={e.title} e={e} />
+            <Loader elem={<Preview key={e.title} e={e} />} />
           ))}
         </div>
       </div>

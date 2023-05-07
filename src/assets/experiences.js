@@ -1,11 +1,18 @@
 import whiteout from "./experience/whiteout.png";
+import kitware from "./experience/kitware.png";
+import cornell from "./experience/cornell.gif";
+import capitalone from "./experience/capitalone.png";
 
 // {
 //   title: "",
 //   date: "",
 //   img: "",
 //   role: "",
-//   bullets: ["", ""],
+//   bullets:
+//    [
+// "",
+//  ""
+// ],
 //   link: "",
 //   src: "",
 //   read: "",
@@ -28,11 +35,41 @@ export const experiences = [
     read: "",
   },
   {
-    title: "",
-    date: "",
-    img: "",
-    role: "",
-    bullets: ["", ""],
+    title: "Kitware",
+    date: "May '21 - Aug '21",
+    img: kitware,
+    role: "Computer Graphics R&D Intern",
+    bullets: [
+      "Spearheaded a WebApp critical for military-grade simulation development.",
+      "Collaborated on a PDF scanner that accurately imported operation details.",
+    ],
+    link: "https://www.kitware.com/",
+    src: "",
+    read: "",
+  },
+  {
+    title: "Cornell CAPRA",
+    date: "Jun '19 - Dec '20",
+    img: cornell,
+    role: "Research Assistant",
+    bullets: [
+      "Ported a novel graphics language into Unity to assess its commercial potential.",
+      "Built a game engine from scratch as the first major test of the novel language.",
+      "Wrote GLSL shaders that were featured in a published paper.",
+    ],
+    link: "https://capra.cs.cornell.edu",
+    src: "",
+    read: "https://capra.cs.cornell.edu/research/gator/",
+  },
+
+  {
+    title: "Capital One",
+    date: "May '20 - Aug '20",
+    img: capitalone,
+    role: "Software Engineering Intern",
+    bullets: [
+      "Developed an Angular tool to remediate customer data, reducing labor by 90%.",
+    ],
     link: "",
     src: "",
     read: "",

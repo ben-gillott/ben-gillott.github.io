@@ -5,7 +5,21 @@
   transition-property: transform, opacity, width, height;
   transition-duration: 0.7s;
   transition-timing-function: ease-in;
+  // overflow: hidden;
 }
+
+div {
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+  scrollbar-width: none; /* Firefox */
+}
+div::-webkit-scrollbar {
+  display: none; /* Safari and Chrome */
+}
+
+// div {
+//   // overflow-y: hidden; // hide vertical
+//   // overflow-x: hidden; // hide horizontal
+// }
 
 .in-view {
   transform: none;
