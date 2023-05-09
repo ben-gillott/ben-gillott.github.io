@@ -10,15 +10,17 @@ export default function Loader(props) {
   });
 
   return (
-    <div
-      ref={myRef}
-      className={
-        props.className +
-        " loader" +
-        (myElementIsVisible ? " in-view" : " out-of-view")
-      }
-    >
-      {props.elem}
+    <div className="loaderContainer">
+      <div
+        ref={myRef}
+        className={
+          props.className +
+          " loader" +
+          (myElementIsVisible ? " in-view" : " out-of-view")
+        }
+      >
+        {props.elem}
+      </div>
     </div>
   );
 }

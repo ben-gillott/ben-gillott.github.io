@@ -6,20 +6,11 @@ $linkColor: rgb(0, 0, 255);
 $topbarHeight: 70px;
 $width: 768px;
 
-
 @mixin mobile {
   @media (max-width : #{$width}) {
     @content;
   }
 }
-
-// -ms-overflow-style: none; /* Internet Explorer 10+ */
-// scrollbar-width: none; /* Firefox */
-
-
-// .loader::-webkit-scrollbar {
-// display: none; /* Safari and Chrome */
-// }
 
 .sectionTitle {
   font-size: 40px;
@@ -30,22 +21,21 @@ $width: 768px;
   align-items: center;
   justify-content: center;
   display: flex;
+}
 
-  .hLine {
-    width: 80%;
-    height: 3px;
-    background-color: $mainColor;
-    border-radius: 100px;
-  }
+.hLine {
+  height: 3px;
+  background-color: $mainColor;
+  border-radius: 100px;
+}
 
-  .vLine {
-    margin-left: 8px;
-    margin-right: 8px;
+.vLine {
+  margin-left: 8px;
+  margin-right: 8px;
 
-    width: 2px;
-    height: 80%;
+  width: 2px;
+  height: 80%;
 
-    background-color: $mainColor;
-    border-radius: 100px;
-  }
+  background-color: $mainColor;
+  border-radius: 100px;
 }

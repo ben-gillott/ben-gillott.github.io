@@ -1,52 +1,40 @@
 @import "../../global.scss";
 
-.loader {
-  // background-color: aqua;
-  transition-property: transform, opacity, width, height;
-  transition-duration: 0.7s;
-  transition-timing-function: ease-in;
-  // overflow: hidden;
-}
+.loaderContainer {
+  overflow-y: hidden;
+  width: 100%;
 
-div {
-  -ms-overflow-style: none; /* Internet Explorer 10+ */
-  scrollbar-width: none; /* Firefox */
-}
-div::-webkit-scrollbar {
-  display: none; /* Safari and Chrome */
-}
-
-// div {
-//   // overflow-y: hidden; // hide vertical
-//   // overflow-x: hidden; // hide horizontal
-// }
-
-.in-view {
-  transform: none;
-  opacity: 1;
-}
-.out-of-view {
-  transform: translateY(10px);
-  opacity: 0;
-}
-
-.lineContainer {
-  .hLine.in-view {
-    // background-color: red;
-    width: 80%;
+  .loader {
+    transition-property: transform, opacity, width, height;
+    transition-duration: 0.7s;
+    transition-timing-function: ease-in;
   }
-  .hLine.out-of-view {
-    transform: translateY(0px);
-    // background-color: red;
+
+  .in-view {
+    transform: none;
+    opacity: 1;
+  }
+
+  .out-of-view {
+    transform: translateY(10px);
+    opacity: 0;
+  }
+
+  .out-of-view.hLine {
+    transform: none;
     width: 10%;
   }
 
-  .vLine.in-view {
-    height: 80%;
+  .in-view.hLine {
+    width: 80%;
   }
 
-  .vLine.out-of-view {
-    transform: translateY(0px);
+  .out-of-view.vLine {
+    transform: none;
     height: 10%;
+  }
+
+  .in-view.vLine {
+    height: 80%;
   }
 }

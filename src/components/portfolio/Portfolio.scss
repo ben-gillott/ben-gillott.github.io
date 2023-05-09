@@ -3,11 +3,6 @@
 .portfolio {
   // background-color: lightblue;
   scroll-snap-align: start;
-  // scroll-padding-bottom: 400px;
-  // scrollbar-width: none;
-  // &::-webkit-scrollbar {
-  //   display: none;
-  // }
 
   display: flex;
   flex-direction: column;
@@ -15,6 +10,10 @@
   margin-top: 200px;
 
   min-height: 100%;
+
+  .loader {
+    display: flex;
+  }
 
   .sectionTitle {
     margin: auto;
@@ -35,6 +34,10 @@
 
     .lineContainer {
       padding-bottom: 30px;
+      .loaderContainer {
+        display: flex;
+        justify-content: center;
+      }
     }
 
     .projectContainer {
