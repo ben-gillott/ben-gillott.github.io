@@ -9,8 +9,9 @@ import itchIcon from "../../assets/icons/itch.svg";
 import linkedinIcon from "../../assets/icons/linkedin.svg";
 import instaIcon from "../../assets/icons/instagram.svg";
 import Preview from "../preview/Preview";
-
+import { Link } from "react-router-dom";
 import { experiences } from "../../assets/experiences";
+import { projects } from "../../assets/projects";
 
 export default function About() {
   return (
@@ -106,8 +107,24 @@ export default function About() {
           </div>
 
           {experiences.map((e) => (
-            <Loader elem={<Preview key={e.title} e={e} />} />
+            <Loader elem={<Preview key={e.title} e={e} type="experience" />} />
           ))}
+        </div>
+
+        <div className="sectionContainer">
+          <Loader elem={<h1>Projects</h1>} />
+
+          <div className="lineContainer">
+            <Loader className="hLine" />
+          </div>
+
+          {projects.map((p) =>
+            p.highlight ? (
+              <Loader elem={<Preview key={p.title} e={p} type="project" />} />
+            ) : null
+          )}
+
+          <Link to="/portfolio"> ...more projects </Link>
         </div>
       </div>
     </div>

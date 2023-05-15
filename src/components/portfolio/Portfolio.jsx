@@ -29,7 +29,7 @@ export default function Projects() {
 
                 <div className="right">
                   <h3> {p.title} </h3>
-                  <Description desc={p.description} />
+                  <Description desc={p.bullets ? p.bullets.join(" ") : ""} />
                   <PlayButton link={p.link} />
                 </div>
               </div>
