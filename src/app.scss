@@ -1,21 +1,11 @@
 @import "./global.scss";
 
 .app {
-  height: 100%;
-  overflow: auto;
+  scroll-behavior: smooth;
+  scroll-padding-top: $topbarHeight;
 
-  // scroll-behavior: smooth;
-  // scroll-padding-top: $topbarHeight;
-
-  // height: 100%;
-  // overflow: auto;
-
-  // scrollbar-width: none;
-  // &::-webkit-scrollbar {
-  //   display: none;
-  // }
-
-  .body {
-    height: 100%;
+  scrollbar-width: none;
+  &::-webkit-scrollbar {
+    display: none;
   }
 }

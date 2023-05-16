@@ -14,10 +14,6 @@ import { experiences } from "../../assets/experiences";
 import { projects } from "../../assets/projects";
 
 export default function About() {
-  const scrollTop = () => {
-    window.scrollTo(0, 0);
-  };
-
   return (
     <div className="about" id="about">
       <div className="left">
@@ -128,10 +124,7 @@ export default function About() {
             ) : null
           )}
 
-          <Link to="/portfolio"> ...more projects </Link>
-          {/* <Link onClick={console.log("Scrolling")}>Scroll Up</Link> */}
-
-          <button onClick={scrollTop}> Hello From Button</button>
+          <Loader elem={<Link to="/portfolio"> ...more projects </Link>} />
         </div>
       </div>
     </div>
