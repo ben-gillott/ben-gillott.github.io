@@ -1,28 +1,21 @@
 @import "./global.scss";
 
 .app {
-  scroll-behavior: smooth;
-  scroll-padding-top: $topbarHeight;
-  // scroll-snap-type: y proximity;
+  height: 100%;
+  overflow: auto;
 
-  height: 100vh;
+  // scroll-behavior: smooth;
+  // scroll-padding-top: $topbarHeight;
 
-  scrollbar-width: none;
-  &::-webkit-scrollbar {
-    display: none;
-  }
+  // height: 100%;
+  // overflow: auto;
 
-  // .sections {
-  //   width: 100%;
-  //   height: calc(100vh - 70px);
-  //   position: relative;
-  //   top: 70px;
-
-  //   //   For each sub element
-  //   > * {
-  //     width: 100vw;
-  //     height: calc(100vh - 70px);
-  //     scroll-snap-align: start;
-  //   }
+  // scrollbar-width: none;
+  // &::-webkit-scrollbar {
+  //   display: none;
   // }
+
+  .body {
+    height: 100%;
+  }
 }
