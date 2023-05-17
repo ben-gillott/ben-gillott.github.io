@@ -1,10 +1,10 @@
-// import conway_3D from "./projects/conway_3D.png";
-// import conway_snail from "./projects/conway_snail.png";
-// import edna from "./projects/edna.png";
-// import greedy_cube from "./projects/greedy_cube.png";
-// import medtracker from "./projects/medtracker.png";
-// import otetris from "./projects/otetris.png";
-// import terrain_world from "./projects/terrain_world.png";
+import conway_3D from "./projects/conway_3D.png";
+import conway_snail from "./projects/conway_snail.png";
+import edna from "./projects/edna.png";
+import greedy_cube from "./projects/greedy_cube.png";
+import medtracker from "./projects/medtracker.png";
+import otetris from "./projects/otetris.png";
+import terrain_world from "./projects/terrain_world.png";
 
 import hyperloop from "./projects/hyperloop_sc.png";
 import panic from "./projects/PP_2-transformed.png";
@@ -36,6 +36,7 @@ export const projects = [
       "Casual mobile game made in Walker White’s CS 4152 advanced game development class.",
       "I implemented basic game code, and added the signature paint splatter shader by modifying the custom C# game engine’s shading pipeline.",
     ],
+
     src: "",
   },
   {
@@ -72,47 +73,53 @@ export const projects = [
       "Group entry for the ArtCenter game jam, made in Unity in 48 hours. Primary effort was in assisting artists with the art pipeline and managing animation code. Won second place for visuals, and fifth overall.",
     ],
   },
-  // {
-  //   title: "Conway and the Snail",
-  //   img: conway_snail,
-  //   description:
-  //     "Researched linguistic change theory and simulated Japanese historical linguistics with cellular automata.",
-  // },
-  // {
-  //   title: "Terrain World",
-  //   img: terrain_world,
-  //   description:
-  //     "A shader pipeline and procedural terrain simulation made in OpenGL.",
-  // },
-
-  // {
-  //   title: "E.D.N.A. Authorization System",
-  //   img: edna,
-  //   description:
-  //     "Prototyped a VR banking interface in Unity in 48 hours, with ML signature recognition via Microsoft Azure",
-  // },
-  // {
-  //   title: "OTetris",
-  //   img: otetris,
-  //   description:
-  //     "Developed a Tetris clone with a genetic programming AI using OCaml and JS",
-  // },
-  // {
-  //   title: "Medtracker",
-  //   img: medtracker,
-  //   description:
-  //     "Collaborated to build a crossplatform gamified prescription tracking app in 72 hours with Bootstrap and JS",
-  // },
-  // {
-  //   title: "Greedy Cube",
-  //   img: greedy_cube,
-  //   description:
-  //     "Designed a platformer game with parallax camera and physics based movement in Unity and C#",
-  // },
-  // {
-  //   title: "Conway's Game of Life 3D",
-  //   img: conway_3D,
-  //   description:
-  //     "Modified a cellular automata algorithm to function in 3 dimensions via Processing3D and Java",
-  // },
+  {
+    title: "Conway and the Snail",
+    img: conway_snail,
+    bullets: [
+      "Researched linguistic change theory and simulated Japanese historical linguistics with cellular automata.",
+    ],
+  },
+  {
+    title: "Terrain World",
+    img: terrain_world,
+    bullets: [
+      "A shader pipeline and procedural terrain simulation made in OpenGL.",
+    ],
+  },
+  {
+    title: "E.D.N.A. Authorization System",
+    img: edna,
+    bullets: [
+      "Prototyped a VR banking interface in Unity in 48 hours, with ML signature recognition via Microsoft Azure",
+    ],
+  },
+  {
+    title: "OTetris",
+    img: otetris,
+    bullets: [
+      "Developed a Tetris clone with a genetic programming AI using OCaml and JS",
+    ],
+  },
+  {
+    title: "Medtracker",
+    img: medtracker,
+    bullets: [
+      "Collaborated to build a crossplatform gamified prescription tracking app in 72 hours with Bootstrap and JS",
+    ],
+  },
+  {
+    title: "Greedy Cube",
+    img: greedy_cube,
+    bullets: [
+      "Designed a platformer game with parallax camera and physics based movement in Unity and C#",
+    ],
+  },
+  {
+    title: "Conway's Game of Life 3D",
+    img: conway_3D,
+    bullets: [
+      "Modified a cellular automata algorithm to function in 3 dimensions via Processing3D and Java",
+    ],
+  },
 ];

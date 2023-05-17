@@ -99,7 +99,7 @@ export default function About() {
           />
         </div>
 
-        <div className="sectionContainer">
+        <div className="sectionContainer previewContainer">
           <Loader elem={<h1>Experience</h1>} />
 
           <div className="lineContainer">
@@ -111,7 +111,7 @@ export default function About() {
           ))}
         </div>
 
-        <div className="sectionContainer">
+        <div className="sectionContainer previewContainer">
           <Loader elem={<h1>Projects</h1>} />
 
           <div className="lineContainer">

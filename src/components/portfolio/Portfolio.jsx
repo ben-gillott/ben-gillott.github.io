@@ -1,8 +1,7 @@
 import "./Portfolio.scss";
-import Icon from "../icon/Icon";
-import playIcon from "../../assets/icons/play.png";
 import Loader from "../loader/Loader";
 import { projects } from "../../assets/projects";
+import Preview from "../preview/Preview";
 
 export default function Projects() {
   return (
@@ -15,43 +14,9 @@ export default function Projects() {
         </div>
 
         {projects.map((p) => (
-          <Loader
-            key={p.title}
-            elem={
-              <div className="projectContainer">
-                <div className="left">
-                  <img className="projectImage" src={p.img} alt={p.title} />
-                </div>
-
-                <div className="lineContainer">
-                  <Loader className="vLine" />
-                </div>
-
-                <div className="right">
-                  <h3> {p.title} </h3>
-                  <Description desc={p.bullets ? p.bullets.join(" ") : ""} />
-                  <PlayButton link={p.link} />
-                </div>
-              </div>
-            }
-          />
+          <Loader elem={<Preview key={p.title} e={p} type="project" />} />
         ))}
       </div>
-    </div>
-  );
-}
-
-function Description(props) {
-  return (
-    <div className="descContainer">
-      <p> {props.desc} </p>
-    </div>
-  );
-}
-function PlayButton(props) {
-  return (
-    <div className="iconContainer">
-      {props.link && <Icon name="Play" link={props.link} img={playIcon} />}
     </div>
   );
 }

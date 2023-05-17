@@ -1,14 +1,13 @@
 import "./Preview.scss";
-// import Loader from "../../loader/Loader";
 import srcIcon from "../../assets/icons/git.svg";
 import linkIcon from "../../assets/icons/link.svg";
-// import linkIcon from "../../assets/icons/resume.png";
 
 export default function Preview(props) {
   const e = props.e;
+
   return (
-    <div className="preview">
-      <div className="left">
+    <div className={"preview " + props.type}>
+      <div className="leftPrev">
         <img
           className="image"
           src={e.img}
@@ -17,7 +16,7 @@ export default function Preview(props) {
         />
       </div>
 
-      <div className="right">
+      <div className="rightPrev">
         <h2 className="title"> {e.title} </h2>
 
         <div className="roleinfo">

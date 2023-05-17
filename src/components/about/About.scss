@@ -13,8 +13,6 @@
     width: 25vw;
     max-width: 300px;
     .imageContainer {
-      // background-color: purple;
-
       .image {
         height: 100%;
         width: 100%;
@@ -22,16 +20,13 @@
       }
     }
     .iconContainer {
-      // background-color: red;
       margin-top: 1vw;
-
       display: flex;
       justify-content: center;
     }
   }
 
   .right {
-    // margin-top: 5vw;
     width: 65vw;
 
     .sectionContainer {
@@ -40,6 +35,10 @@
       .lineContainer {
         justify-content: left;
       }
+    }
+
+    .previewContainer {
+
     }
   }
 
