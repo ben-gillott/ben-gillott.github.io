@@ -45,16 +45,6 @@ export default function Preview(props) {
             <p>...Read More</p>
           </a>
           <a
-            style={!e.link || e.link === "" ? { display: "none" } : {}}
-            className="link"
-            rel="noreferrer"
-            target="_blank"
-            href={e.link}
-          >
-            <img src={linkIcon} alt={"Link Icon"} />
-          </a>
-
-          <a
             style={!e.src || e.src === "" ? { display: "none" } : {}}
             className="src"
             rel="noreferrer"
@@ -62,6 +52,15 @@ export default function Preview(props) {
             href={e.src}
           >
             <img src={srcIcon} alt={"Src Icon"} />
+          </a>
+          <a
+            style={!e.link || e.link === "" ? { display: "none" } : {}}
+            className="link"
+            rel="noreferrer"
+            target="_blank"
+            href={e.link}
+          >
+            <img src={linkIcon} alt={"Link Icon"} />
           </a>
         </div>
       </div>

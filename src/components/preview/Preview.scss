@@ -1,18 +1,16 @@
 @import "../../global.scss";
 
 .preview {
-  border: 2px solid black;
+  // border: 1px solid black;
+  margin-top: 2vh;
 
-  width: 100%;
   min-height: 150px;
   display: grid;
 
   .leftPrev {
-    margin-top: 10px;
-    // margin-right: 10px;
-
     overflow: hidden;
     width: 100%;
+    padding-top: 2%;
     .image {
       width: 100%;
       height: 100%;
@@ -20,11 +18,19 @@
   }
 
   .rightPrev {
-    width: 100%;
+    width: 98%;
+    padding-left: 2%;
+
+    display: flex;
+    flex-direction: column;
 
     .company {
     }
     .roleinfo {
+      width: 98%;
+      padding-right: 2%;
+
+      // background-color: orange;
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
@@ -35,21 +41,23 @@
     }
 
     .bullets {
-      list-style-type: disc;
       display: block;
-      padding-left: 15px;
-
+      padding-left: 0px;
       .bullet {
         overflow-x: visible; //This was key
       }
     }
 
     .linkContainer {
-      width: 100%;
+      width: 99%;
+      padding-right: 1%;
+      padding-top: 2%;
+
       display: flex;
       flex-direction: row;
       height: 25px;
       justify-content: right;
+      margin-top: auto;
 
       .read {
       }
@@ -76,12 +84,14 @@
       }
     }
   }
-
-  @include mobile {
-  }
 }
 
 .preview.project {
+  @include mobile {
+    display: flex;
+    flex-direction: column;
+  }
+
   grid-template-columns: 1fr 2fr;
 
   .leftPrev {
@@ -94,16 +104,22 @@
 }
 
 .preview.experience {
-  grid-template-columns: 1fr 5fr;
+  grid-template-columns: 11vh 1fr;
 
   .leftPrev {
-    aspect-ratio: 1/1;
-
+    padding-top: 10px;
     display: flex;
-    align-items: flex-start;
 
     .image {
-      object-fit: contain;
+      width: 100%;
+      height: auto;
+      align-self: flex-start;
+    }
+  }
+  .rightPrev {
+    .bullets {
+      list-style-type: disc;
+      padding-left: 15px;
     }
   }
 }
