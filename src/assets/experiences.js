@@ -21,7 +21,7 @@ import capitalone from "./experience/capitalone.png";
 export const experiences = [
   {
     title: "Whiteout Solutions",
-    date: "Oct '23 - Present",
+    date: "Oct '21 - Present",
     img: whiteout,
     role: "Software Developer",
     bullets: [
