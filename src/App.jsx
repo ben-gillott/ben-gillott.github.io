@@ -1,6 +1,7 @@
 import Portfolio from "./components/portfolio/Portfolio";
 import Topbar from "./components/topbar/Topbar";
 import About from "./components/about/About";
+import Blog from "./components/blog/Blog";
 
 import "./app.scss";
 import { useState, useEffect } from "react";
@@ -26,6 +27,7 @@ function App() {
       <Routes>
         <Route path="/" element={<About />} />
         <Route path="/portfolio" element={<Portfolio />} />
+        <Route path="/blog" element={<Blog />} />
       </Routes>
     </div>
   );

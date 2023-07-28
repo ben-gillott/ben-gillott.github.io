@@ -1,0 +1,9 @@
+@import "../../global.scss";
+
+.blog {
+  margin-top: $topbarHeight;
+  padding: 20px;
+  scroll-snap-align: start;
+  display: flex;
+  padding-bottom: 10vh;
+}

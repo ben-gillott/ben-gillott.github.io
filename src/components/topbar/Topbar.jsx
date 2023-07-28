@@ -27,6 +27,9 @@ export default function Topbar({ menuOpen, setMenuOpen }) {
           <li onClick={() => setMenuOpen(false)}>
             <Link to="/portfolio">Portfolio</Link>
           </li>
+          <li onClick={() => setMenuOpen(false)}>
+            <Link to="/blog">Blog</Link>
+          </li>
         </ul>
       </div>
       <div className="hamburger" onClick={() => setMenuOpen(!menuOpen)}>
