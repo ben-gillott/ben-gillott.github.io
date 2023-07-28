@@ -2,10 +2,14 @@ import "./Blog.scss";
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 
-// const post = https://api.github.com/repos/{username}/{repository_name}/contents/{file_path}
-// const uri = "https://api.github.com/repos/ben-gillott/ben-gillott.github.io/contents/src/assets/posts/simple.md"
+const apiURI = "https://api.github.com/repos/ben-gillott/ben-gillott.github.io/contents/src/src/assets/posts/simple.md";
+// const rawURI = "https://raw.githubusercontent.com/ben-gillott/ben-gillott.github.io/src/src/assets/posts";
+
 const client = axios.create({
-  baseURL: "https://raw.githubusercontent.com/ben-gillott/ben-gillott.github.io/src/src/assets/posts",
+  baseURL: apiURI,
+  headers: {
+    Authorization: "Bearer AUTH_TOKEN_HERE",
+  },
 });
 
 export default function Blog() {
@@ -15,14 +19,13 @@ export default function Blog() {
     getPost();
   }, []);
 
+  //AXIOS METHOD
   async function getPost() {
     const response = await client.get("/simple.md");
     setPost(response.data);
     console.log(response.data);
   }
-  getPost();
 
-  //Post test
   return (
     <div className="blog">
       <p>{post}</p>
