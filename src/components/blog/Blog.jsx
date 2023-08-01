@@ -2,6 +2,7 @@ import "./Blog.scss";
 import React from "react";
 import { useState, useEffect } from "react";
 import axios from "axios";
+import Post from "./Post.jsx";
 
 const client = axios.create({
   baseURL: "https://api.github.com/repos/ben-gillott/ben-gillott.github.io/contents/src/assets/posts?ref=src",
@@ -33,7 +34,7 @@ export default function Blog() {
     <div className="blog">
       <ul>
         {posts.map((p) => (
-          <li key={p}>{p}</li>
+          <Post key={p} url={p} />
         ))}
       </ul>
     </div>
