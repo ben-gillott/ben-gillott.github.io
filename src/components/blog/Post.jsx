@@ -3,14 +3,11 @@ import React, { useState, useEffect } from "react";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 
-import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
-import { dark } from "react-syntax-highlighter/dist/esm/styles/prism";
-
+// import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
+// import { dark } from "react-syntax-highlighter/dist/esm/styles/prism";
 // import retro from "markdown-retro";
 
-export default function Post() {
-  const file_name = "test.md";
-
+export default function Post(props) {
   const [post, setPost] = useState("");
 
   useEffect(() => {
@@ -25,13 +22,7 @@ export default function Post() {
   });
 
   //Post test
-  return (
-    <ReactMarkdown
-      children={post}
-      remarkPlugins={[remarkGfm]}
-      className="markdown"
-    />
-  );
+  return <ReactMarkdown children={post} remarkPlugins={[remarkGfm]} className="markdown" />;
 
   //Syntax highlighting
   // return (

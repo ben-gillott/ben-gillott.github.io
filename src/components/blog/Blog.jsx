@@ -1,34 +1,41 @@
 import "./Blog.scss";
-import React, { useState, useEffect } from "react";
+import React from "react";
+import { useState, useEffect } from "react";
 import axios from "axios";
 
-const apiURI = "https://api.github.com/repos/ben-gillott/ben-gillott.github.io/contents/src/src/assets/posts/simple.md";
-// const rawURI = "https://raw.githubusercontent.com/ben-gillott/ben-gillott.github.io/src/src/assets/posts";
-
 const client = axios.create({
-  baseURL: apiURI,
-  headers: {
-    Authorization: "Bearer AUTH_TOKEN_HERE",
-  },
+  baseURL: "https://api.github.com/repos/ben-gillott/ben-gillott.github.io/contents/src/assets/posts?ref=src",
 });
+var ran = false;
 
 export default function Blog() {
-  const [post, setPost] = React.useState("Loading");
+  const [posts, setPosts] = useState([]);
 
-  React.useEffect(() => {
-    getPost();
+  useEffect(() => {
+    if (!ran) {
+      getPosts();
+      ran = true;
+    }
   }, []);
 
-  //AXIOS METHOD
-  async function getPost() {
-    const response = await client.get("/simple.md");
-    setPost(response.data);
-    console.log(response.data);
+  async function getPosts() {
+    const response = await client.get();
+
+    function handleFile(p) {
+      if (p.type === "file") {
+        setPosts((posts) => [...posts, p.download_url]);
+      }
+    }
+    response.data.map((p) => handleFile(p));
   }
 
   return (
     <div className="blog">
-      <p>{post}</p>
+      <ul>
+        {posts.map((p) => (
+          <li key={p}>{p}</li>
+        ))}
+      </ul>
     </div>
   );
 }
