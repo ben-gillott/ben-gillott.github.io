@@ -10,11 +10,12 @@ import axios from "axios";
 
 export default function Post(props) {
   const [markdown, setMarkdown] = useState();
-  var ran = false;
+  const [ran, setRan] = useState(false);
 
   useEffect(() => {
     if (!ran) {
       downloadPost();
+      setRan(true);
     }
   });
 
