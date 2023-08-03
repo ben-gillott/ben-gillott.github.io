@@ -3,9 +3,13 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 
 import ReactMarkdown from "react-markdown";
-import gfm from "remark-gfm";
-import math from "remark-math";
-import katex from "rehype-katex";
+import remarkGFM from "remark-gfm";
+import remarkMath from "remark-math";
+import rehypeKatex from "rehype-katex";
+import rehypeRaw from "rehype-raw";
+
+// import "katex/dist/katex.min.css";
+
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 import { coy } from "react-syntax-highlighter/dist/esm/styles/prism";
 
@@ -42,7 +46,7 @@ export default function Post(props) {
   //Post test
   return (
     <div className="markdown">
-      <ReactMarkdown remarkPlugins={[gfm, math, katex]} components={{ code: code }} children={markdown} />
+      <ReactMarkdown remarkPlugins={[remarkGFM, remarkMath]} rehypePlugins={[rehypeKatex, rehypeRaw]} components={{ code: code }} children={markdown} />
     </div>
   );
 }
