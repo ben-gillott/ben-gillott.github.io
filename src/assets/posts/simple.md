@@ -1,3 +1,25 @@
+
+# code block
+
+CSS code example:
+ 
+~~~css
+.container{
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0;
+}
+ 
+.child-1{
+  background-color: red;
+}
+ 
+.child-2{
+  background-color: blue;
+}
+ 
+~~~
+
 # image
 
 ![A dog looking at you](https://ichef.bbci.co.uk/news/976/cpsprodpb/17638/production/_124800859_gettyimages-817514614.jpg)
