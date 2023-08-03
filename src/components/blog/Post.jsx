@@ -6,6 +6,8 @@ import ReactMarkdown from "react-markdown";
 import gfm from "remark-gfm";
 import math from "remark-math";
 import katex from "rehype-katex";
+import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
+import { coy } from "react-syntax-highlighter/dist/esm/styles/prism";
 
 export default function Post(props) {
   const [markdown, setMarkdown] = useState();
@@ -23,14 +25,24 @@ export default function Post(props) {
       baseURL: props.url,
     });
     const response = await client.get();
-    console.log(response.data);
     setMarkdown(response.data);
+  }
+
+  function code({ node, inline, className, children, ...props }) {
+    const match = /language-(\w+)/.exec(className || "");
+    return !inline && match ? (
+      <SyntaxHighlighter {...props} children={String(children).replace(/\n$/, "")} style={coy} language={match[1]} PreTag="div" />
+    ) : (
+      <code {...props} className={className}>
+        {children}
+      </code>
+    );
   }
 
   //Post test
   return (
     <div className="markdown">
-      <ReactMarkdown remarkPlugins={[gfm, math, katex]} children={markdown} />
+      <ReactMarkdown remarkPlugins={[gfm, math, katex]} components={{ code: code }} children={markdown} />
     </div>
   );
 }
