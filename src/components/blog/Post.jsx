@@ -5,7 +5,7 @@ import axios from "axios";
 import ReactMarkdown from "react-markdown";
 import remarkGFM from "remark-gfm";
 import remarkMath from "remark-math";
-import rehypeMathjax from 'rehype-mathjax'
+import rehypeMathjax from "rehype-mathjax";
 import rehypeRaw from "rehype-raw";
 
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
@@ -43,8 +43,8 @@ export default function Post(props) {
 
   //Post test
   return (
-    <div className="markdown">
-      <ReactMarkdown remarkPlugins={[remarkGFM, remarkMath]} rehypePlugins={[rehypeMathjax, rehypeRaw]} components={{ code: code }} children={markdown} />
+    <div className="container">
+      <ReactMarkdown className="markdown" remarkPlugins={[remarkGFM, remarkMath]} rehypePlugins={[rehypeMathjax, rehypeRaw]} components={{ code: code }} children={markdown} />
     </div>
   );
 }

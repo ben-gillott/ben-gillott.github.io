@@ -1,5 +1,20 @@
 @import "../../global.scss";
 
 .markdown {
-  //   background-color: red;
+  // some root styles here
+  background-color: lightgray;
+
+  ul {
+    background-color: red;
+    list-style-type: disc;
+  }
+
+  li {
+    display: list-item;
+    overflow-x: visible;
+  }
+
+  img {
+    // width: 10%;
+  }
 }
