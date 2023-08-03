@@ -20,18 +20,16 @@ CSS code example:
  
 ~~~
 
-# image
+# Full image
 
 ![A dog looking at you](https://ichef.bbci.co.uk/news/976/cpsprodpb/17638/production/_124800859_gettyimages-817514614.jpg)
 
-
-## HTML image - 200px
-
-<img src="https://ichef.bbci.co.uk/news/976/cpsprodpb/17638/production/_124800859_gettyimages-817514614.jpg" alt="drawing" width="200px"/>
-
 ## HTML image - 50%
 
-<img src="https://ichef.bbci.co.uk/news/976/cpsprodpb/17638/production/_124800859_gettyimages-817514614.jpg" alt="drawing" width = 50%>
+<img src="https://ichef.bbci.co.uk/news/976/cpsprodpb/17638/production/_124800859_gettyimages-817514614.jpg" alt="drawing" width = 70%>
+
+
+
 
 Itemized lists look like:
 
