@@ -16,6 +16,7 @@ export default function Post(props) {
   const [ran, setRan] = useState(false);
 
   useEffect(() => {
+    console.log("Post use effect");
     if (!ran) {
       downloadPost();
       setRan(true);
@@ -23,6 +24,8 @@ export default function Post(props) {
   });
 
   async function downloadPost() {
+    console.log("Post downloading");
+
     const client = axios.create({
       baseURL: props.url,
     });
