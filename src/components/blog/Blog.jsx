@@ -23,7 +23,7 @@ export default function Blog() {
     const response = await client.get();
 
     function handleFile(p) {
-      if (p.type === "file") {
+      if (p.type === "file" && p.name === "simple.md") {
         setPosts((posts) => [...posts, p.download_url]);
       }
     }
