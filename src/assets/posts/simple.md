@@ -24,7 +24,14 @@ CSS code example:
 
 ![A dog looking at you](https://ichef.bbci.co.uk/news/976/cpsprodpb/17638/production/_124800859_gettyimages-817514614.jpg)
 
-<img src="https://ichef.bbci.co.uk/news/976/cpsprodpb/17638/production/_124800859_gettyimages-817514614.jpg" alt="drawing" width="200"/>
+
+## HTML image - 200px
+
+<img src="https://ichef.bbci.co.uk/news/976/cpsprodpb/17638/production/_124800859_gettyimages-817514614.jpg" alt="drawing" width="200px"/>
+
+## HTML image - 50%
+
+<img src="https://ichef.bbci.co.uk/news/976/cpsprodpb/17638/production/_124800859_gettyimages-817514614.jpg" alt="drawing" width = 50%>
 
 Itemized lists look like:
 
