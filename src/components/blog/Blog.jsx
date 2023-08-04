@@ -7,16 +7,13 @@ import Post from "./Post.jsx";
 const client = axios.create({
   baseURL: "https://api.github.com/repos/ben-gillott/ben-gillott.github.io/contents/src/assets/posts?ref=src",
 });
-var ran = false;
 
 export default function Blog() {
   const [posts, setPosts] = useState([]);
 
   useEffect(() => {
-    if (!ran) {
-      getPosts();
-      ran = true;
-    }
+    console.log("Blog useEffect");
+    getPosts();
   }, []);
 
   async function getPosts() {

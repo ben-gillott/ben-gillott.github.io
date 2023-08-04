@@ -13,25 +13,19 @@ import { coy } from "react-syntax-highlighter/dist/esm/styles/prism";
 
 export default function Post(props) {
   const [markdown, setMarkdown] = useState();
-  const [ran, setRan] = useState(false);
 
   useEffect(() => {
     console.log("Post use effect");
-    if (!ran) {
-      downloadPost();
-      setRan(true);
+    async function downloadPost() {
+      console.log("downloading post");
+      const client = axios.create({
+        baseURL: props.url,
+      });
+      setMarkdown((await client.get()).data);
     }
-  });
 
-  async function downloadPost() {
-    console.log("Post downloading");
-
-    const client = axios.create({
-      baseURL: props.url,
-    });
-    const response = await client.get();
-    setMarkdown(response.data);
-  }
+    downloadPost();
+  }, [props.url]);
 
   function code({ node, inline, className, children, ...props }) {
     const match = /language-(\w+)/.exec(className || "");
@@ -47,6 +41,7 @@ export default function Post(props) {
   //Post test
   return (
     <div className="container">
+      <p> Hello post </p>
       <ReactMarkdown className="markdown" remarkPlugins={[remarkGFM, remarkMath]} rehypePlugins={[rehypeMathjax, rehypeRaw]} components={{ code: code }} children={markdown} />
     </div>
   );
