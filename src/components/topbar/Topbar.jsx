@@ -28,7 +28,7 @@ export default function Topbar({ menuOpen, setMenuOpen }) {
             <Link to="/portfolio">Portfolio</Link>
           </li>
           <li onClick={() => setMenuOpen(false)}>
-            <Link to="/blog">Blog</Link>
+            <Link to="/posts">Posts</Link>
           </li>
         </ul>
       </div>

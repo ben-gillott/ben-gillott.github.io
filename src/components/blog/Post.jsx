@@ -25,7 +25,7 @@ export default function Post(props) {
     }
 
     downloadPost();
-  }, [props.url]);
+  }, [props]);
 
   function code({ node, inline, className, children, ...props }) {
     const match = /language-(\w+)/.exec(className || "");
@@ -41,8 +41,9 @@ export default function Post(props) {
   //Post test
   return (
     <div className="container">
-      <p> Hello post </p>
-      <ReactMarkdown className="markdown" remarkPlugins={[remarkGFM, remarkMath]} rehypePlugins={[rehypeMathjax, rehypeRaw]} components={{ code: code }} children={markdown} />
+      <h1> Post Title </h1>
+      <p> Post Content </p>
+      {/* <ReactMarkdown className="markdown" remarkPlugins={[remarkGFM, remarkMath]} rehypePlugins={[rehypeMathjax, rehypeRaw]} components={{ code: code }} children={markdown} /> */}
     </div>
   );
 }
