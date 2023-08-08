@@ -1,18 +1,16 @@
 {
-  [
-    "simple" : {
-      "filename": "simple.md",
-      "date": "8/8/23",
-      "img": "https://ichef.bbci.co.uk/news/976/cpsprodpb/17638/production/_124800859_gettyimages-817514614.jpg",
-      "tags":["gdev", "techart"],
-      "published": true
-    },
-    "test" : {
-      "filename": "test.md",
-      "date": "7/7/23",
-      "img": "https://ichef.bbci.co.uk/news/976/cpsprodpb/17638/production/_124800859_gettyimages-817514614.jpg",
-      "tags":["other"],
-      "published": true
-    }
-  ]
+  "simple" : {
+    "filename": "simple.md",
+    "date": "8/8/23",
+    "img": "https://ichef.bbci.co.uk/news/976/cpsprodpb/17638/production/_124800859_gettyimages-817514614.jpg",
+    "tags":["gdev", "techart"],
+    "published": true
+  },
+  "test" : {
+    "filename": "test.md",
+    "date": "7/7/23",
+    "img": "https://ichef.bbci.co.uk/news/976/cpsprodpb/17638/production/_124800859_gettyimages-817514614.jpg",
+    "tags":["other"],
+    "published": true
+  }
 }
