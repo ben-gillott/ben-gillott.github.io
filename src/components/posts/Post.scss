@@ -12,10 +12,10 @@
 
 .markdown {
   // some root styles here
-  background-color: lightgray;
+  background-color: $lightColor;
 
   ul {
-    background-color: red;
+    // background-color: red;
     list-style-type: disc;
   }
 
