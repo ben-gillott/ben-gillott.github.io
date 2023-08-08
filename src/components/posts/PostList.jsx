@@ -7,8 +7,7 @@ export default function PostList() {
   const [posts, setPosts] = useState([]);
 
   useEffect(() => {
-    console.log("Blog useEffect");
-    getPosts().then((retval) => setPosts(retval));
+    getPosts().then((d) => setPosts(d));
   }, []);
 
   return (

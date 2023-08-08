@@ -1,7 +1,7 @@
 import "./Post.scss";
 import React, { useState, useEffect } from "react";
-import axios from "axios";
 import { useParams } from "react-router-dom";
+import { getPostMetadata, downloadPost } from "./PostUtils.jsx";
 
 import ReactMarkdown from "react-markdown";
 import remarkGFM from "remark-gfm";
@@ -12,21 +12,20 @@ import rehypeRaw from "rehype-raw";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 import { coy } from "react-syntax-highlighter/dist/esm/styles/prism";
 
-export default function Post(props) {
+export default function Post() {
+  const { slug } = useParams();
   const [markdown, setMarkdown] = useState();
+  const [post, setPost] = useState();
 
   useEffect(() => {
-    console.log("Post use effect");
-    async function downloadPost() {
-      console.log("downloading post");
-      const client = axios.create({
-        baseURL: props.url,
-      });
-      setMarkdown((await client.get()).data);
-    }
+    getPostMetadata(slug).then((d) => setPost(d));
+  }, [slug]);
 
-    downloadPost();
-  }, [props]);
+  useEffect(() => {
+    if (post !== undefined) {
+      downloadPost(post.download_url).then((d) => setMarkdown(d));
+    }
+  }, [post]);
 
   function code({ node, inline, className, children, ...props }) {
     const match = /language-(\w+)/.exec(className || "");
@@ -39,37 +38,19 @@ export default function Post(props) {
     );
   }
 
-  const BlogPosts = {
-    "first-blog-post": {
-      title: "First Blog Post",
-      description: "Hello lorem ipsum",
-    },
-    "second-blog-post": {
-      title: "Second Blog Post",
-      description: "Hello React Router v6",
-    },
-  };
-
-  const { slug } = useParams();
-  const post = BlogPosts[slug];
-  if (!post) {
-    return <span>The blog post you've requested doesn't exist.</span>;
+  if (post === undefined) {
+    return (
+      <div container="container">
+        <h1> That page does not exist.</h1>
+      </div>
+    );
+  } else {
+    return (
+      <div className="container">
+        <h1> Title {post.name} </h1>
+        <p> {post.download_url} </p>
+        <ReactMarkdown className="markdown" remarkPlugins={[remarkGFM, remarkMath]} rehypePlugins={[rehypeMathjax, rehypeRaw]} components={{ code: code }} children={markdown} />
+      </div>
+    );
   }
-  const { title, description } = post;
-
-  return (
-    <div className="container">
-      <h3>{title}</h3>
-      <p>{description}</p>
-    </div>
-  );
-
-  // //Post test
-  // return (
-  //   <div className="container">
-  //     <h1> Post Title </h1>
-  //     <p> Post Content </p>
-  //     {/* <ReactMarkdown className="markdown" remarkPlugins={[remarkGFM, remarkMath]} rehypePlugins={[rehypeMathjax, rehypeRaw]} components={{ code: code }} children={markdown} /> */}
-  //   </div>
-  // );
 }
