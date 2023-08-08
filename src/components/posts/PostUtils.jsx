@@ -21,9 +21,7 @@ export async function downloadPost(url) {
   const client = axios.create({
     baseURL: url,
   });
-
-  console.log("downloading from: " + url);
+  console.log("Downloading: " + url);
   const md = (await client.get()).data;
-  console.log("MD Downloaded is:\n" + md);
   return md;
 }
