@@ -2,7 +2,7 @@ import "./Post.scss";
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { getPostMetadata, downloadPost } from "./PostUtils.jsx";
-
+import NoMatch from "../nomatch/NoMatch.jsx";
 import ReactMarkdown from "react-markdown";
 import remarkGFM from "remark-gfm";
 import remarkMath from "remark-math";
@@ -14,8 +14,8 @@ import { coy } from "react-syntax-highlighter/dist/esm/styles/prism";
 
 export default function Post() {
   const { slug } = useParams();
-  const [markdown, setMarkdown] = useState();
   const [post, setPost] = useState();
+  const [markdown, setMarkdown] = useState();
 
   useEffect(() => {
     getPostMetadata(slug).then((d) => setPost(d));
@@ -23,7 +23,7 @@ export default function Post() {
 
   useEffect(() => {
     if (post !== undefined) {
-      downloadPost(post.download_url).then((d) => setMarkdown(d));
+      downloadPost(post.filename).then((d) => setMarkdown(d));
     }
   }, [post]);
 
@@ -39,12 +39,10 @@ export default function Post() {
   }
 
   if (post === undefined) {
-    return (
-      <div container="container">
-        <h1> That page does not exist.</h1>
-      </div>
-    );
+    console.log("Post undefined!");
+    return <NoMatch />;
   } else {
+    console.log("Post defined!");
     return (
       <div className="container">
         <h1> Title {post.name} </h1>
