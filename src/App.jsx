@@ -1,8 +1,9 @@
 import Portfolio from "./components/portfolio/Portfolio";
 import Topbar from "./components/topbar/Topbar";
 import About from "./components/about/About";
-import PostList from "./components/blog/PostList";
-import Posts from "./components/blog/Posts";
+import PostList from "./components/posts/PostList";
+import Posts from "./components/posts/Posts";
+import Post from "./components/posts/Post";
 import NoMatch from "./components/nomatch/NoMatch";
 
 import "./app.scss";
@@ -31,6 +32,7 @@ function App() {
         <Route path="/portfolio" element={<Portfolio />} />
         <Route path="/posts" element={<Posts />}>
           <Route index element={<PostList />} />
+          <Route path=":slug" element={<Post />} />
         </Route>
         <Route path="*" element={<NoMatch />} />
       </Routes>

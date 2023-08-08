@@ -2,7 +2,7 @@ import "./PostList.scss";
 import React from "react";
 import { useState, useEffect } from "react";
 import axios from "axios";
-import Post from "./Post.jsx";
+// import Post from "./Post.jsx";
 
 import { Link } from "react-router-dom";
 
@@ -47,7 +47,9 @@ export default function PostList() {
       <ul>
         {Object.entries(BlogPosts).map(([slug, { title }]) => (
           <li key={slug}>
-            <h3>{title}</h3>
+            <Link to={`/posts/${slug}`}>
+              <h3>{title}</h3>
+            </Link>
           </li>
         ))}
       </ul>

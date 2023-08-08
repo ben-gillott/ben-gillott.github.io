@@ -1,6 +1,7 @@
 import "./Post.scss";
 import React, { useState, useEffect } from "react";
 import axios from "axios";
+import { useParams } from "react-router-dom";
 
 import ReactMarkdown from "react-markdown";
 import remarkGFM from "remark-gfm";
@@ -38,12 +39,37 @@ export default function Post(props) {
     );
   }
 
-  //Post test
+  const BlogPosts = {
+    "first-blog-post": {
+      title: "First Blog Post",
+      description: "Hello lorem ipsum",
+    },
+    "second-blog-post": {
+      title: "Second Blog Post",
+      description: "Hello React Router v6",
+    },
+  };
+
+  const { slug } = useParams();
+  const post = BlogPosts[slug];
+  if (!post) {
+    return <span>The blog post you've requested doesn't exist.</span>;
+  }
+  const { title, description } = post;
+
   return (
     <div className="container">
-      <h1> Post Title </h1>
-      <p> Post Content </p>
-      {/* <ReactMarkdown className="markdown" remarkPlugins={[remarkGFM, remarkMath]} rehypePlugins={[rehypeMathjax, rehypeRaw]} components={{ code: code }} children={markdown} /> */}
+      <h3>{title}</h3>
+      <p>{description}</p>
     </div>
   );
+
+  // //Post test
+  // return (
+  //   <div className="container">
+  //     <h1> Post Title </h1>
+  //     <p> Post Content </p>
+  //     {/* <ReactMarkdown className="markdown" remarkPlugins={[remarkGFM, remarkMath]} rehypePlugins={[rehypeMathjax, rehypeRaw]} components={{ code: code }} children={markdown} /> */}
+  //   </div>
+  // );
 }

@@ -1,5 +1,14 @@
 @import "../../global.scss";
 
+.container {
+  margin-top: $topbarHeight;
+  padding: 20px;
+  scroll-snap-align: start;
+  display: flex;
+  padding-bottom: 10vh;
+}
+
+
 .markdown {
   // some root styles here
   background-color: lightgray;
