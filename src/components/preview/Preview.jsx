@@ -27,15 +27,23 @@ export default function Preview(props) {
         </ul>
 
         <div className="linkContainer">
-          <a style={!props.read || props.read === "" ? { display: "none" } : {}} className="read" href={props.read}>
-            <p>...Read More</p>
-          </a>
-          <a style={!props.src || props.src === "" ? { display: "none" } : {}} className="src" rel="noreferrer" target="_blank" href={props.src}>
-            <img src={srcIcon} alt={"Src Icon"} />
-          </a>
-          <a style={!props.link || props.link === "" ? { display: "none" } : {}} className="link" rel="noreferrer" target="_blank" href={props.link}>
-            <img src={linkIcon} alt={"Link Icon"} />
-          </a>
+          {props.read && props.read !== "" && (
+            <a className="read" href={props.read}>
+              <p>...Read More</p>
+            </a>
+          )}
+
+          {props.src && props.src !== "" && (
+            <a className="src" rel="noreferrer" target="_blank" href={props.src}>
+              <img src={srcIcon} alt={"Src Icon"} />
+            </a>
+          )}
+
+          {props.link && props.link !== "" && (
+            <a className="link" rel="noreferrer" target="_blank" href={props.link}>
+              <img src={linkIcon} alt={"Link Icon"} />
+            </a>
+          )}
         </div>
       </div>
     </div>
