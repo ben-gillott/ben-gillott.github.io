@@ -1,23 +1,26 @@
 {
   "simple" : {
-    "title" : "A simple test of markdown",
     "filename": "simple.md",
+    "title" : "A simple test of markdown",
+    "description": "A simple test of testing testing lorem ipsum."
     "date": "8/8/23",
     "img": "https://ichef.bbci.co.uk/news/976/cpsprodpb/17638/production/_124800859_gettyimages-817514614.jpg",
     "tags":["gdev", "techart"],
     "published": true
   },
   "test" : {
-    "title" : "A test of markdown",
     "filename": "test.md",
-    "date": "7/7/23",
+    "title" : "A test of markdown",
+    "description": "A simple test of testing testing lorem ipsum."
+    "date": "7/7/23",  
     "img": "https://ichef.bbci.co.uk/news/976/cpsprodpb/17638/production/_124800859_gettyimages-817514614.jpg",
     "tags":["other"],
     "published": true
   },
   "unpub" : {
-    "title" : "An article in progress",
     "filename": "codetest.md",
+    "title" : "An article in progress",
+    "description": "A simple test of testing testing lorem ipsum."
     "date": "7/7/23",
     "img": "https://ichef.bbci.co.uk/news/976/cpsprodpb/17638/production/_124800859_gettyimages-817514614.jpg",
     "tags": ["dev"],
