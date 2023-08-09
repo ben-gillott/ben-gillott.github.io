@@ -1,21 +1,77 @@
 @import "../../global.scss";
 
 .container {
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+  max-width: 700px;
+
   margin-top: $topbarHeight;
-  padding: 20px;
-  scroll-snap-align: start;
+  margin-left: auto;
+  margin-right: auto;
+
   display: flex;
-  padding-bottom: 10vh;
-  background-color: palegoldenrod;
   flex-direction: column;
+
+  @if $debug {
+    background-color: yellow;
+  }
+}
+
+.header {
+  padding-bottom: 20px;
+  text-align: center;
+
+  @if $debug {
+    background-color: red;
+  }
+
+  .title {
+    @if $debug {
+      background-color: orange;
+    }
+
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    font-size: 2em;
+  }
+
+  .description {
+    @if $debug {
+      background-color: yellow;
+    }
+    font-style: italic;
+    font-size: medium;
+  }
+  .date {
+    @if $debug {
+      background-color: palegoldenrod;
+    }
+
+    font-style: italic;
+    text-align: right;
+    padding-right: 15px;
+  }
+
+  .thumbnail {
+    @if $debug {
+      background-color: orange;
+    }
+    padding-top: 30px;
+    padding-bottom: 30px;
+    width: 90%;
+  }
 }
 
 .markdown {
-  // some root styles here
-  background-color: $lightColor;
+  @if $debug {
+    background-color: blue;
+  }
 
   ul {
-    // background-color: red;
     list-style-type: disc;
   }
 

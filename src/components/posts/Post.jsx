@@ -46,8 +46,13 @@ export default function Post() {
   } else {
     return (
       <div className="container">
-        <h1> Title {post.name} </h1>
-        <p> {post.download_url} </p>
+        <div className="header">
+          <h4 className="date"> {post.date} </h4>
+          <h1 className="title"> {post.title} </h1>
+          <p className="description"> {post.description} </p>
+
+          <img className="thumbnail" src={post.img} alt="Thumbnail" />
+        </div>
         <ReactMarkdown className="markdown" remarkPlugins={[remarkGFM, remarkMath]} rehypePlugins={[rehypeMathjax, rehypeRaw]} components={{ code: code }} children={markdown} />
       </div>
     );
