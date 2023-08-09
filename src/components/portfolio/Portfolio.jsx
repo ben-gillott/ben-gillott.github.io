@@ -14,9 +14,11 @@ export default function Projects() {
         </div>
 
         {projects.map((p) => (
-          <Loader elem={<Preview key={p.title} e={p} type="project" />} />
+          <Loader elem={<Preview key={p.title} title={p.title} img={p.img} src={p.src} read={p.read} link={p.link} bullets={p.bullets} type="project" />} />
         ))}
       </div>
     </div>
   );
 }
+
+// title, highlight, img, src, link, bullets

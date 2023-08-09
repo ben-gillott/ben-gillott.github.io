@@ -2,6 +2,8 @@ import "./PostList.scss";
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { getPosts } from "./PostUtils.jsx";
+import Preview from "../preview/Preview.jsx";
+import Loader from "../loader/Loader.jsx";
 
 export default function PostList() {
   const [posts, setPosts] = useState();
@@ -18,10 +20,7 @@ export default function PostList() {
           Object.keys(posts).map((slug) => (
             <li key={slug} style={{ visibility: posts[slug].published ? "visible" : "hidden" }}>
               <Link to={`/posts/${slug}`}>
-                <div className="postLink">
-                  <h3>{posts[slug].headline}</h3>
-                  <h4>{posts[slug].date} </h4>
-                </div>
+                <Loader elem={<Preview key={slug} title={posts[slug].title} date={posts[slug].date} img={posts[slug].img} type="blog" />} />
               </Link>
             </li>
           ))}
