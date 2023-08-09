@@ -14,7 +14,7 @@ import { coy } from "react-syntax-highlighter/dist/esm/styles/prism";
 
 export default function Post() {
   const { slug } = useParams();
-  const [post, setPost] = useState();
+  const [post, setPost] = useState("loading");
   const [markdown, setMarkdown] = useState();
 
   useEffect(() => {
@@ -22,7 +22,7 @@ export default function Post() {
   }, [slug]);
 
   useEffect(() => {
-    if (post !== undefined) {
+    if (post !== "loading" && post !== undefined) {
       downloadPost(post.filename).then((d) => setMarkdown(d));
     }
   }, [post]);
@@ -38,11 +38,12 @@ export default function Post() {
     );
   }
 
-  if (post === undefined) {
-    console.log("Post undefined!");
+  //Three cases: The page is loading (default state), it is undefined (metadata fetch failed), else assume working
+  if (post === "loading") {
+    return <div className="container" />;
+  } else if (post === undefined) {
     return <NoMatch />;
   } else {
-    console.log("Post defined!");
     return (
       <div className="container">
         <h1> Title {post.name} </h1>
