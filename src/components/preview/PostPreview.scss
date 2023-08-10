@@ -1,0 +1,75 @@
+@import "../../global.scss";
+
+.postPreview {
+  border: 1px solid black;
+  border-radius: 10px;
+  margin-top: 2vh;
+  min-height: 150px;
+  max-height: 300px;
+  overflow: hidden;
+
+  display: flex;
+
+  background-color: lightgray;
+  transition: filter 0.25s ease-in-out;
+
+  .leftPrev {
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+
+    .image {
+      min-width: 100%;
+      min-height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  .rightPrev {
+    @if $debug {
+      background-color: green;
+    }
+    width: 100%;
+    padding-left: 2%;
+
+    display: flex;
+    flex-direction: column;
+
+    .title {
+      @if $debug {
+        background-color: orange;
+      }
+
+      text-align: left;
+      margin-top: 20px;
+      margin-bottom: 15px;
+      font-size: 2em;
+    }
+
+    .description {
+      @if $debug {
+        background-color: yellow;
+      }
+      font-style: italic;
+      font-size: medium;
+    }
+
+    .date {
+      @if $debug {
+        background-color: palegoldenrod;
+      }
+
+      font-style: italic;
+      text-align: right;
+      padding-right: 15px;
+      align-self: flex-end;
+      margin-top: auto;
+    }
+  }
+}
+
+.postPreview:hover {
+  filter: saturate(110%) brightness(110%) contrast(100%); //https://codepen.io/sosuke/pen/Pjoqqp
+}

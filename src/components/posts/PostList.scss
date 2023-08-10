@@ -18,4 +18,12 @@
   .postLink:hover {
     background-color: red;
   }
+  li {
+    overflow-x: visible;
+    list-style-type: none;
+  }
+
+  ul {
+    overflow-x: visible;
+  }
 }
