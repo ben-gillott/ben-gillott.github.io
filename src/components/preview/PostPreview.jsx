@@ -15,7 +15,7 @@ export default function Preview(props) {
       </div>
 
       <div className="rightPrev">
-        <h1 className="title"> {props.title} </h1>
+        <h2 className="title"> {props.title} </h2>
 
         <p className="description"> {props.description} </p>
 

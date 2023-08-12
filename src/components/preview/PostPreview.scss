@@ -1,24 +1,27 @@
 @import "../../global.scss";
 
 .postPreview {
-  border: 1px solid black;
-  border-radius: 10px;
+  border: 3px solid black;
+  border-radius: 8px;
   margin-top: 2vh;
-  min-height: 150px;
-  max-height: 300px;
+  min-height: 180px;
   overflow: hidden;
 
   display: flex;
+
+  display: grid;
+  grid-template-columns: 40% 60%;
+  grid-gap: 0px;
 
   background-color: lightgray;
   transition: filter 0.25s ease-in-out;
 
   .leftPrev {
-    width: 500px;
+    // width: 400px;
     display: flex;
     justify-content: center;
     align-items: center;
-    overflow: hidden;
+    // overflow: hidden;
 
     .image {
       min-width: 100%;
@@ -45,7 +48,6 @@
       text-align: left;
       margin-top: 20px;
       margin-bottom: 15px;
-      font-size: 2em;
     }
 
     .description {
@@ -71,5 +73,6 @@
 }
 
 .postPreview:hover {
-  filter: saturate(110%) brightness(110%) contrast(100%); //https://codepen.io/sosuke/pen/Pjoqqp
+  filter: saturate(110%) brightness(115%) contrast(100%); //https://codepen.io/sosuke/pen/Pjoqqp
+  cursor: pointer;
 }
