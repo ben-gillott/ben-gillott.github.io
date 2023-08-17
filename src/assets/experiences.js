@@ -31,8 +31,6 @@ export const experiences = [
       "Prototyped a mesh volume calculator using React, three.js, Spring and MySQL.",
     ],
     link: "https://whiteoutsolutions.com",
-    src: "",
-    read: "",
   },
   {
     title: "Kitware",
@@ -44,8 +42,6 @@ export const experiences = [
       "Collaborated on a scanner to import complex operation details from PDFs.",
     ],
     link: "https://www.kitware.com/",
-    src: "",
-    read: "",
   },
   {
     title: "Cornell CAPRA",
@@ -58,7 +54,6 @@ export const experiences = [
       "Created a game engine from scratch as the first major test of the novel language.",
     ],
     link: "https://capra.cs.cornell.edu",
-    src: "",
     read: "https://capra.cs.cornell.edu/research/gator/",
   },
 
@@ -70,8 +65,15 @@ export const experiences = [
     bullets: [
       "Developed an Angular tool to remediate faulty customer data, reducing labor by 90%.",
     ],
-    link: "",
-    src: "",
-    read: "",
+  },
+  {
+    title: "Cornell CS 2112",
+    date: "Aug '19 - Jan '20",
+    img: cornell,
+    role: "Teaching Assistant",
+    bullets: [
+      "Held office hours for honors object oriented programming and helped lead a weekly 40 student lab.",
+    ],
+    link: "https://www.cs.cornell.edu/courses/cs2112/2018fa/",
   },
 ];
