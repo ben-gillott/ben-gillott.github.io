@@ -1,0 +1,43 @@
+@import "../../global.scss";
+
+.postlist {
+  margin-top: $topbarHeight;
+  margin-left: auto;
+  margin-right: auto;
+
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  .centerLoader {
+    display: flex;
+    justify-content: center;
+  }
+
+  .lineContainer {
+    padding-bottom: 30px;
+    .loaderContainer {
+      max-width: 800px;
+      display: flex;
+      justify-content: center;
+    }
+  }
+
+  .postLink {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: whitesmoke;
+  }
+  .postLink:hover {
+    background-color: red;
+  }
+
+  .previewContainer {
+    max-width: 800px;
+    padding-left: 3vw;
+    padding-right: 3vw;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}

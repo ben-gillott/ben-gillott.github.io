@@ -1,6 +1,10 @@
 import Portfolio from "./components/portfolio/Portfolio";
 import Topbar from "./components/topbar/Topbar";
 import About from "./components/about/About";
+import PostList from "./components/posts/PostList";
+import Posts from "./components/posts/Posts";
+import Post from "./components/posts/Post";
+import NoMatch from "./components/nomatch/NoMatch";
 
 import "./app.scss";
 import { useState, useEffect } from "react";
@@ -26,6 +30,11 @@ function App() {
       <Routes>
         <Route path="/" element={<About />} />
         <Route path="/portfolio" element={<Portfolio />} />
+        <Route path="/posts" element={<Posts />}>
+          <Route index element={<PostList />} />
+          <Route path=":slug" element={<Post />} />
+        </Route>
+        <Route path="*" element={<NoMatch />} />
       </Routes>
     </div>
   );

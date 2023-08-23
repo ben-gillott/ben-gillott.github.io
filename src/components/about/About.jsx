@@ -18,53 +18,19 @@ export default function About() {
     <div className="about" id="about">
       <div className="left">
         <div className="imageContainer">
-          <Loader
-            elem={<img className="image" src={profileImg} alt="Profile" />}
-          />
+          <Loader elem={<img className="image" src={profileImg} alt="Profile" />} />
         </div>
 
         <div className="iconContainer">
           <div className="icons">
             <Loader elem={<ResumeIcon />} />
-            <Loader
-              elem={
-                <Icon
-                  name="Games"
-                  link="https://cloudlight-games.itch.io/"
-                  img={itchIcon}
-                />
-              }
-            />
+            <Loader elem={<Icon name="Games" link="https://cloudlight-games.itch.io/" img={itchIcon} />} />
 
-            <Loader
-              elem={
-                <Icon
-                  name="Art"
-                  link="https://www.instagram.com/littleartbean/"
-                  img={instaIcon}
-                />
-              }
-            />
+            <Loader elem={<Icon name="Art" link="https://www.instagram.com/littleartbean/" img={instaIcon} />} />
 
-            <Loader
-              elem={
-                <Icon
-                  name="Linkedin"
-                  link="https://www.linkedin.com/in/ben-gillott/"
-                  img={linkedinIcon}
-                />
-              }
-            />
+            <Loader elem={<Icon name="Linkedin" link="https://www.linkedin.com/in/ben-gillott/" img={linkedinIcon} />} />
 
-            <Loader
-              elem={
-                <Icon
-                  name="Github"
-                  link="https://github.com/ben-gillott"
-                  img={gitIcon}
-                />
-              }
-            />
+            <Loader elem={<Icon name="Github" link="https://github.com/ben-gillott" img={gitIcon} />} />
           </div>
         </div>
       </div>
@@ -80,18 +46,13 @@ export default function About() {
           <Loader
             elem={
               <p className="blurb">
-                I am a software engineer specializing in computer graphics. I am
-                fascinated by the blend of art and technology, and I
-                passionately believe this combination should be used to create
-                profound emotional experiences.
+                I am a software engineer specializing in computer graphics. I am fascinated by the blend of art and technology, and I passionately believe this combination should be used to create profound emotional experiences.
                 <br />
                 <br />
                 In my free time I make indie games, art, and DIY projects.
                 <br />
                 <br />
-                I graduated from Cornell in 2021 with a B.A. in Computer
-                Science, and am currently working at the geospatial startup
-                Whiteout Solutions.
+                I graduated from Cornell in 2021 with a B.A. in Computer Science, and am currently working at the geospatial startup Whiteout Solutions.
                 <br />
                 <br />
               </p>
@@ -107,7 +68,7 @@ export default function About() {
           </div>
 
           {experiences.map((e) => (
-            <Loader elem={<Preview key={e.title} e={e} type="experience" />} />
+            <Loader elem={<Preview key={e.title} title={e.title} img={e.img} src={e.src} read={e.read} link={e.link} bullets={e.bullets} type="experience" />} />
           ))}
         </div>
 
@@ -118,11 +79,7 @@ export default function About() {
             <Loader className="hLine" />
           </div>
 
-          {projects.map((p) =>
-            p.highlight ? (
-              <Loader elem={<Preview key={p.title} e={p} type="project" />} />
-            ) : null
-          )}
+          {projects.map((p) => (p.highlight ? <Loader elem={<Preview key={p.title} title={p.title} img={p.img} src={p.src} read={p.read} link={p.link} bullets={p.bullets} type="project" />} /> : null))}
 
           <Loader elem={<Link to="/portfolio"> ...more projects </Link>} />
         </div>

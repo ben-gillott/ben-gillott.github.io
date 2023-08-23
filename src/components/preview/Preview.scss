@@ -3,7 +3,6 @@
 .preview {
   // border: 1px solid black;
   margin-top: 2vh;
-
   min-height: 150px;
   display: grid;
 
@@ -79,14 +78,30 @@
       }
 
       a:hover {
-        filter: invert(8%) sepia(100%) saturate(7070%) hue-rotate(247deg)
-          brightness(97%) contrast(143%); //https://codepen.io/sosuke/pen/Pjoqqp
+        filter: invert(8%) sepia(100%) saturate(7070%) hue-rotate(247deg) brightness(97%) contrast(143%); //https://codepen.io/sosuke/pen/Pjoqqp
       }
     }
   }
 }
 
 .preview.project {
+  @include mobile {
+    display: flex;
+    flex-direction: column;
+  }
+
+  grid-template-columns: 1fr 2fr;
+
+  .leftPrev {
+    aspect-ratio: 3/2;
+
+    .image {
+      object-fit: cover;
+    }
+  }
+}
+
+.preview.blog {
   @include mobile {
     display: flex;
     flex-direction: column;
