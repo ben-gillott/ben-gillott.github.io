@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.6958d534.css",
-    "main.js": "/static/js/main.484593c0.js",
+    "main.js": "/static/js/main.96422fab.js",
     "static/media/pb_2.png": "/static/media/pb_2.3e669002cf9a2af72224.png",
     "static/media/PP_2-transformed.png": "/static/media/PP_2-transformed.01f6ed46487714b99c9f.png",
     "static/media/skitters_sc.png": "/static/media/skitters_sc.bb03169d18add3a4996c.png",
@@ -14,7 +14,7 @@
     "static/media/kitware.png": "/static/media/kitware.96ea0d967e2a3c6463cc.png",
     "static/media/coffee.png": "/static/media/coffee.757aa78d59b31376d144.png",
     "static/media/capitalone.png": "/static/media/capitalone.1df491649246a9dfad8e.png",
-    "static/media/Resume.pdf#toolbar=0&navpanes=0&scrollbar=0&view=FitW": "/static/media/Resume.01a3ee64cbdba8f0cc08.pdf",
+    "static/media/Resume.pdf#toolbar=0&navpanes=0&scrollbar=0&view=FitW": "/static/media/Resume.7d14f479e81bce1dff77.pdf",
     "static/media/cornell.gif": "/static/media/cornell.1e45a6d6ab8bcfd1c837.gif",
     "static/media/edna.png": "/static/media/edna.5a1cd67b4a75dfe8901f.png",
     "static/media/conway_snail.png": "/static/media/conway_snail.272b77ac33eca37d1794.png",
@@ -25,10 +25,10 @@
     "static/media/linkedin.svg": "/static/media/linkedin.aee20d054a41828aa2a61bd6e95a2b10.svg",
     "static/media/link.svg": "/static/media/link.d1b599488d8cc7df2e87e9faf537168e.svg",
     "main.6958d534.css.map": "/static/css/main.6958d534.css.map",
-    "main.484593c0.js.map": "/static/js/main.484593c0.js.map"
+    "main.96422fab.js.map": "/static/js/main.96422fab.js.map"
   },
   "entrypoints": [
     "static/css/main.6958d534.css",
-    "static/js/main.484593c0.js"
+    "static/js/main.96422fab.js"
   ]
 }
