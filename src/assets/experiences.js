@@ -25,10 +25,11 @@ export const experiences = [
     img: whiteout,
     role: "Software Developer",
     bullets: [
-      "Constructed computer vision tools and processing pipeline for wetland conservation analysis using Java and Spring.",
-      "Developed a distributed file management system using Java that saved terabytes of storage space and accelerated testing.",
-      "Built interactive VR simulations of LIDAR scans using C# and Unity.",
-      "Prototyped a mesh volume calculator using React, three.js, Spring and MySQL.",
+      "Deliver computer vision tools for seabird conservation enabling a multi-million dollar state contract.",
+      "Optimize ML feature recognition and processing speed in Java to improve cargo ship fuel efficiency.",
+      "Pioneer a cross-platform file system in Java to save TBs of server storage space and accelerate user testing.",
+      "Prototype a VR simulation of a point cloud using an Octree to achieve a high frame rate on billions of points in C# and C++.",
+      "Independently create a user-friendly tool in React, Spring, and MySQL to accurately calculate biomass volumes.",
     ],
     link: "https://whiteoutsolutions.com",
   },
@@ -37,10 +38,7 @@ export const experiences = [
     date: "May '21 - Aug '21",
     img: kitware,
     role: "Computer Graphics R&D Intern",
-    bullets: [
-      "Spearheaded a WebApp for military-grade simulations using React.",
-      "Collaborated on a scanner to import complex operation details from PDFs.",
-    ],
+    bullets: ["Utilized CV and NLP methods to securely interpret complex documents.", "Produced a WebApp critical for military simulation development using React."],
     link: "https://www.kitware.com/",
   },
   {
@@ -48,11 +46,7 @@ export const experiences = [
     date: "Jun '19 - Dec '20",
     img: cornell,
     role: "Research Assistant",
-    bullets: [
-      "Wrote GLSL shaders that were featured in a published paper.",
-      "Ported a novel graphics language into Unity to assess its commercial potential.",
-      "Created a game engine from scratch as the first major test of the novel language.",
-    ],
+    bullets: ["Ported novel graphics type system GATOR into the Unity shader pipeline to eliminate geometry transformation errors.", "Wrote shaders for a published paper to show subtle graphics errors in GLSL.", "Collaborated to make a game engine using the GATOR type system and C."],
     link: "https://capra.cs.cornell.edu",
     read: "https://capra.cs.cornell.edu/research/gator/",
   },
@@ -62,18 +56,14 @@ export const experiences = [
     date: "May '20 - Aug '20",
     img: capitalone,
     role: "Software Engineering Intern",
-    bullets: [
-      "Developed an Angular tool to remediate faulty customer data, reducing labor by 90%.",
-    ],
+    bullets: ["Prototyped a VR banking interface with ML signature recognition using Azure.", "Built a WebApp using Angular and Spring that reduced customer data remediation time by 90%."],
   },
   {
     title: "Cornell CS 2112",
     date: "Aug '19 - Jan '20",
     img: cornell,
     role: "Teaching Assistant",
-    bullets: [
-      "Held office hours for honors object oriented programming and helped lead a weekly 40 student lab.",
-    ],
+    bullets: ["Held office hours for honors object oriented programming and helped lead a weekly 40 student lab."],
     link: "https://www.cs.cornell.edu/courses/cs2112/2018fa/",
   },
 ];
