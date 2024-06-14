@@ -3,7 +3,7 @@ import "./ResumeOverlay.scss";
 import resumeIcon from "../../assets/icons/resume.png";
 import Overlay from "react-overlay-component";
 
-import resumeSource from "../../assets/resume.pdf#toolbar=0&navpanes=0&scrollbar=0&view=FitW";
+import resumeSource from "../../assets/BenGillott_Resume.pdf#toolbar=0&navpanes=0&scrollbar=0&view=FitW";
 
 import React, { useState } from "react";
 
