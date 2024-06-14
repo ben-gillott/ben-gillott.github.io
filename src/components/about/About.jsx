@@ -1,7 +1,6 @@
 import "./About.scss";
 import { projects } from "../../assets/projects";
 import Icon from "../icon/Icon";
-import ResumeIcon from "../overlays/ResumeIcon";
 import Loader from "../loader/Loader";
 import profileImg from "../../assets/profile/coffee.png";
 import gitIcon from "../../assets/icons/git.svg";
@@ -23,7 +22,6 @@ export default function About() {
 
         <div className="iconContainer">
           <div className="icons">
-            <Loader elem={<ResumeIcon />} />
             <Loader
               elem={
                 <Icon
