@@ -1,4 +1,5 @@
 import Portfolio from "./components/portfolio/Portfolio";
+import Resume from "./components/resume/Resume";
 import Topbar from "./components/topbar/Topbar";
 import About from "./components/about/About";
 import PostList from "./components/posts/PostList";
@@ -30,6 +31,7 @@ function App() {
       <Routes>
         <Route path="/" element={<About />} />
         <Route path="/portfolio" element={<Portfolio />} />
+        <Route path="/resume" element={<Resume />} />
         <Route path="/posts" element={<Posts />}>
           <Route index element={<PostList />} />
           <Route path=":slug" element={<Post />} />

@@ -25,8 +25,13 @@ export default function Topbar({ menuOpen, setMenuOpen }) {
           </li>
 
           <li onClick={() => setMenuOpen(false)}>
+            <Link to="/resume">Resume</Link>
+          </li>
+
+          <li onClick={() => setMenuOpen(false)}>
             <Link to="/portfolio">Portfolio</Link>
           </li>
+
           {/* <li onClick={() => setMenuOpen(false)}>
             <Link to="/posts">Posts</Link>
           </li> */}

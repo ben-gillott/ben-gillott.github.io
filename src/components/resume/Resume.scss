@@ -1,0 +1,53 @@
+@import "../../global.scss";
+
+.resume {
+  scroll-snap-align: start;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 200px;
+
+  min-height: 100%;
+
+  .loader {
+    display: flex;
+  }
+
+  .sectionTitle {
+    margin: auto;
+    justify-self: center;
+    top: 150px;
+  }
+
+  .mainList {
+    overflow: hidden;
+    scrollbar-width: none;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    margin-right: 1vw;
+    margin-left: 1vw;
+
+    margin-bottom: 10vh;
+
+    .lineContainer {
+      padding-bottom: 30px;
+      .loaderContainer {
+        display: flex;
+        justify-content: center;
+      }
+    }
+
+    .resumeImg {
+      width: 60%;
+      height: auto;
+      margin-left: 20%;
+    }
+  }
+}
