@@ -1,11 +1,12 @@
 {
   "files": {
-    "main.css": "/static/css/main.d4bcceaa.css",
-    "main.js": "/static/js/main.55789423.js",
+    "main.css": "/static/css/main.0fcc12b8.css",
+    "main.js": "/static/js/main.483f96d0.js",
     "static/media/pb_2.png": "/static/media/pb_2.3e669002cf9a2af72224.png",
     "static/media/PP_2-transformed.png": "/static/media/PP_2-transformed.01f6ed46487714b99c9f.png",
     "static/media/skitters_sc.png": "/static/media/skitters_sc.bb03169d18add3a4996c.png",
     "static/media/hyperloop_sc.png": "/static/media/hyperloop_sc.34c87b004c4de514b612.png",
+    "static/media/Ben_Gillott_Resume_png.png": "/static/media/Ben_Gillott_Resume_png.79f998657488d5ba9812.png",
     "static/media/terrain_world.png": "/static/media/terrain_world.ed664e894775710f449f.png",
     "static/media/conway_3D.png": "/static/media/conway_3D.3ad1d2a84157fa2e316d.png",
     "static/media/tt_sc2.png": "/static/media/tt_sc2.5a97150605b27c217de8.png",
@@ -19,11 +20,11 @@
     "static/media/instagram.svg": "/static/media/instagram.eaf605765b9e49e3c32ea4163d64ad3f.svg",
     "static/media/linkedin.svg": "/static/media/linkedin.aee20d054a41828aa2a61bd6e95a2b10.svg",
     "static/media/link.svg": "/static/media/link.d1b599488d8cc7df2e87e9faf537168e.svg",
-    "main.d4bcceaa.css.map": "/static/css/main.d4bcceaa.css.map",
-    "main.55789423.js.map": "/static/js/main.55789423.js.map"
+    "main.0fcc12b8.css.map": "/static/css/main.0fcc12b8.css.map",
+    "main.483f96d0.js.map": "/static/js/main.483f96d0.js.map"
   },
   "entrypoints": [
-    "static/css/main.d4bcceaa.css",
-    "static/js/main.55789423.js"
+    "static/css/main.0fcc12b8.css",
+    "static/js/main.483f96d0.js"
   ]
 }
