@@ -2,7 +2,7 @@ import "./About.scss";
 import { projects } from "../../assets/projects";
 import Icon from "../icon/Icon";
 import Loader from "../loader/Loader";
-import profileImg from "../../assets/profile/coffee.png";
+import profileImg from "../../assets/profile/face.jpg";
 import gitIcon from "../../assets/icons/git.svg";
 import itchIcon from "../../assets/icons/itch.svg";
 import linkedinIcon from "../../assets/icons/linkedin.svg";
@@ -76,18 +76,12 @@ export default function About() {
           <Loader
             elem={
               <p className="blurb">
-                I am a software engineer specializing in computer graphics. I am
-                fascinated by the blend of art and technology, and I
-                passionately believe this combination should be used to create
-                profound emotional experiences.
+                <br />
+                I am a Software Engineer with 2.5 years experience, specializing
+                in backend development, Computer Graphics and Computer Vision.
                 <br />
                 <br />
                 In my free time I make indie games, art, and DIY projects.
-                <br />
-                <br />
-                I graduated from Cornell in 2021 with a B.A. in Computer
-                Science, and am currently working at the geospatial startup
-                Whiteout Solutions.
                 <br />
                 <br />
               </p>
