@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/static/css/main.0fcc12b8.css",
-    "main.js": "/static/js/main.483f96d0.js",
+    "main.css": "/static/css/main.3681da4e.css",
+    "main.js": "/static/js/main.704024dd.js",
     "static/media/pb_2.png": "/static/media/pb_2.3e669002cf9a2af72224.png",
     "static/media/PP_2-transformed.png": "/static/media/PP_2-transformed.01f6ed46487714b99c9f.png",
     "static/media/skitters_sc.png": "/static/media/skitters_sc.bb03169d18add3a4996c.png",
     "static/media/hyperloop_sc.png": "/static/media/hyperloop_sc.34c87b004c4de514b612.png",
-    "static/media/Ben_Gillott_Resume_png.png": "/static/media/Ben_Gillott_Resume_png.79f998657488d5ba9812.png",
     "static/media/terrain_world.png": "/static/media/terrain_world.ed664e894775710f449f.png",
+    "static/media/Ben_Gillott_Resume_png.png": "/static/media/Ben_Gillott_Resume_png.8ba1822413fd1fabc687.png",
     "static/media/conway_3D.png": "/static/media/conway_3D.3ad1d2a84157fa2e316d.png",
     "static/media/tt_sc2.png": "/static/media/tt_sc2.5a97150605b27c217de8.png",
+    "static/media/face.jpg": "/static/media/face.317daa7eef8c34c02e5c.jpg",
     "static/media/otetris.png": "/static/media/otetris.b137d4e08008c3ffd81d.png",
-    "static/media/coffee.png": "/static/media/coffee.757aa78d59b31376d144.png",
     "static/media/edna.png": "/static/media/edna.5a1cd67b4a75dfe8901f.png",
     "static/media/conway_snail.png": "/static/media/conway_snail.272b77ac33eca37d1794.png",
     "static/media/itch.svg": "/static/media/itch.b0b726fdf00fb51bfc6641a9791a8951.svg",
@@ -20,11 +20,11 @@
     "static/media/instagram.svg": "/static/media/instagram.eaf605765b9e49e3c32ea4163d64ad3f.svg",
     "static/media/linkedin.svg": "/static/media/linkedin.aee20d054a41828aa2a61bd6e95a2b10.svg",
     "static/media/link.svg": "/static/media/link.d1b599488d8cc7df2e87e9faf537168e.svg",
-    "main.0fcc12b8.css.map": "/static/css/main.0fcc12b8.css.map",
-    "main.483f96d0.js.map": "/static/js/main.483f96d0.js.map"
+    "main.3681da4e.css.map": "/static/css/main.3681da4e.css.map",
+    "main.704024dd.js.map": "/static/js/main.704024dd.js.map"
   },
   "entrypoints": [
-    "static/css/main.0fcc12b8.css",
-    "static/js/main.483f96d0.js"
+    "static/css/main.3681da4e.css",
+    "static/js/main.704024dd.js"
   ]
 }
